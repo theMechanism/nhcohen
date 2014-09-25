@@ -5,6 +5,26 @@
 
 // @import "icons/*.png";
 
-/* main stylesheetssss */
+/* main stylesheet */
 
-@import "partials/partial";
+/* ========================
+    IE Fixes
+   ======================== */
+
+.oldie nav a {
+    margin: 0 0.7%;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@import "partials/intermediate";
+@import "partials/wide";
+@import "partials/maximal";
+
+
+@import "partials/helper";
+@import "partials/print";

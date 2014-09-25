@@ -3,10 +3,10 @@ require 'animation'
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "stylesheets"
+css_dir = "httpdocs/css"
 sass_dir = "sass"
-images_dir = "images"
-http_stylesheets_path = "/stylesheets"
+images_dir = "httpdocs/images"
+http_stylesheets_path = "/css"
 http_images_path = "/images"
 http_generated_images_path = "/images"
 sprite_load_path = "sass/sprites"
