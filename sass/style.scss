@@ -1,7 +1,10 @@
 @import "compass/css3";
 @import "compass/utilities/sprites";
 @import "compass/utilities/general/clearfix";
+
 @import "vendor/normalize";
+@import "partials/config";
+@import "partials/fonts";
 
 // @import "icons/*.png";
 
@@ -24,7 +27,6 @@
 @import "partials/intermediate";
 @import "partials/wide";
 @import "partials/maximal";
-
 
 @import "partials/helper";
 @import "partials/print";
