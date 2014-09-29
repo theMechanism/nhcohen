@@ -2,6 +2,6 @@
 
 ## Compiling Sass
 
-1. Make sure you have compass installed: ```compass -v```
-	* If it is not installed on your machine: ```sudo gem install compass```
-1. Run ```compass watch``` or ```compass build``` in the project directory (same directory as ```config.rb```)
+1. Make sure you have compass and susy installed: ```compass -v``` & ```susy -v```
+	* If not installed: ```gem install compass``` / ```gem install susy```
+1. ```compass watch``` or ```compass compile``` in the project directory (same directory as ```config.rb```)

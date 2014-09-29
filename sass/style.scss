@@ -1,14 +1,24 @@
 @import "compass/css3";
 @import "compass/utilities/sprites";
 @import "compass/utilities/general/clearfix";
+@import "susy";
 
 @import "vendor/normalize";
 @import "partials/config";
 @import "partials/fonts";
 
-// @import "icons/*.png";
+// @import "icons/*.png"; 
 
 /* main stylesheet */
+body {
+	@include container(960px);
+}
+.body {
+	@include span(9 of 12);
+}
+.aside {
+	@include span(3 of 12);
+}
 
 /* ========================
     IE Fixes
