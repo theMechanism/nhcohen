@@ -4,11 +4,16 @@
 http_path = "/"
 css_dir = "httpdocs/css"
 sass_dir = "sass"
-images_dir = "httpdocs/images"
+images_dir = "httpdocs/img"
 http_stylesheets_path = "/css"
-http_images_path = "/images"
-http_generated_images_path = "/images"
+http_images_path = "/img"
+http_generated_images_path = "/img"
 sprite_load_path = "sass/sprites"
+
+if environment == :development
+    http_images_path = "../img"
+    http_generated_images_path = "../img"
+end
 
 # Development
 output_style = :expanded

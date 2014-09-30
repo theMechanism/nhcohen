@@ -7,17 +7,141 @@
 @import "partials/config";
 @import "partials/fonts";
 
-// @import "icons/*.png"; 
+@import "icons/*.png"; 
 
 /* main stylesheet */
 body {
-	@include container(960px);
+	font: 16px $body-font;
+	a { 
+		color: $link-color; 
+		text-decoration: none;
+		&:hover, &:active { 
+			color: $active-color;
+			@include transition(color 0.3s ease);
+		}
+	}
 }
-.body {
-	@include span(9 of 12);
+
+.header-container {
+	a { 
+		color: white; 
+		line-height: 1;
+		text-decoration: none;
+	}
 }
-.aside {
-	@include span(3 of 12);
+header {
+	.title {
+		@include icons-sprite(nhcohen-logo);
+		background-size: cover;
+		height: 53px;
+		margin: 35px 0;
+		max-width: 100%;
+		overflow: hidden;
+		text-indent: -9999px;
+		width: 203px;
+	}
+	nav .menu-item { 
+		font: 20px $header-font; 
+		text-align: center;
+		a {
+			color: $dark-neutral;
+			text-decoration: none;
+		}
+	}
+}
+.banner-container {
+	background-color: $brand-color;
+	position: relative;
+	width: 100%;
+	.bg-container {
+		background-size: cover;
+		background-position: center bottom;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.hero-text {
+		@include span(12 of 12);
+		color: white;
+		font-family: $header-font;
+		position: relative;
+		text-transform: uppercase;
+		h2 {
+			font-size: 42px;
+			text-shadow: 2px 2px 8px $dark-neutral;
+		}
+		.hero-cta {
+			background: $link-color;
+			color: white;
+			display: inline-block;
+			font-size: 20px;
+			letter-spacing: 1px;
+			padding: 13px 50px 11px;
+			@include transition(background 0.3s ease);
+			&:hover, &:active {
+				background: $active-color;
+			}
+		}
+	}
+}
+.homepage-cta {
+	background-color: $brand-color;
+	color: white;
+	width: 100%;
+	ul { 
+		padding: 0;
+		margin: 0; 
+		list-style: none;
+		li {
+			font: 20px $header-font;
+			text-align: center;
+			a {
+				color: white;
+				text-decoration: none;
+				text-transform: uppercase;
+				&:hover, &:active {
+					color: $active-color;
+				}
+			}
+		}
+	}
+}
+.latest-news {
+	background-color: $lightest-neutral;
+	.date-container {
+		.date { 
+			color: $dark-neutral; 
+			font-family: 'latobold'; 
+			margin-bottom: 5px;
+		}
+	}
+	.news-container {
+		h2 { margin: 0; }
+		p { margin: 10px 0 0 0; color: $light-neutral; }
+	}
+}
+.footer-container {
+	background: $dark-neutral;
+	width: 100%;
+	ul { 
+		list-style: none;
+		margin: 0;
+		padding: 8px 0;
+		@extend .clearfix;
+		li {
+			border-left: 1px solid $light-neutral;
+			display: inline-block;
+			font-size: 14px;
+			float: left;
+			padding: 0 10px;
+			&:first-child { border-left: 0; }
+			a { color: $light-neutral; &:hover, &:active { color: $active-color; }}
+		}
+	}
+	nav { float: left; }
+	.socials { float: right; }
 }
 
 /* ========================

@@ -15,7 +15,7 @@
 
         <link rel="stylesheet" href="css/style.css">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -24,13 +24,28 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav>
+                <div class="container">
+                    <div class="title-container"><a href="<?php echo base_url(); ?>"><h1 class="title">NHCohen Partners, LLC.</h1></a></div>
+                    <nav>
+                        <ul class="menu-container">
+                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('about-us'); ?>">About Us</a></div></li>
+                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('for-investors'); ?>">For Investors</a></div></li>
+                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('contact-us'); ?>">Contact Us</a></div></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
+            <?php if (isset($banner)) : ?>
+                <div class="banner-container<?php if (isset($isHero)) echo ' big'; ?>">
+                    <div class="bg-container" style="background-image:url('<?php echo base_url('img/' . $banner); ?>');"></div>
+                    <?php if (isset($isHero)) : ?>
+                        <div class="container">
+                            <div class="hero-text">
+                                <h2>Perspective and insight,<br>for real estate investment<br>that stands the test of time</h2>
+                                <a class="hero-cta" href="#">Learn More</a>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            <?php endif; ?>
         </div>

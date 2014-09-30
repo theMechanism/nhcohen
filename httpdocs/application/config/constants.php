@@ -37,7 +37,7 @@ define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 
-define('SITE_NAME', 'SITE_NAME');
+define('SITE_NAME', 'NHCohen Partners, LLC.');
 define('API_GOOGLE', 'XXXXX-X');
 
 /* End of file constants.php */
