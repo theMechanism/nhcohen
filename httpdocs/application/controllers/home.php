@@ -22,8 +22,6 @@ class Home extends CI_Controller {
 		$data = array(
 			'view' => 'home',
 			'title' => 'Home',
-			'banner' => 'hero-banner.jpg',
-			'isHero' => true,
 			'notice' => 'Ned Cohen announces new offering. Contact us at 212 221 3444 for more details'
 		);
 		$this->load->view('template', $data);

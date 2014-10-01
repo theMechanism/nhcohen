@@ -53,6 +53,7 @@
 			height: 396px;
 		}
 		.notice-container {
+			padding: 20px 0;
 			.title {
 				@include span(3 of 12);
 			}
