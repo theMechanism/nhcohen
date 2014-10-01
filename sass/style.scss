@@ -7,15 +7,15 @@
 @import "partials/config";
 @import "partials/fonts";
 
-@import "icons/*.png"; 
+@import "icons/*.png";
 
 /* main stylesheet */
 body {
 	font: 16px $body-font;
-	a { 
-		color: $link-color; 
+	a {
+		color: $link-color;
 		text-decoration: none;
-		&:hover, &:active { 
+		&:hover, &:active {
 			color: $active-color;
 			@include transition(color 0.3s ease);
 		}
@@ -23,8 +23,8 @@ body {
 }
 
 .header-container {
-	a { 
-		color: white; 
+	a {
+		color: white;
 		line-height: 1;
 		text-decoration: none;
 	}
@@ -40,8 +40,8 @@ header {
 		text-indent: -9999px;
 		width: 203px;
 	}
-	nav .menu-item { 
-		font: 20px $header-font; 
+	nav .menu-item {
+		font: 20px $header-font;
 		text-align: center;
 		a {
 			color: $dark-neutral;
@@ -61,6 +61,20 @@ header {
 		left: 0;
 		right: 0;
 		bottom: 0;
+	}
+	.notice-container {
+		background: $brand-color;
+		padding: 20px 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		.title {
+			color: white;
+			font: 20px $header-font;
+		}
+		.notice {
+			a { color: $link-color; &:hover, &:active { color: $active-color; }}
+		}
 	}
 	.hero-text {
 		@include span(12 of 12);
@@ -90,9 +104,9 @@ header {
 	background-color: $brand-color;
 	color: white;
 	width: 100%;
-	ul { 
+	ul {
 		padding: 0;
-		margin: 0; 
+		margin: 0;
 		list-style: none;
 		li {
 			font: 20px $header-font;
@@ -111,9 +125,9 @@ header {
 .latest-news {
 	background-color: $lightest-neutral;
 	.date-container {
-		.date { 
-			color: $dark-neutral; 
-			font-family: 'latobold'; 
+		.date {
+			color: $dark-neutral;
+			font-family: 'latobold';
 			margin-bottom: 5px;
 		}
 	}
@@ -125,7 +139,7 @@ header {
 .footer-container {
 	background: $dark-neutral;
 	width: 100%;
-	ul { 
+	ul {
 		list-style: none;
 		margin: 0;
 		padding: 8px 0;

@@ -34,7 +34,7 @@
 					right: 0;
 					bottom: 0;
 				}
-				a { 
+				a {
 					border: 6px solid transparent;
 					border-width: 6px 0;
 					display: inline-block;
@@ -49,8 +49,16 @@
 		}
 	}
 	.banner-container {
-		&.big { 
+		&.big {
 			height: 396px;
+		}
+		.notice-container {
+			.title {
+				@include span(3 of 12);
+			}
+			.notice {
+				@include span(9 of 12);
+			}
 		}
 		.hero-text {
 			margin-top: 40px;

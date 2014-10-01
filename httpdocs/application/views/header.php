@@ -39,7 +39,15 @@
                 <div class="banner-container<?php if (isset($isHero)) echo ' big'; ?>">
                     <div class="bg-container" style="background-image:url('<?php echo base_url('img/' . $banner); ?>');"></div>
                     <?php if (isset($isHero)) : ?>
+                		<div class="notice-container">
+                			<div class="container">
+	                    		<div class="title">Important Announcment</div>
+	                    		<div class="notice"><a href=""><?php echo $notice; ?></a></div>
+                    		</div>
+                		</div>
                         <div class="container">
+                        	<?php if (isset($notice)) : ?>
+                        	<?php endif ?>
                             <div class="hero-text">
                                 <h2>Perspective and insight,<br>for real estate investment<br>that stands the test of time</h2>
                                 <a class="hero-cta" href="#">Learn More</a>
