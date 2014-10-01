@@ -21,23 +21,35 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <div class="container">
-                    <div class="title-container"><a href="<?php echo base_url(); ?>"><h1 class="title">NHCohen Partners, LLC.</h1></a></div>
-                    <nav>
-                        <ul class="menu-container">
-                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('about-us'); ?>">About Us</a></div></li>
-                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('for-investors'); ?>">For Investors</a></div></li>
-                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('contact-us'); ?>">Contact Us</a></div></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <?php if (isset($banner)) : ?>
-	            <div class="banner-container">
-	                <div class="bg-container" style="background-image:url('<?php echo base_url('img/' . $banner); ?>');"></div>
-	            </div>
-	        <?php endif; ?>
+        <div class="menu-slider">
+            <nav>
+                <ul class="menu-container">
+                    <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('about-us'); ?>">About Us</a></div></li>
+                    <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('for-investors'); ?>">For Investors</a></div></li>
+                    <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('contact-us'); ?>">Contact Us</a></div></li>
+                </ul>
+                <div class="nav-background"></div>
+            </nav>
         </div>
+
+        <div class="main">
+	        <div class="header-container">
+	            <header class="wrapper clearfix">
+	                <div class="container">
+		                <div class="menu-button"><a href="#" id="menu-trigger">menu</a></div>
+	                    <div class="title-container"><a href="<?php echo base_url(); ?>"><h1 class="title">NHCohen Partners, LLC.</h1></a></div>
+	                    <nav>
+	                        <ul class="menu-container">
+	                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('about-us'); ?>">About Us</a></div></li>
+	                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('for-investors'); ?>">For Investors</a></div></li>
+	                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('contact-us'); ?>">Contact Us</a></div></li>
+	                        </ul>
+	                    </nav>
+	                </div>
+	            </header>
+	            <?php if (isset($banner)) : ?>
+		            <div class="banner-container">
+		                <div class="bg-container" style="background-image:url('<?php echo base_url('img/' . $banner); ?>');"></div>
+		            </div>
+		        <?php endif; ?>
+	        </div>

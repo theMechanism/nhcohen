@@ -22,6 +22,78 @@ body {
 	}
 }
 
+.container {
+	@include container(12);
+}
+
+nav {
+	.menu-item {
+		font: 20px $header-font;
+		text-align: center;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			padding: 0;
+		}
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+.menu-slider {
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	nav {
+		width: 220px;
+		ul li {
+			border-bottom: 1px solid white;
+			a {
+				display: block;
+				color: white;
+				height: 68px;
+				text-transform: uppercase;
+				vertical-align: middle;
+				&:before {
+					content: "";
+					display: inline-block;
+					height: 100%;
+					vertical-align: middle;
+				}
+				&:hover, &:active {
+					color: $active-color;
+				}
+			}
+		}
+		.nav-background {
+			background-color: $link-color;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			width: 220px;
+			z-index: -1;
+		}
+	}
+}
+
+.main {
+	background: white;
+	min-height: 100%;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+	@include box-shadow(3px -10px 10px black);
+	@include transition(all 0.3s ease);
+	.menu-active & {
+		@include translateX(220px);
+		.no-csstransforms & { left: 220px; }
+	}
+}
+
 .header-container {
 	a {
 		color: white;
@@ -30,30 +102,53 @@ body {
 	}
 }
 header {
-	.title {
-		@include icons-sprite(nhcohen-logo);
-		background-size: cover;
-		height: 53px;
-		margin: 35px 0;
-		max-width: 100%;
-		overflow: hidden;
-		text-indent: -9999px;
-		width: 203px;
-	}
-	nav .menu-item {
-		font: 20px $header-font;
-		text-align: center;
-		a {
-			color: $dark-neutral;
-			text-decoration: none;
+	.menu-button {
+		display: inline-block;
+		height: 76px;
+		width: 39px;
+		margin: 0 10px;
+		&:before {
+			content: "";
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
 		}
+		a {
+			display: inline-block;
+			height: 28px;
+			overflow: hidden;
+			text-indent: -999px;
+			width: 39px;
+			vertical-align: middle;
+			@include icons-sprite(menu-burger);
+		}
+	}
+	.title-container {
+		display: inline-block;
+		vertical-align: middle;
+		.title {
+			@include icons-sprite(nhcohen-logo);
+			height: 53px;
+			margin: 0;
+			overflow: hidden;
+			text-indent: -9999px;
+			width: 203px;
+		}
+	}
+	nav  {
+		display: none;
 	}
 }
 .banner-container {
 	background-color: $brand-color;
 	position: relative;
 	width: 100%;
+	.hero-container {
+		height: 220px;
+		position: relative;
+	}
 	.bg-container {
+		z-index: 0;
 		background-size: cover;
 		background-position: center bottom;
 		position: absolute;
@@ -63,15 +158,24 @@ header {
 		bottom: 0;
 	}
 	.notice-container {
-		background: $brand-color;
-		position: absolute;
-		top: 0;
+		background-color: $brand-color;
+		padding: 5px 0;
 		width: 100%;
+		z-index: 3;
 		.title {
+			@include span(3 of 12);
 			color: white;
-			font: 20px $header-font;
+			font: 18px $header-font;
+			display: inline-block;
+			float: none;
+			vertical-align: middle;
 		}
 		.notice {
+			@include span(9 of 12);
+			display: inline-block;
+			float: none;
+			font-size: 14px;
+			vertical-align: middle;
 			a { color: $link-color; &:hover, &:active { color: $active-color; }}
 		}
 	}
@@ -79,22 +183,25 @@ header {
 		@include span(12 of 12);
 		color: white;
 		font-family: $header-font;
+		margin-top: 40px;
 		position: relative;
 		text-transform: uppercase;
 		h2 {
-			font-size: 42px;
+			margin: 0;
+			font-size: 22px;
 			text-shadow: 2px 2px 8px $dark-neutral;
 		}
 		.hero-cta {
-			background: $link-color;
+			background-color: $link-color;
 			color: white;
 			display: inline-block;
-			font-size: 20px;
+			font-size: 16px;
 			letter-spacing: 1px;
+			margin-top: 15px;
 			padding: 13px 50px 11px;
 			@include transition(background 0.3s ease);
 			&:hover, &:active {
-				background: $active-color;
+				background-color: $active-color;
 			}
 		}
 	}
@@ -108,10 +215,13 @@ header {
 		margin: 0;
 		list-style: none;
 		li {
-			font: 20px $header-font;
+			border-bottom: 1px solid white;
+			font: 18px $header-font;
 			text-align: center;
 			a {
+				display: block;
 				color: white;
+				padding: 15px 0;
 				text-decoration: none;
 				text-transform: uppercase;
 				&:hover, &:active {
@@ -123,6 +233,10 @@ header {
 }
 .latest-news {
 	background-color: $lightest-neutral;
+	padding: 15px 0;
+	.latest-container {
+		@include span(12);
+	}
 	.date-container {
 		.date {
 			color: $dark-neutral;
@@ -136,25 +250,50 @@ header {
 	}
 }
 .footer-container {
-	background: $dark-neutral;
+	background-color: $dark-neutral;
 	width: 100%;
+	text-align: center;
+	footer {
+		@include span(12);
+	}
 	ul {
 		list-style: none;
 		margin: 0;
-		padding: 8px 0;
+		padding: 10px 0;
 		@extend .clearfix;
 		li {
-			border-left: 1px solid $light-neutral;
 			display: inline-block;
 			font-size: 14px;
-			float: left;
+			height: 20px;
 			padding: 0 10px;
 			&:first-child { border-left: 0; }
-			a { color: $light-neutral; &:hover, &:active { color: $active-color; }}
+			a {
+				color: $light-neutral;
+				vertical-align: baseline;
+				&:hover, &:active { color: $active-color; }
+			}
 		}
 	}
-	nav { float: left; }
-	.socials { float: right; }
+	.socials {
+		float: none;
+		text-align: center;
+		li a {
+			display: block;
+			height: 20px;
+			width: 21px;
+			overflow: hidden;
+			text-indent: -9999px;
+			vertical-align: middle;
+			&.twitter {
+				@include icons-sprite(twitter);
+				&:hover, &:active { @include icons-sprite(twitter-active); }
+			}
+			&.linked-in {
+				@include icons-sprite(linked-in);
+				&:hover, &:active { @include icons-sprite(linked-in-active); }
+			}
+		}
+	}
 }
 
 /* ========================

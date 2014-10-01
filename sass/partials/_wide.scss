@@ -7,13 +7,20 @@
 		@include container(960px);
 	}
 
+	.menu-slider { display: none; }
+
 	header {
+		.menu-button { display: none; }
 		.title-container {
 			@include span (3 of 12);
+			.title {
+				margin: 35px 0;
+			}
 		}
 		nav {
 			@include span(8 or 12);
 			@include last;
+			display: block;
 			height: 123px;
 			.menu-container {
 				@include container;
@@ -37,6 +44,7 @@
 				a {
 					border: 6px solid transparent;
 					border-width: 6px 0;
+					color: $dark-neutral;
 					display: inline-block;
 					padding: 22px 0;
 					text-transform: uppercase;
@@ -49,25 +57,30 @@
 		}
 	}
 	.banner-container {
-		&.big {
+		&.big .hero-container {
 			height: 396px;
 		}
 		.notice-container {
 			padding: 20px 0;
+			position: absolute;
+			top: 0;
 			.title {
-				@include span(3 of 12);
+				font-size: 20px;
 			}
 			.notice {
-				@include span(9 of 12);
 			}
 		}
 		.hero-text {
-			margin-top: 40px;
+			margin-top: 79px;
+			h2{ font-size: 42px; }
+			.hero-cta { font-size: 20px; }
 		}
 	}
 	.homepage-cta {
-		li {
+		ul li {
 			@include span(4 of 12);
+			border: none;
+			font-size: 20px;
 			height: 110px;
 			&:before {
 				content: "";
@@ -78,11 +91,13 @@
 			a {
 				display: inline-block;
 				vertical-align: middle;
+				width: 170px;
 			}
 		}
 	}
 	.latest-news {
 		padding: 36px 0;
+		.latest-container { padding: 0; }
 		.date-container {
 			@include span(3 of 12);
 			display: inline-block;

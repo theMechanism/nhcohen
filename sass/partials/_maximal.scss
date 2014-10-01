@@ -3,5 +3,20 @@
 /* ===============
     Maximal Width
    =============== */
+	.footer-container {
+		footer {
+			nav {
+				float: left;
+				text-align: left;
+			}
+			ul li {
+				border-left: 1px solid $light-neutral;
+			}
+		}
+		.socials {
+			float: right;
+		}
+	}
+
 
 }

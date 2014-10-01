@@ -1,32 +1,35 @@
-        <div class="footer-container">
-            <div class="container">
-                <footer class="wrapper">
-                    <nav>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">In The News</a></li>
-                            <li><a href="#">Investors</a></li>
-                            <li><a href="#">Tax Info</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Site Map</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Disclosure Statement</a></li>
-                            <li><a href="#">Legal</a></li>
-                        </ul>
-                    </nav>
-                    <div class="socials">
-                        <ul>
-                            <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">Twitter</a></li>
-                        </ul>
-                    </div>
-                </footer>
-            </div>
-        </div>
+	        <div class="footer-container">
+	            <div class="container">
+	                <footer class="wrapper">
+	                    <nav>
+	                        <ul>
+	                            <li><a href="#">About Us</a></li>
+	                            <li><a href="#">In The News</a></li>
+	                            <li><a href="#">Investors</a></li>
+	                            <li><a href="#">Tax Info</a></li>
+	                            <li><a href="#">Contact Us</a></li>
+	                            <li><a href="#">Site Map</a></li>
+	                            <li><a href="#">Terms of Use</a></li>
+	                            <li><a href="#">Disclosure Statement</a></li>
+	                            <li><a href="#">Legal</a></li>
+	                        </ul>
+	                    </nav>
+	                    <div class="socials">
+	                        <ul>
+	                            <li><a href="#" class="linked-in">LinkedIn</a></li>
+	                            <li><a href="#" class="twitter">Twitter</a></li>
+	                        </ul>
+	                    </div>
+	                </footer>
+	            </div>
+	        </div>
+
+        </div> <!-- close .main -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
+        <script src="js/vendor/fastclick.js"></script>
         <script src="js/main.js"></script>
 
         <script>
