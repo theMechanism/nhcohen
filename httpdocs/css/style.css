@@ -594,6 +594,10 @@ textarea {
 }
 
 /* main stylesheet */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   font: 16px "latoregular", helvetica, sans-serif;
 }

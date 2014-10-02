@@ -6,6 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="cleartype" content="on">
         <title><?php echo $title; if ($title <> SITE_NAME): echo ' | ' . SITE_NAME; endif; ?></title>
 
         <?php if (isset($description)) { ?><meta name="description" content="<?php echo $description; ?>" /><?php } ?>
