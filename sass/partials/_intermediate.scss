@@ -3,6 +3,21 @@
 /* ====================
     INTERMEDIATE:
    ==================== */
+	.notice-container {
+		.title {
+			@include span(3 of 12);
+		}
+		.notice {
+			@include span(9 of 12);
+		}
+	}
 
+	.banner-container {
+		.hero-text {
+			margin-top: 20px;
+			h2{ font-size: 37px; line-height: 0.9; }
+			.hero-cta { font-size: 20px; }
+		}
+	}
 
 }

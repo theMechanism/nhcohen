@@ -2,7 +2,7 @@
 	<?php if (isset($notice)) : ?>
 		<div class="notice-container">
 			<div class="container">
-        		<div class="title">Important Announcment</div
+        		<div class="title">Important Announcement</div
         		><div class="notice"><a href=""><?php echo $notice; ?></a></div>
     		</div>
 		</div>

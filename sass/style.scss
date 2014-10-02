@@ -107,14 +107,14 @@ nav {
 header {
 	.menu-button {
 		display: inline-block;
-		height: 76px;
 		margin-right: 10px;
-		.menu-active & { background-color: $light-neutral; }
+		@include transition(background-color 0.3s ease);
+		.menu-active & { background-color: $link-color; }
 		a {
 			border-right: 1px solid $light-neutral;
-			border-bottom: 1px solid $light-neutral;
+			border-bottom: 1px solid white;
 			display: block;
-			height: 100%;
+			height: 68px;
 			padding: 0 12px;
 			&:before {
 				content: "";
@@ -173,7 +173,6 @@ header {
 		width: 100%;
 		z-index: 3;
 		.title {
-			@include span(3 of 12);
 			color: white;
 			font: 18px $header-font;
 			display: inline-block;
@@ -181,7 +180,6 @@ header {
 			vertical-align: middle;
 		}
 		.notice {
-			@include span(9 of 12);
 			display: inline-block;
 			float: none;
 			font-size: 14px;
@@ -255,7 +253,7 @@ header {
 		}
 	}
 	.news-container {
-		h2 { margin: 0; }
+		h2 { font-family: $header-font; margin: 0; }
 		p { margin: 10px 0 0 0; color: $light-neutral; }
 	}
 }

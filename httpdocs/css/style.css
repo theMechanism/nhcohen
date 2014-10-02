@@ -708,17 +708,20 @@ nav a {
 
 header .menu-button {
   display: inline-block;
-  height: 76px;
   margin-right: 10px;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 .menu-active header .menu-button {
-  background-color: #999999;
+  background-color: #56B3E0;
 }
 header .menu-button a {
   border-right: 1px solid #999999;
-  border-bottom: 1px solid #999999;
+  border-bottom: 1px solid white;
   display: block;
-  height: 100%;
+  height: 68px;
   padding: 0 12px;
 }
 header .menu-button a:before {
@@ -778,13 +781,6 @@ header nav {
   z-index: 3;
 }
 .banner-container .notice-container .title {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 25%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
   color: white;
   font: 18px "NewsGothicBT-BoldCondensed", arial, sans-serif;
   display: inline-block;
@@ -792,13 +788,6 @@ header nav {
   vertical-align: middle;
 }
 .banner-container .notice-container .notice {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 75%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
   display: inline-block;
   float: none;
   font-size: 14px;
@@ -891,6 +880,7 @@ header nav {
   margin-bottom: 5px;
 }
 .latest-news .news-container h2 {
+  font-family: "NewsGothicBT-BoldCondensed", arial, sans-serif;
   margin: 0;
 }
 .latest-news .news-container p {
@@ -971,6 +961,35 @@ header nav {
   /* ====================
       INTERMEDIATE:
      ==================== */
+  .notice-container .title {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  .notice-container .notice {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 75%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+
+  .banner-container .hero-text {
+    margin-top: 20px;
+  }
+  .banner-container .hero-text h2 {
+    font-size: 37px;
+    line-height: 0.9;
+  }
+  .banner-container .hero-text .hero-cta {
+    font-size: 20px;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* ============
@@ -1139,7 +1158,7 @@ header nav {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 66.66667%;
+    width: 75%;
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
@@ -1152,10 +1171,10 @@ header nav {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 90%;
+    width: 93.33333%;
     float: right;
-    padding-left: 1.25%;
-    padding-right: 1.25%;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
   }
 }
 @media only screen and (min-width: 1140px) {
