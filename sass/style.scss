@@ -105,22 +105,29 @@ header {
 	.menu-button {
 		display: inline-block;
 		height: 76px;
-		width: 39px;
-		margin: 0 10px;
-		&:before {
-			content: "";
-			display: inline-block;
-			height: 100%;
-			vertical-align: middle;
-		}
+		margin-right: 10px;
+		.menu-active & { background-color: $light-neutral; }
 		a {
-			display: inline-block;
-			height: 28px;
-			overflow: hidden;
-			text-indent: -999px;
-			width: 39px;
-			vertical-align: middle;
-			@include icons-sprite(menu-burger);
+			border-right: 1px solid $light-neutral;
+			border-bottom: 1px solid $light-neutral;
+			display: block;
+			height: 100%;
+			padding: 0 12px;
+			&:before {
+				content: "";
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+			span {
+				display: inline-block;
+				height: 28px;
+				overflow: hidden;
+				text-indent: -999px;
+				width: 39px;
+				vertical-align: middle;
+				@include icons-sprite(menu-burger);
+			}
 		}
 	}
 	.title-container {
@@ -294,14 +301,6 @@ header {
 			}
 		}
 	}
-}
-
-/* ========================
-    IE Fixes
-   ======================== */
-
-.oldie nav a {
-    margin: 0 0.7%;
 }
 
 

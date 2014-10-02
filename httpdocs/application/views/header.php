@@ -11,7 +11,7 @@
         <?php if (isset($description)) { ?><meta name="description" content="<?php echo $description; ?>" /><?php } ?>
         <?php if (isset($keywords)) { ?><meta name="keywords" content="<?php echo $keywords; ?>" /><?php } ?>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
         <link rel="stylesheet" href="css/style.css">
 
@@ -36,7 +36,7 @@
 	        <div class="header-container">
 	            <header class="wrapper clearfix">
 	                <div class="container">
-		                <div class="menu-button"><a href="#" id="menu-trigger">menu</a></div>
+		                <div class="menu-button"><a href="#" id="menu-trigger"><span>menu</span></a></div>
 	                    <div class="title-container"><a href="<?php echo base_url(); ?>"><h1 class="title">NHCohen Partners, LLC.</h1></a></div>
 	                    <nav>
 	                        <ul class="menu-container">
