@@ -700,6 +700,9 @@ nav a {
   left: 220px;
 }
 
+.header-container {
+  background-color: white;
+}
 .header-container a {
   color: white;
   line-height: 1;
@@ -1010,6 +1013,11 @@ header nav {
     display: none;
   }
 
+  .main {
+    position: static;
+    height: 100%;
+  }
+
   header .menu-button {
     display: none;
   }
@@ -1181,6 +1189,28 @@ header nav {
   /* ===============
       Maximal Width
      =============== */
+  * {
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .body-container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px;
+  }
+  .body-container:after {
+    content: "";
+    display: block;
+  }
+  .home .body-container {
+    background-color: #f5f5f5;
+  }
+
   .footer-container footer nav {
     float: left;
     text-align: left;
@@ -1190,6 +1220,10 @@ header nav {
   }
   .footer-container .socials {
     float: right;
+  }
+
+  .footer-container, .body-container:after {
+    height: 50px;
   }
 }
 /* ==========================================================================
