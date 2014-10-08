@@ -185,7 +185,7 @@ header {
 			float: none;
 			font-size: 14px;
 			vertical-align: middle;
-			a { color: $link-color; &:hover, &:active { color: $active-color; }}
+			a { color: $link-color; @include transition(color 0.3s ease); &:hover, &:active { color: $active-color; }}
 		}
 	}
 	.hero-text {
