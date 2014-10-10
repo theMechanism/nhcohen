@@ -1,0 +1,6 @@
+@mixin bg-respond($image) {
+	background-image: image-url($image + '.jpg');
+	@media only screen and (min-width: $wide) {
+		background-image: image-url($image + '-wide.jpg');
+	}
+}

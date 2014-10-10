@@ -777,6 +777,14 @@ header nav {
   right: 0;
   bottom: 0;
 }
+.home .banner-container .bg-container {
+  background-image: url('../img/hero-banner.jpg?1412966887');
+}
+@media only screen and (min-width: 768px) {
+  .home .banner-container .bg-container {
+    background-image: url('../img/hero-banner-wide.jpg?1412966888');
+  }
+}
 .banner-container .notice-container {
   background-color: #002D62;
   padding: 5px 0;

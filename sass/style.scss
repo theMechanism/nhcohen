@@ -5,6 +5,7 @@
 
 @import "vendor/normalize";
 @import "partials/config";
+@import "partials/mixins";
 @import "partials/fonts";
 
 @import "icons/*.png";
@@ -167,6 +168,9 @@ header {
 		left: 0;
 		right: 0;
 		bottom: 0;
+		.home & {
+			@include bg-respond('hero-banner');
+		}
 	}
 	.notice-container {
 		background-color: $brand-color;
@@ -185,7 +189,11 @@ header {
 			float: none;
 			font-size: 14px;
 			vertical-align: middle;
-			a { color: $link-color; @include transition(color 0.3s ease); &:hover, &:active { color: $active-color; }}
+			a {
+				color: $link-color;
+				@include transition(color 0.3s ease);
+				&:hover, &:active { color: $active-color; }
+			}
 		}
 	}
 	.hero-text {
