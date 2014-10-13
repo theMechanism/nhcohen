@@ -42,16 +42,34 @@
 		                    <div class="title-container"><a href="<?php echo base_url(); ?>"><h1 class="title">NHCohen Partners, LLC.</h1></a></div>
 		                    <nav>
 		                        <ul class="menu-container">
-		                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('about-us'); ?>">About Us</a></div></li>
-		                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('for-investors'); ?>">For Investors</a></div></li>
-		                            <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('contact-us'); ?>">Contact Us</a></div></li>
+		                            <li class="menu-item<?php if ('about-us' == $this->uri->segment(1)) { echo " on"; } ?>"><div class="item-wrap"><a href="<?php echo base_url('about-us'); ?>">About Us</a></div></li>
+		                            <li class="menu-item<?php if ('for-investors' == $this->uri->segment(1)) { echo " on"; } ?>"><div class="item-wrap"><a href="<?php echo base_url('for-investors'); ?>">For Investors</a></div></li>
+		                            <li class="menu-item<?php if ('contact-us' == $this->uri->segment(1)) { echo " on"; } ?>"><div class="item-wrap"><a href="<?php echo base_url('contact-us'); ?>">Contact Us</a></div></li>
 		                        </ul>
 		                    </nav>
 		                </div>
 		            </header>
-		            <?php if (isset($banner)) : ?>
-			            <div class="banner-container">
-			                <div class="bg-container" style="background-image:url('<?php echo base_url('img/' . $banner); ?>');"></div>
-			            </div>
-			        <?php endif; ?>
 		        </div>
+	            <?php if (isset($banner)) : ?>
+		            <div class="banner-container">
+		                <div class="bg-container"></div>
+						<div class="container">
+							<?php if (isset($subnav)) : ?>
+						    <nav class="sub-nav">
+							    <ul>
+							    	<?php foreach ($subnav as $key => $navitem) : ?>
+								    	<li><a href="<?php echo base_url('about-us/' . $key); ?>"><?php echo $navitem ?></a></li>
+							    	<?php endforeach; ?>
+							    </ul>
+							</nav>
+							<?php endif; ?>
+						</div>
+		            </div>
+					<div class="content-container">
+						<div class="container">
+							<div class="wrapper">
+								<div class="cont">
+									<h1 class="title"><?= $title ?></h1>
+									<?php if (isset($subtitle)) : ?><h2 class="subtitle"><?= $subtitle ?></h2><?php endif; ?>
+
+		        <?php endif; ?>

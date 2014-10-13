@@ -55,12 +55,19 @@
 						border-color: $link-color;
 					}
 				}
+				&.on a {
+					border-color: $link-color;
+					&:hover, &:active { border-color: $active-color; }
+				}
 			}
 		}
 	}
 	.banner-container {
 		&.big .hero-container {
 			height: 396px;
+		}
+		.bg-container {
+			min-height: 190px;
 		}
 		.notice-container {
 			padding: 20px 0;
@@ -76,6 +83,10 @@
 			margin-top: 79px;
 			h2{ font-size: 42px; }
 			.hero-cta { font-size: 20px; }
+		}
+		.sub-nav {
+			position: relative;
+			@include span(isolate 85% at 7.5% no-gutters);
 		}
 	}
 	.homepage-cta {
@@ -94,6 +105,29 @@
 				display: inline-block;
 				vertical-align: middle;
 				width: 170px;
+			}
+		}
+	}
+	.content-container {
+		.wrapper {
+			@include span(isolate 85% at 7.5% no-gutters);
+			background-color: white;
+			.cont {
+				@include span(10 of 12);
+				@include push(1 of 12);
+			}
+		}
+		.title {
+			height: 115px;
+			margin: 0;
+			&:before {
+				content: "";
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+			+ p, + .subtitle {
+				margin-top: 0;
 			}
 		}
 	}

@@ -1,3 +1,9 @@
+			<?php if($banner) : ?>
+						</div>
+					</div>
+				</div>
+			</div>
+			<?php endif; ?>
 	        </div> <!-- end .body-container -->
 	        <div class="footer-container">
 	            <div class="container">
