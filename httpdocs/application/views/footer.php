@@ -1,4 +1,4 @@
-			<?php if($banner) : ?>
+			<?php if(isset($banner)) : ?>
 						</div>
 					</div>
 				</div>
