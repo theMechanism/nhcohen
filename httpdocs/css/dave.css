@@ -1,1 +1,60 @@
 /* Dave overrides */
+
+header nav .menu-item a {
+font-family: "latoregular", helvetica, sans-serif;
+/* font-size: .9em;*/
+color: #666;
+}
+
+
+.banner-container .notice-container .title {
+font-family: "latoregular", helvetica, sans-serif;
+font-size: .9em;
+text-transform: uppercase;
+}
+
+.banner-container .hero-text h2 {
+letter-spacing: .5px;
+color: #f2f8ff;
+}
+
+
+.latest-news .news-container h2 {
+font-family: "latoregular", helvetica, sans-serif;
+font-size: 1.1em;
+color: #333;
+text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 1140px) {
+.banner-container.big .hero-container {
+height: 750px;
+}
+.banner-container .hero-text h2 {
+font-size: 4em;
+}
+.banner-container .hero-text {
+margin-top: 100px;
+}
+
+.banner-container .hero-text .hero-cta {
+font-size: 30px;
+}
+
+}
+
+
+
+@media only screen and (min-width: 1900px) {
+.banner-container.big .hero-container {
+height: 900px;
+}
+.banner-container .hero-text h2 {
+font-size: 5em;
+}
+.banner-container .hero-text {
+margin-top: 150px;
+}
+
+}

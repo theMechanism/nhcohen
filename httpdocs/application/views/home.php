@@ -12,7 +12,7 @@
 	    <div class="container">
 	        <div class="hero-text">
 	            <h2>Perspective and insight<br>for real estate investment<br>that stands the test of time</h2>
-	            <a class="hero-cta" href="#">Learn More</a>
+	            <a class="hero-cta" href="#">Become an Investor</a>
 	        </div>
         </div>
     </div>

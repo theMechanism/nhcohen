@@ -11,9 +11,9 @@
 	                    <nav>
 	                        <ul>
 	                            <li><a href="#">About Us</a></li>
-	                            <li><a href="#">In The News</a></li>
+	                            <!--li><a href="#">In The News</a></li>
 	                            <li><a href="#">Investors</a></li>
-	                            <li><a href="#">Tax Info</a></li>
+	                            <li><a href="#">Tax Info</a></li-->
 	                            <li><a href="#">Contact Us</a></li>
 	                            <li><a href="#">Site Map</a></li>
 	                            <li><a href="#">Terms of Use</a></li>
