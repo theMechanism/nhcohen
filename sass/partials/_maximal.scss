@@ -1,5 +1,7 @@
 @media only screen and (min-width: $maximal) {
 
+$footer-height: 100px;
+
 /* ===============
     Maximal Width
    =============== */
@@ -12,7 +14,7 @@
 		min-height: 100%;
 		height: auto !important;
 		height: 100%;
-		margin: 0 auto -50px;
+		margin: 0 auto (-$footer-height);
 		&:after {
 			content: "";
 			display: block;
@@ -35,7 +37,7 @@
 		}
 	}
 	.footer-container, .body-container:after {
-			height: 50px;
+			height: $footer-height;
 	}
 
 

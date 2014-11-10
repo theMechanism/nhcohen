@@ -14,10 +14,10 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/dave.css">
+        <link rel="stylesheet" href="<?php echo base_url('css/style.css'); ?>">
+        <link rel="stylesheet" href="<?php echo base_url('css/dave.css'); ?>">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="<?php echo base_url('js/vendor/modernizr-2.6.2-respond-1.1.0.min.js'); ?>"></script>
     </head>
     <body class="<?php echo $view; ?>">
         <!--[if lt IE 7]>
