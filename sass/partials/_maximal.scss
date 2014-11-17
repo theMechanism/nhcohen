@@ -1,7 +1,5 @@
 @media only screen and (min-width: $maximal) {
 
-$footer-height: 100px;
-
 /* ===============
     Maximal Width
    =============== */
@@ -22,20 +20,6 @@ $footer-height: 100px;
 		.home & { background-color: $lightest-neutral; }
 	}
 
-	.footer-container {
-		footer {
-			nav {
-				float: left;
-				text-align: left;
-			}
-			ul li {
-				border-left: 1px solid $light-neutral;
-			}
-		}
-		.socials {
-			float: right;
-		}
-	}
 	.footer-container, .body-container:after {
 			height: $footer-height;
 	}

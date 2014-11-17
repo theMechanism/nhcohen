@@ -71,6 +71,7 @@
 							<div class="wrapper">
 								<div class="cont">
 									<h1 class="title"><?= $title ?></h1>
+									<?php if (isset($breadcrumbs)) : generate_breadcrumbs($breadcrumbs); endif; ?>
 									<?php if (isset($subtitle)) : ?><h2 class="subtitle"><?= $subtitle ?></h2><?php endif; ?>
 
 		        <?php endif; ?>

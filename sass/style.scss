@@ -263,6 +263,24 @@ header {
 	position: relative;
 	.cont {
 		@include span(12 of 12);
+		.breadcrumbs {
+			list-style: none;
+			margin: 14px 0;
+			padding: 0;
+			@include clearfix;
+			li {
+				float: left;
+				&:before {
+					color: $light-neutral;
+					content: '>';
+					margin: 0 5px;
+				}
+				&:first-child:before {
+					content: '';
+					margin: 0;
+				}
+			}
+		}
 	}
 }
 .homepage-cta {
@@ -338,14 +356,16 @@ header {
 		margin-bottom: 10px;
 		span {
 			margin-left: 7px;
+			white-space: nowrap;
 			&:first-child {
-				margin: 0 10px 0 0;
+				margin: 0 9px 0 0;
 			}
 		}
 	}
 	.disclaimer {
 		font-size: 11px;
 		font-family: latolight;
+		margin-bottom: 20px;
 	}
 	.socials {
 		float: none;

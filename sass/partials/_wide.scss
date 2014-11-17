@@ -108,26 +108,24 @@
 			}
 		}
 	}
+	.content-container .wrapper, .footer-container .wrapper {
+		@include span(isolate 85% at 7.5% no-gutters);
+	}
 	.content-container {
 		.wrapper {
-			@include span(isolate 85% at 7.5% no-gutters);
 			background-color: white;
 			.cont {
-				@include span(10 of 12);
-				@include push(1 of 12);
+				width: 100%;
+				padding: 40px 45px;
 			}
 		}
 		.title {
-			height: 115px;
-			margin: 0;
+			margin: 0 0 14px;
 			&:before {
 				content: "";
 				display: inline-block;
 				height: 100%;
 				vertical-align: middle;
-			}
-			+ p, + .subtitle {
-				margin-top: 0;
 			}
 		}
 	}
@@ -158,5 +156,21 @@
 			}
 		}
 	}
+	.footer-container {
+		footer {
+			nav {
+				float: left;
+				max-width: 90%;
+				text-align: left;
+			}
+			ul li {
+				border-left: 1px solid $light-neutral;
+			}
+		}
+		.socials {
+			float: right;
+		}
+	}
+
 
 }

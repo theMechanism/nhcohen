@@ -22,7 +22,12 @@ class About_us extends CI_Controller {
 	{
 		$data->subnav = array(
 			'leadership' => 'Leadership',
+			'for-sponsors' => 'For Sponsors',
 			'in-the-news' => 'In the News'
+		);
+		$data->breadcrumbs = array(
+			'/' => 'Home',
+			'about-us' => 'About Us'
 		);
 		$data->view = 'about_us';
 		$data->title = 'About Us';
