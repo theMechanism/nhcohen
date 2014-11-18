@@ -23,16 +23,8 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="menu-slider">
-            <nav>
-                <ul class="menu-container">
-                    <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('about-us'); ?>">About Us</a></div></li>
-                    <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('for-investors'); ?>">For Investors</a></div></li>
-                    <li class="menu-item"><div class="item-wrap"><a href="<?php echo base_url('contact-us'); ?>">Contact Us</a></div></li>
-                </ul>
-                <div class="nav-background"></div>
-            </nav>
-        </div>
+
+        <?php generate_mobile_nav($sitemap, $this->uri->segment(1), $this->uri->segment(2)); ?>
 
         <div class="main">
         	<div class="body-container">
@@ -41,37 +33,21 @@
 		                <div class="container">
 			                <div class="menu-button"><a href="#" id="menu-trigger"><span>menu</span></a></div>
 		                    <div class="title-container"><a href="<?php echo base_url(); ?>"><h1 class="title">NHCohen Partners, LLC.</h1></a></div>
-		                    <nav>
-		                        <ul class="menu-container">
-		                            <li class="menu-item<?php if ('about-us' == $this->uri->segment(1)) { echo " on"; } ?>"><div class="item-wrap"><a href="<?php echo base_url('about-us'); ?>">About Us</a></div></li>
-		                            <li class="menu-item<?php if ('for-investors' == $this->uri->segment(1)) { echo " on"; } ?>"><div class="item-wrap"><a href="<?php echo base_url('for-investors'); ?>">For Investors</a></div></li>
-		                            <li class="menu-item<?php if ('contact-us' == $this->uri->segment(1)) { echo " on"; } ?>"><div class="item-wrap"><a href="<?php echo base_url('contact-us'); ?>">Contact Us</a></div></li>
-		                        </ul>
-		                    </nav>
+		                    <?php generate_main_nav($sitemap, $this->uri->segment(1)); ?>
 		                </div>
 		            </header>
 		        </div>
 	            <?php if (isset($banner)) : ?>
 		            <div class="banner-container">
 		                <div class="bg-container"></div>
-						<div class="container">
-							<?php if (isset($subnav)) : ?>
-						    <nav class="sub-nav">
-							    <ul>
-							    	<?php foreach ($subnav as $key => $navitem) : ?>
-								    	<li><a href="<?php echo base_url('about-us/' . $key); ?>"><?php echo $navitem ?></a></li>
-							    	<?php endforeach; ?>
-							    </ul>
-							</nav>
-							<?php endif; ?>
-						</div>
+						<?php generate_sub_nav($sitemap, $this->uri->segment(1), $this->uri->segment(2)); ?>
 		            </div>
 					<div class="content-container">
 						<div class="container">
 							<div class="wrapper">
 								<div class="cont">
 									<h1 class="title"><?= $title ?></h1>
-									<?php if (isset($breadcrumbs)) : generate_breadcrumbs($breadcrumbs); endif; ?>
+									<?php generate_breadcrumbs($sitemap, $this->uri->segment(1), $this->uri->segment(2)); ?>
 									<?php if (isset($subtitle)) : ?><h2 class="subtitle"><?= $subtitle ?></h2><?php endif; ?>
 
 		        <?php endif; ?>

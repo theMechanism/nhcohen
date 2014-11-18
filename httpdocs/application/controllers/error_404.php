@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class error_404 extends CI_Controller 
+class error_404 extends MY_Controller
 {
 
     public function __construct()
@@ -8,13 +8,12 @@ class error_404 extends CI_Controller
         parent::__construct();
     }
 
-    public function index() 
-    { 
-        $this->output->set_status_header('404'); 
-        $data = array(
-            'view' => '404',
-            'title' => 'Page Not Found'
-        );
-        $this->load->view('template', $data);       
-    } 
-} 
+    public function index()
+    {
+        $this->output->set_status_header('404');
+        $this->data['view'] = '404';
+        $this->data['title'] = 'Page Not Found';
+
+        $this->load->view('template', $this->data);
+    }
+}

@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class About_us extends CI_Controller {
+class About_us extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,24 +18,32 @@ class About_us extends CI_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 
+	public function __construct()
+	{
+        parent::__construct();
+
+		$this->data['banner'] = true;
+
+	}
+
 	public function index()
 	{
-		$data->subnav = array(
-			'leadership' => 'Leadership',
-			'for-sponsors' => 'For Sponsors',
-			'in-the-news' => 'In the News'
-		);
-		$data->breadcrumbs = array(
-			'/' => 'Home',
-			'about-us' => 'About Us'
-		);
-		$data->view = 'about_us';
-		$data->title = 'About Us';
-		$data->subtitle = 'Investment Philosophy & Values';
-		$data->banner = true;
+		$this->data['view'] = 'about_us';
+		$this->data['title'] = 'About Us';
+		$this->data['subtitle'] = 'Investment Philosophy & Values';
 
-		$this->load->view('template', $data);
+		$this->load->view('template', $this->data);
 	}
+
+	public function leadership()
+	{
+		$this->data['view'] = 'leadership';
+		$this->data['title'] = 'Leadership';
+		$this->data['subtitle'] = 'Ned H. Cohen, President';
+
+		$this->load->view('template', $this->data);
+	}
+
 }
 
 /* End of file welcome.php */

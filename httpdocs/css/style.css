@@ -786,7 +786,7 @@ header nav {
 .banner-container .bg-container {
   z-index: 0;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center top;
   position: absolute;
   top: 0;
   left: 0;
@@ -794,6 +794,7 @@ header nav {
   bottom: 0;
 }
 .home .banner-container .bg-container {
+  background-position: center bottom;
   background-image: url('../img/hero-banner.jpg?1412966887');
 }
 @media only screen and (min-width: 768px) {
@@ -801,12 +802,12 @@ header nav {
     background-image: url('../img/hero-banner-wide.jpg?1415298017');
   }
 }
-.about_us .banner-container .bg-container {
-  background-image: url('../img/about_us-banner.jpg?1412971573');
+.about_us .banner-container .bg-container, .leadership .banner-container .bg-container {
+  background-image: url('../img/about_us-banner.jpg?1416251522');
 }
 @media only screen and (min-width: 768px) {
-  .about_us .banner-container .bg-container {
-    background-image: url('../img/about_us-banner-wide.jpg?1412969291');
+  .about_us .banner-container .bg-container, .leadership .banner-container .bg-container {
+    background-image: url('../img/about_us-banner-wide.jpg?1416251507');
   }
 }
 .banner-container .notice-container {
@@ -1065,6 +1066,15 @@ header nav {
 }
 .footer-container .socials li a.linked-in:hover, .footer-container .socials li a.linked-in:active {
   background-position: 0 0;
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+.leadership-headshot {
+  float: right;
+  margin: 0 0 0 20px;
+  max-width: 50%;
 }
 
 /* ==========================================================================
@@ -1351,6 +1361,14 @@ header nav {
   }
   .footer-container .socials {
     float: right;
+  }
+
+  /* ==========================================================================
+     Content
+     ========================================================================== */
+  .leadership-headshot {
+    float: right;
+    margin: 0 -40px 0 20px;
   }
 }
 @media only screen and (min-width: 1140px) {

@@ -175,16 +175,17 @@ header {
 	.bg-container {
 		z-index: 0;
 		background-size: cover;
-		background-position: center bottom;
+		background-position: center top;
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		.home & {
+			background-position: center bottom;
 			@include bg-respond('hero-banner');
 		}
-		.about_us & {
+		.about_us &, .leadership & {
 			@include bg-respond('about_us-banner');
 		}
 	}
@@ -393,6 +394,16 @@ header {
 			}
 		}
 	}
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.leadership-headshot {
+	float: right;
+	margin: 0 0 0 20px;
+	max-width: 50%;
 }
 
 
