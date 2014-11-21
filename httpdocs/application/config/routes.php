@@ -43,6 +43,8 @@ $route['404_override'] = 'error_404';
 
 $route['about-us'] = 'about_us';
 $route['about-us/(:any)'] = 'about_us/$1';
+$route['for-investors'] = 'for_investors';
+$route['for-investors/(:any)'] = 'for_investors/$1';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

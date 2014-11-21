@@ -16,6 +16,7 @@
 }
 body {
 	font: 16px $body-font;
+	margin: 0;
 	a {
 		color: $link-color;
 		text-decoration: none;
@@ -185,7 +186,7 @@ header {
 			background-position: center bottom;
 			@include bg-respond('hero-banner');
 		}
-		.about_us &, .leadership & {
+		.about_us &, .leadership &, .for_investors & {
 			@include bg-respond('about_us-banner');
 		}
 	}
@@ -279,6 +280,50 @@ header {
 				&:first-child:before {
 					content: '';
 					margin: 0;
+				}
+			}
+		}
+	}
+	.full-spread {
+		background-color: $dark-neutral;
+		color: white;
+		text-transform: uppercase;
+		.wrapper {
+			background-color: transparent;
+			.cont {
+				padding: 50px 0;
+				&:before {
+					content: "";
+					display: inline-block;
+					height: 100%;
+					vertical-align: middle;
+				}
+			}
+		}
+		.investor-cta {
+			display: inline-block;
+			text-align: center;
+			width: 33%;
+			vertical-align: middle;
+			a {
+				color: inherit;
+				display: block;
+				position: relative;
+				&:hover {
+					color: $active-color;
+					&:after {
+						border-top: 10px solid transparent;
+						content: "";
+						display: block;
+						height: 12px;
+						margin: auto;
+						position: absolute;
+						top: 100%;
+						left: 0;
+						right: 0;
+						width: 18px;
+						@include icons-sprite(down-arrow);
+					}
 				}
 			}
 		}
@@ -404,6 +449,51 @@ header {
 	float: right;
 	margin: 0 0 0 20px;
 	max-width: 50%;
+}
+.for_investors .form-container {
+	@include span(6 of 12);
+	margin-bottom: 20px;
+	text-align: center;
+	.form-button {
+		background-color: $link-color;
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+		position: relative;
+		@include border-radius(50%);
+		div {
+			position: absolute;
+			overflow: hidden;
+			margin: auto;
+			height: 39px;
+			width: 33px;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			&.pdf {
+				@include icons-sprite(pdf);
+			}
+			&.form {
+				width: 34px;
+				@include icons-sprite(form);
+			}
+		}
+	}
+	a {
+		display: inline-block;
+		h3 {
+			color: #222;
+			margin: 20px 0 5px;
+			text-transform: uppercase;
+		}
+		&:hover .form-button {
+			background-color: $active-color;
+		}
+	}
+	p {
+		margin: 0;
+	}
 }
 
 
