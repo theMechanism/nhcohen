@@ -461,6 +461,7 @@ header {
 		height: 100px;
 		position: relative;
 		@include border-radius(50%);
+		@include transition(background-color 0.3s ease);
 		div {
 			position: absolute;
 			overflow: hidden;
