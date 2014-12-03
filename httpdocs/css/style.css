@@ -664,7 +664,25 @@ nav a {
   width: 220px;
 }
 .menu-slider nav ul li {
-  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+.menu-slider nav ul li:first-child {
+  border-top-width: 0;
+}
+.menu-slider nav ul li ul {
+  display: none;
+}
+.menu-slider nav ul li ul li {
+  background-color: #002D62;
+}
+.menu-slider nav ul li ul li a {
+  height: 38px;
+}
+.menu-slider nav ul li ul li:first-child {
+  border-top-width: 1px;
+}
+.menu-slider nav ul li.on ul {
+  display: list-item;
 }
 .menu-slider nav ul li a {
   display: block;
@@ -1143,6 +1161,9 @@ header nav {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  -moz-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   -webkit-transition: background-color 0.3s ease;

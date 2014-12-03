@@ -67,7 +67,17 @@ nav {
 	nav {
 		width: 220px;
 		ul li {
-			border-bottom: 1px solid white;
+			border-top: 1px solid white;
+			&:first-child { border-top-width: 0; }
+			ul {
+				display: none;
+				li {
+					background-color: $brand-color;
+					a { height: 38px; }
+					&:first-child { border-top-width: 1px; }
+				}
+			}
+			&.on ul { display: list-item; }
 			a {
 				display: block;
 				color: white;
@@ -462,6 +472,7 @@ header {
 		height: 100px;
 		position: relative;
 		@include border-radius(50%);
+		@include box-shadow(1px 1px 5px 0px rgba(50, 50, 50, 0.75));
 		@include transition(background-color 0.3s ease);
 		div {
 			position: absolute;

@@ -9,7 +9,11 @@
 					<ul class="menu-container">';
 
 			foreach ($sitemap as $key => $topnav) {
-				echo '	<li class="menu-item"><div class="item-wrap"><a href="' . base_url($key) . '">' . $topnav['title'] . '</a></div>';
+				echo '	<li class="menu-item';
+				if ($first_segment == $key) {
+					echo ' on';
+				}
+				echo '"><div class="item-wrap"><a href="' . base_url($key) . '">' . $topnav['title'] . '</a></div>';
 
 				if (isset($topnav['children'])) {
 					echo '	<ul class="menu-container">';
