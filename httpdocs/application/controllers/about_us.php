@@ -44,6 +44,14 @@ class About_us extends MY_Controller {
 		$this->load->view('template', $this->data);
 	}
 
+	public function for_sponsors()
+	{
+		$this->data['view'] = 'for_sponsors';
+		$this->data['title'] = 'For Sponsors';
+
+		$this->load->view('template', $this->data);
+	}
+
 	public function in_the_news($url = FALSE)
 	{
 		$this->load->model('In_the_news_model');

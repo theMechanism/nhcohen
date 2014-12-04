@@ -624,7 +624,7 @@ h1 {
   text-transform: uppercase;
 }
 
-p {
+p, ul, ol {
   color: #999999;
 }
 
@@ -822,11 +822,11 @@ header nav {
     background-image: url('../img/hero-banner-wide.jpg?1415298017');
   }
 }
-.about_us .banner-container .bg-container, .leadership .banner-container .bg-container, .for_investors .banner-container .bg-container, [class^="in_the_news"] .banner-container .bg-container, [class="404"] .banner-container .bg-container {
+.about_us .banner-container .bg-container, .leadership .banner-container .bg-container, .for_investors .banner-container .bg-container, .for_sponsors .banner-container .bg-container, [class^="in_the_news"] .banner-container .bg-container, [class="404"] .banner-container .bg-container {
   background-image: url('../img/about_us-banner.jpg?1416251522');
 }
 @media only screen and (min-width: 768px) {
-  .about_us .banner-container .bg-container, .leadership .banner-container .bg-container, .for_investors .banner-container .bg-container, [class^="in_the_news"] .banner-container .bg-container, [class="404"] .banner-container .bg-container {
+  .about_us .banner-container .bg-container, .leadership .banner-container .bg-container, .for_investors .banner-container .bg-container, .for_sponsors .banner-container .bg-container, [class^="in_the_news"] .banner-container .bg-container, [class="404"] .banner-container .bg-container {
     background-image: url('../img/about_us-banner-wide.jpg?1416251507');
   }
 }

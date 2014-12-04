@@ -34,7 +34,7 @@ h1, h2, h3, h4 {
 h1 {
 	text-transform: uppercase;
 }
-p {
+p, ul, ol {
 	color: $light-neutral;
 }
 
@@ -200,6 +200,7 @@ header {
 		.about_us &,
 		.leadership &,
 		.for_investors &,
+		.for_sponsors &,
 		[class^="in_the_news"] &,
 		[class="404"] & {
 			@include bg-respond('about_us-banner');

@@ -1,12 +1,4 @@
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>NHCohen Partners LLC, and its registered broker-dealer affiliate, NHCohen Capital LLC are dedicated to identifying and structuring investment opportunities through private placement programs that harness the many potential benefits of direct ownership of income-producing real estate in the office, retail, multifamily, hospitality, industrial and multi-use property sectors.</p>
+<p>NHCohen Partners was formed to provide high net worth individuals, family entities, registered investment advisors, trusts and institutions that are accredited investors, the advantages of real estate ownership through a simplification of the investing process.  The investment opportunities are intended to provide cash distributions, partial tax shelter such as depreciation and pass-through income/loss, protection against inflation and tax deferred distributions from periodic refinancing.</p>
+<p>The firm also may seek attractive opportunities in other types of alternative investments.</p>
+<p>NHCohen Capital will be the placement agent for the securities issued by investment sponsors.  NHCohen Capital LLC is a registered broker-dealer with the Securities and Exchange Commission and member of FINRA.  NHCohen Capital LLC and NHCohen Partners LLC are affiliated companies.</p>

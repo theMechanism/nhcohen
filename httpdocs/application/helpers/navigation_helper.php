@@ -68,7 +68,7 @@
 				if ($second_segment && $key == $second_segment) {
 					echo ' class="on"';
 				}
-				echo '><a href="' . base_url('about-us/' . $key) . '">' . $navitem['title'] . '</a></li>';
+				echo '><a href="' . base_url($first_segment . '/' . $key) . '">' . $navitem['title'] . '</a></li>';
 			}
 
 			echo '	</ul>

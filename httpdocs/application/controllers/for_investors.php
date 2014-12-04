@@ -34,6 +34,31 @@ class For_investors extends MY_Controller {
 		$this->load->view('template', $this->data);
 	}
 
+	public function accredited_investing()
+	{
+		$this->data['view'] = 'accredited_investing';
+		$this->data['title'] = 'Accredited Investing';
+
+		$this->load->view('template', $this->data);
+	}
+
+	public function tax_advantage()
+	{
+		$this->data['view'] = 'tax_advantage';
+		$this->data['title'] = 'Tax Advantage';
+
+		$this->load->view('template', $this->data);
+	}
+
+	public function opening_an_account()
+	{
+		$this->data['view'] = 'opening_an_account';
+		$this->data['title'] = 'Opening an account';
+		$this->data['subtitle'] = 'Investing in real estate should be a key part of any investor\'s financial planning';
+
+		$this->load->view('template', $this->data);
+	}
+
 }
 
 /* End of file welcome.php */
