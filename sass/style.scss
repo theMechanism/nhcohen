@@ -197,7 +197,11 @@ header {
 			background-position: center bottom;
 			@include bg-respond('hero-banner');
 		}
-		.about_us &, .leadership &, .for_investors & {
+		.about_us &,
+		.leadership &,
+		.for_investors &,
+		[class^="in_the_news"] &,
+		[class="404"] & {
 			@include bg-respond('about_us-banner');
 		}
 	}
@@ -368,9 +372,9 @@ header {
 .latest-news {
 	background-color: $lightest-neutral;
 	padding: 15px 0;
-	.latest-container {
-		@include span(12);
-	}
+}
+.news-item-container {
+	@include span(12);
 	.date-container {
 		.date {
 			color: $dark-neutral;
@@ -382,7 +386,11 @@ header {
 		h2 { font-family: $header-font; margin: 0; }
 		p { margin: 10px 0 0 0; color: $light-neutral; }
 	}
+	[class^="in_the_news"] & {
+		margin: 20px 0;
+	}
 }
+
 .footer-container {
 	background-color: $neutral;
 	color: white;

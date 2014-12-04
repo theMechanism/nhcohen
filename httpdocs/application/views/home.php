@@ -26,4 +26,8 @@
 		</ul>
 	</div>
 </div>
-<?php $this->load->view('latest-news'); ?>
+<div class="latest-news">
+	<div class="container">
+		<?php generate_news_item($latest_news); ?>
+	</div>
+</div>

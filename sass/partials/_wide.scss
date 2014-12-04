@@ -63,6 +63,7 @@
 		}
 	}
 	.banner-container {
+		min-height: 75px;
 		&.big .hero-container {
 			height: 396px;
 		}
@@ -134,7 +135,9 @@
 	}
 	.latest-news {
 		padding: 36px 0;
-		.latest-container { padding: 0; }
+	}
+	.news-item-container {
+		padding: 0;
 		.date-container {
 			@include span(3 of 12);
 			display: inline-block;

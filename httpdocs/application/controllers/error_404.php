@@ -13,6 +13,7 @@ class error_404 extends MY_Controller
         $this->output->set_status_header('404');
         $this->data['view'] = '404';
         $this->data['title'] = 'Page Not Found';
+        $this->data['banner'] = true;
 
         $this->load->view('template', $this->data);
     }

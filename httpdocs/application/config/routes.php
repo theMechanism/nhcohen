@@ -41,6 +41,8 @@
 $route['default_controller'] = "home";
 $route['404_override'] = 'error_404';
 
+$route['about-us/in-the-news'] = 'about_us/in_the_news';
+$route['about-us/in-the-news/(:any)'] = 'about_us/in_the_news/$1';
 $route['about-us'] = 'about_us';
 $route['about-us/(:any)'] = 'about_us/$1';
 $route['for-investors'] = 'for_investors';

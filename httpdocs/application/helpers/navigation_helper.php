@@ -57,7 +57,7 @@
 
 	function generate_sub_nav($sitemap, $first_segment = FALSE, $second_segment = FALSE)
 	{
-		if (isset($sitemap) && $first_segment && $sitemap[$first_segment]['children'])
+		if (isset($sitemap) && $first_segment && isset($sitemap[$first_segment]['children']))
 		{
 			echo '<div class="container">
 				<nav class="sub-nav">

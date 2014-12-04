@@ -44,6 +44,42 @@ class About_us extends MY_Controller {
 		$this->load->view('template', $this->data);
 	}
 
+	public function in_the_news($url = FALSE)
+	{
+		$this->load->model('In_the_news_model');
+		$this->load->helper('in_the_news_helper');
+
+		$this->data['news'] = $this->In_the_news_model->news();
+
+		if ($url) {
+
+			$news_item = $this->In_the_news_model->find_news($url);
+
+			if ($news_item) {
+
+				// if news item is defined in models/in_the_news_model.php
+				// add new articles to the array in that model
+
+				$this->data['view'] = 'in_the_news/' . $news_item['view'];
+				$this->data['title'] = $news_item['title'];
+
+			} else {
+
+				show_404('in-the-news/' . $url);
+
+			}
+
+		} else {
+
+			$this->data['view'] = 'in_the_news';
+			$this->data['title'] = 'In The News';
+
+		}
+
+		$this->load->view('template', $this->data);
+	}
+
+
 }
 
 /* End of file welcome.php */
