@@ -13,6 +13,9 @@ class Site_model extends CI_Model {
 			'about-us' => array(
 				'title' => 'About Us',
 				'children' => array(
+					'our-approach' => array(
+						'title' => 'Our Approach'
+					),
 					'leadership' => array(
 						'title' => 'Leadership'
 					),
