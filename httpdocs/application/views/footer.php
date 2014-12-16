@@ -10,8 +10,8 @@
 	                <footer class="wrapper">
 	                    <nav>
 	                        <ul>
-	                            <li><a href="#">About Us</a></li
-	                            ><li><a href="#">Contact Us</a></li
+	                            <li><a href="about-us">About Us</a></li
+	                            ><li><a href="contact-us">Contact Us</a></li
 	                            ><li><a href="#">Site Map</a></li
 	                            ><li><a href="#">Terms of Use</a></li
 	                            ><li><a href="#">Disclosure Statement</a></li
