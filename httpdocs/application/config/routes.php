@@ -42,6 +42,7 @@ $route['default_controller'] = "home";
 $route['404_override'] = 'error_404';
 
 $route['about-us/in-the-news'] = 'about_us/in_the_news';
+$route['about-us/our-approach'] = 'about_us/our_approach';
 $route['about-us/in-the-news/(:any)'] = 'about_us/in_the_news/$1';
 $route['about-us/for-sponsors'] = 'about_us/for_sponsors';
 $route['about-us/for-sponsors/(:any)'] = 'about_us/for_sponsors/$1';
