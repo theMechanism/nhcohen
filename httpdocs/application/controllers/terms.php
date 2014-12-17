@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Sitemap extends MY_Controller {
+class Terms extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -24,22 +24,6 @@ class Sitemap extends MY_Controller {
 
 		$this->data['banner'] = true;
 
-	}
-
-	public function index()
-	{
-		$this->data['view'] = 'sitemap';
-		$this->data['title'] = 'Sitemap';
-
-		$this->load->view('template', $this->data);
-	}
-
-	public function business_continuity_plan_disclosure()
-	{
-		$this->data['view'] = 'business_continuity_plan_disclosure';
-		$this->data['title'] = 'Business Continuity Plan Disclosure';
-
-		$this->load->view('template', $this->data);
 	}
 
 	public function terms_of_use()

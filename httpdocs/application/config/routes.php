@@ -57,6 +57,7 @@ $route['for-investors/tax-advantage/(:any)'] = 'for_investors/tax_advantage/$1';
 $route['for-investors'] = 'for_investors';
 $route['for-investors/(:any)'] = 'for_investors/$1';
 $route['business-continuity-plan-disclosure'] = 'sitemap/business_continuity_plan_disclosure';
+$route['terms-of-use'] = 'terms/terms_of_use';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
