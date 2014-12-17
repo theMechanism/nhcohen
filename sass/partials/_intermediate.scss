@@ -20,4 +20,36 @@
 		}
 	}
 
+	.contact_us .address {
+		@include span(5 of 12);
+	}
+	.contact_us .contact-info {
+		@include span(7 of 12);
+	}
+	form.full-width .row {
+		height: 52px;
+		> div {
+			height: 100%;
+			@include span(5 of 12);
+			&:after {
+				content: "";
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+		}
+		> div + div {
+			@include span(7 of 12);
+		}
+		label {
+			vertical-align: middle;
+		}
+		&.big {
+			height: 140px;
+			> div:first-child {
+				height: 52px;
+			}
+		}
+	}
+
 }

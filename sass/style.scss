@@ -13,6 +13,7 @@
 /* main stylesheet */
 * {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
+  box-sizing: border-box;
 }
 body {
 	font: 16px $body-font;
@@ -34,7 +35,7 @@ h1, h2, h3, h4 {
 h1 {
 	text-transform: uppercase;
 }
-p, ul, ol {
+p, ul, ol, label {
 	color: $light-neutral;
 }
 
@@ -193,17 +194,10 @@ header {
 		left: 0;
 		right: 0;
 		bottom: 0;
+		@include bg-respond('about_us-banner');
 		.home & {
 			background-position: center bottom;
 			@include bg-respond('hero-banner');
-		}
-		.about_us &,
-		.leadership &,
-		.for_investors &,
-		.for_sponsors &,
-		[class^="in_the_news"] &,
-		[class="404"] & {
-			@include bg-respond('about_us-banner');
 		}
 	}
 	.notice-container {
@@ -515,6 +509,90 @@ header {
 	}
 	p {
 		margin: 0;
+	}
+}
+form.full-width {
+	.row {
+		input, textarea {
+			vertical-align: top;
+			padding: 15px;
+			width: 100%;
+		}
+		input:not([type="submit"]),
+		textarea,
+		.select-wrap,
+		input[type="radio"] + label,
+		input[type="checkbox"] + label {
+			color: $neutral;
+			background-color: transparent;
+			border: 2px solid $lighter-neutral;
+			@include border-radius(2px);
+			&:focus {
+			    outline: none !important;
+			    border-color: $light-neutral;
+			    box-shadow: 0 0 10px $neutral;
+			}
+		}
+		input[type="checkbox"], input[type="radio"] {
+			visibility: hidden;
+			width: 40px;
+			+ label {
+				cursor: pointer;
+				display: inline-block;
+				margin-left: -40px;
+				height: 34px;
+				width: 34px;
+			}
+			&:checked + label, &.checked + label {
+				background-color: $link-color;
+			}
+		}
+		input[type="submit"] {
+			border: 0;
+			background-color: $active-color;
+			color: white;
+			font-weight: bold;
+			min-width: 200px;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			width: auto;
+			@include transition(background-color 0.3s ease);
+			&:hover {
+				background-color: $link-color;
+			}
+		}
+		.select-wrap {
+			background: $lightest-neutral;
+			height: 52px;
+			overflow: hidden;
+			position: relative;
+			&:after {
+				content: "";
+				width: 33px;
+				height: 34px;
+				top: 0;
+				bottom: 0;
+				right: 10px;
+				margin: auto;
+				position: absolute;
+				@include icons-sprite(dropdown-arrow);
+			}
+			select {
+				background-color: transparent;
+				border: 0;
+				color: $neutral;
+				height: 100%;
+				padding: 2px 10px;
+				position: relative;
+				vertical-align: middle;
+				width: 100%;
+				-webkit-appearance: none;
+				z-index: 1;
+			}
+		}
+	}
+	.row + .row {
+		margin-top: 20px;
 	}
 }
 
