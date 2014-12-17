@@ -44,6 +44,14 @@ class About_us extends MY_Controller {
 		$this->load->view('template', $this->data);
 	}
 
+	public function our_approach()
+	{
+		$this->data['view'] = 'our_approach';
+		$this->data['title'] = 'Our Approach';
+
+		$this->load->view('template', $this->data);
+	}
+	
 	public function for_sponsors()
 	{
 		$this->data['view'] = 'for_sponsors';

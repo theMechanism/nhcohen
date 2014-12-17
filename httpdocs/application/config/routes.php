@@ -42,6 +42,7 @@ $route['default_controller'] = "home";
 $route['404_override'] = 'error_404';
 
 $route['about-us/in-the-news'] = 'about_us/in_the_news';
+$route['about-us/our-approach'] = 'about_us/our_approach';
 $route['about-us/in-the-news/(:any)'] = 'about_us/in_the_news/$1';
 $route['about-us/for-sponsors'] = 'about_us/for_sponsors';
 $route['about-us/for-sponsors/(:any)'] = 'about_us/for_sponsors/$1';
@@ -57,6 +58,8 @@ $route['for-investors'] = 'for_investors';
 $route['for-investors/(:any)'] = 'for_investors/$1';
 $route['contact-us'] = 'contact_us';
 $route['contact-us/(:any)'] = 'contact_us/$1';
+$route['business-continuity-plan-disclosure'] = 'sitemap/business_continuity_plan_disclosure';
+$route['terms-of-use'] = 'terms/terms_of_use';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

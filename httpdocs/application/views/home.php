@@ -12,7 +12,7 @@
 	    <div class="container">
 	        <div class="hero-text">
 	            <h2>Perspective and insight<br>for real estate investment<br>that stands the test of time</h2>
-	            <a class="hero-cta" href="#">Become an Investor</a>
+	            <a class="hero-cta" href="for-investors">Become an Investor</a>
 	        </div>
         </div>
     </div>
@@ -20,9 +20,9 @@
 <div class="homepage-cta">
 	<div class="container">
 		<ul>
-			<li><a href="">Our Approach</a></li>
-			<li><a href="">What is an Accredited Investor?</a></li>
-			<li><a href="">Become an Investor</a></li>
+			<li><a href="about-us/our-approach">Our Approach</a></li>
+			<li><a href="for-investors/accredited-investing">What is an Accredited Investor?</a></li>
+			<li><a href="for-investors">Become an Investor</a></li>
 		</ul>
 	</div>
 </div>
