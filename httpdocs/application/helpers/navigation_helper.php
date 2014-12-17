@@ -77,17 +77,19 @@
 		}
 	}
 
-	function generate_breadcrumbs($sitemap, $first_segment, $second_segment = FALSE)
+	function generate_breadcrumbs($sitemap, $first_segment, $second_segment = FALSE, $title)
 	{
-		if (isset($sitemap) && $first_segment)
+		echo '<ul class="breadcrumbs">
+				<li><a href="' . base_url() . '">Home</a></li>';
+		if (isset($sitemap) && in_array($first_segment, $sitemap))
 		{
-			echo '<ul class="breadcrumbs">
-				<li><a href="' . base_url() . '">Home</a></li>
-				<li><a href="' . base_url($first_segment) . '">' . $sitemap[$first_segment]['title'] . '</a></li>';
+			echo '<li><a href="' . base_url($first_segment) . '">' . $sitemap[$first_segment]['title'] . '</a></li>';
 			if ($second_segment) {
 				echo '<li><a href="' . base_url($first_segment . '/' . $second_segment) . '">' . $sitemap[$first_segment]['children'][$second_segment]['title'] . '</a></li>';
 			}
-			echo '</ul>';
+		} else {
+			echo '<li><a href="' . base_url($first_segment) . '">' . $title . '</a></li>';
 		}
+		echo '</ul>';
 	}
 

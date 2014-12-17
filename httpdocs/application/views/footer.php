@@ -10,12 +10,12 @@
 	                <footer class="wrapper">
 	                    <nav>
 	                        <ul>
-	                            <li><a href="about-us">About Us</a></li
-	                            ><li><a href="contact-us">Contact Us</a></li
-	                            ><li><a href="#">Site Map</a></li
-	                            ><li><a href="#">Terms of Use</a></li
-	                            ><li><a href="#">Disclosure Statement</a></li
-	                            ><li><a href="#">Legal</a></li>
+	                            <li><a href="<?php echo base_url('about-us'); ?>">About Us</a></li
+	                            ><li><a href="<?php echo base_url('contact-us'); ?>">Contact Us</a></li
+	                            ><li><a href="<?php echo base_url('sitemap'); ?>">Site Map</a></li
+	                            ><li><a href="<?php echo base_url('terms-of-use'); ?>">Terms of Use</a></li
+	                            ><li><a href="<?php echo base_url('business-continuity-plan-disclosure'); ?>">Disclosure Statement</a></li
+	                            ><li><a href="<?php echo base_url('legal'); ?>">Legal</a></li>
 	                        </ul>
 	                        <div class="info">
 								<span class="copyright">&copy;<?php echo date("Y"); ?> NHCohen Partners LLC</span

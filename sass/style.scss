@@ -262,10 +262,12 @@ header {
 					line-height: 23px;
 					padding: 26px 0 20px;
 					@include transition(border 0.3s ease, color 0.3s ease);
-					&:hover, &:active {
-						border-color: white;
-						color: $active-color;
-					}
+				}
+				&.on a,
+				a:hover,
+				a:active {
+					border-color: white;
+					color: $active-color;
 				}
 			}
 		}
@@ -290,6 +292,9 @@ header {
 				&:first-child:before {
 					content: '';
 					margin: 0;
+				}
+				&:last-child a {
+					color: $light-neutral;
 				}
 			}
 		}
@@ -417,6 +422,7 @@ header {
 		span {
 			margin-left: 7px;
 			white-space: nowrap;
+			a { vertical-align: top; }
 			&:first-child {
 				margin: 0 9px 0 0;
 			}

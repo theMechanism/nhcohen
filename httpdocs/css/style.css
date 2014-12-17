@@ -908,7 +908,9 @@ header nav {
   -webkit-transition: border 0.3s ease, color 0.3s ease;
   transition: border 0.3s ease, color 0.3s ease;
 }
-.banner-container .sub-nav ul li a:hover, .banner-container .sub-nav ul li a:active {
+.banner-container .sub-nav ul li.on a,
+.banner-container .sub-nav ul li a:hover,
+.banner-container .sub-nav ul li a:active {
   border-color: white;
   color: #E7A614;
 }
@@ -943,6 +945,9 @@ header nav {
 .content-container .cont .breadcrumbs li:first-child:before {
   content: '';
   margin: 0;
+}
+.content-container .cont .breadcrumbs li:last-child a {
+  color: #999999;
 }
 .content-container .full-spread {
   background-color: #333333;
@@ -1089,6 +1094,9 @@ header nav {
 .footer-container .info span {
   margin-left: 7px;
   white-space: nowrap;
+}
+.footer-container .info span a {
+  vertical-align: top;
 }
 .footer-container .info span:first-child {
   margin: 0 9px 0 0;

@@ -47,7 +47,7 @@
 							<div class="wrapper">
 								<div class="cont">
 									<h1 class="title"><?= $title ?></h1>
-									<?php generate_breadcrumbs($sitemap, $this->uri->segment(1), $this->uri->segment(2)); ?>
+									<?php generate_breadcrumbs($sitemap, $this->uri->segment(1), $this->uri->segment(2), $title); ?>
 									<?php if (isset($subtitle)) : ?><h2 class="subtitle"><?= $subtitle ?></h2><?php endif; ?>
 
 		        <?php endif; ?>
