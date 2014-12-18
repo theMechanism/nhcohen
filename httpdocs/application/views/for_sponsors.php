@@ -6,4 +6,4 @@
 	<li>Due Diligence – we perform due diligence services for a prospective offering</li>
 	<li>Private Funds Placement – we raise private capital through our broker-dealer affiliate NHCohen Capital LLC Please Contact Us to learn more</li>
 </ul>
-<p>Please <a href="<?php base_url('contact-us'); ?>">Contact Us</a> to learn more.</p>
+<p>Please <a href="<?php echo base_url('contact-us'); ?>">Contact Us</a> to learn more.</p>

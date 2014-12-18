@@ -37,6 +37,14 @@ class Contact_us extends MY_Controller {
 		$this->load->view('template', $this->data);
 	}
 
+	public function success()
+	{
+		$this->data['view'] = 'contact_us-success';
+		$this->data['title'] = 'Thank You For Contacting Us';
+
+		$this->load->view('template', $this->data);
+	}
+
 
 }
 

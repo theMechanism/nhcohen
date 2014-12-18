@@ -81,14 +81,16 @@
 	{
 		echo '<ul class="breadcrumbs">
 				<li><a href="' . base_url() . '">Home</a></li>';
-		if (isset($sitemap) && in_array($first_segment, $sitemap))
+		if (isset($sitemap) && array_key_exists($first_segment, $sitemap))
 		{
 			echo '<li><a href="' . base_url($first_segment) . '">' . $sitemap[$first_segment]['title'] . '</a></li>';
-			if ($second_segment) {
+			if ($second_segment && isset($sitemap[$first_segment]['children']) && array_key_exists($second_segment, $sitemap[$first_segment]['children'])) {
 				echo '<li><a href="' . base_url($first_segment . '/' . $second_segment) . '">' . $sitemap[$first_segment]['children'][$second_segment]['title'] . '</a></li>';
+
+				if ($title !== $sitemap[$first_segment]['children'][$second_segment]['title']) {
+					echo '<li><a href="' . base_url(uri_string()) . '">' . $title . '</a></li>';
+				}
 			}
-		} else {
-			echo '<li><a href="' . base_url($first_segment) . '">' . $title . '</a></li>';
 		}
 		echo '</ul>';
 	}

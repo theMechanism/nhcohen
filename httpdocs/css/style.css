@@ -588,8 +588,8 @@ textarea {
   font-weight: normal;
   font-style: normal;
 }
-.icons-sprite, header .menu-button a span, header .title-container .title, .content-container .full-spread .investor-cta a:hover:after, .footer-container .socials li a.twitter, .footer-container .socials li a.twitter:hover, .footer-container .socials li a.twitter:active, .footer-container .socials li a.linked-in, .footer-container .socials li a.linked-in:hover, .footer-container .socials li a.linked-in:active, .for_investors .form-container .form-button div.pdf, .for_investors .form-container .form-button div.form, form.full-width .row .select-wrap:after {
-  background-image: url('../img/icons-saf17fa267b.png');
+.icons-sprite, header .menu-button a span, header .title-container .title, .banner-container .sub-nav ul li a[href$=".pdf"]:before, .content-container .full-spread .investor-cta a:hover:after, .footer-container .socials li a.twitter, .footer-container .socials li a.twitter:hover, .footer-container .socials li a.twitter:active, .footer-container .socials li a.linked-in, .footer-container .socials li a.linked-in:hover, .footer-container .socials li a.linked-in:active, .for_investors .form-container .form-button div.pdf, .for_investors .form-container .form-button div.form, form.full-width .row .select-wrap:after {
+  background-image: url('../img/icons-s4a3f886b52.png');
   background-repeat: no-repeat;
 }
 
@@ -908,6 +908,16 @@ header nav {
   -webkit-transition: border 0.3s ease, color 0.3s ease;
   transition: border 0.3s ease, color 0.3s ease;
 }
+.banner-container .sub-nav ul li a[href$=".pdf"]:before {
+  background-position: 0 -206px;
+  content: "";
+  display: inline-block;
+  height: 18px;
+  margin-bottom: 1px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 15px;
+}
 .banner-container .sub-nav ul li.on a,
 .banner-container .sub-nav ul li a:hover,
 .banner-container .sub-nav ul li a:active {
@@ -936,6 +946,10 @@ header nav {
 }
 .content-container .cont .breadcrumbs li {
   float: left;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content-container .cont .breadcrumbs li:before {
   color: #999999;
@@ -1043,12 +1057,21 @@ header nav {
   font-family: "NewsGothicBT-BoldCondensed", arial, sans-serif;
   margin: 0;
 }
+.news-item-container .news-container h2 a {
+  color: inherit;
+}
 .news-item-container .news-container p {
   margin: 10px 0 0 0;
   color: #999999;
 }
-[class^="in_the_news"] .news-item-container {
+.in_the_news .news-item-container {
   margin: 20px 0;
+}
+.in_the_news .news-item-container .date-wrap a {
+  display: none;
+}
+.in_the_news .news-item-container .news-container {
+  border-left: 0;
 }
 
 .footer-container {
@@ -1125,13 +1148,13 @@ header nav {
   vertical-align: middle;
 }
 .footer-container .socials li a.twitter {
-  background-position: 0 -265px;
+  background-position: 0 -283px;
 }
 .footer-container .socials li a.twitter:active, .footer-container .socials li a.twitter.twitter-active {
-  background-position: 0 -245px;
+  background-position: 0 -263px;
 }
 .footer-container .socials li a.twitter:hover, .footer-container .socials li a.twitter:active {
-  background-position: 0 -245px;
+  background-position: 0 -263px;
 }
 .footer-container .socials li a.linked-in {
   background-position: 0 -105px;
@@ -1160,7 +1183,7 @@ header nav {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  margin-bottom: 20px;
+  margin: 20px 0;
   text-align: center;
 }
 .for_investors .form-container .form-button {
@@ -1192,7 +1215,7 @@ header nav {
   left: 0;
 }
 .for_investors .form-container .form-button div.pdf {
-  background-position: 0 -206px;
+  background-position: 0 -224px;
 }
 .for_investors .form-container .form-button div.form {
   width: 34px;
@@ -1246,7 +1269,7 @@ form.full-width .row input[type="checkbox"], form.full-width .row input[type="ra
 form.full-width .row input[type="checkbox"] + label, form.full-width .row input[type="radio"] + label {
   cursor: pointer;
   display: inline-block;
-  margin-left: -40px;
+  margin: 9px 0 9px -40px;
   height: 34px;
   width: 34px;
 }
@@ -1361,10 +1384,10 @@ form.full-width .row + .row {
   }
 
   form.full-width .row {
-    height: 52px;
+    overflow: hidden;
+    *zoom: 1;
   }
   form.full-width .row > div {
-    height: 100%;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1373,11 +1396,17 @@ form.full-width .row + .row {
     padding-left: 0.83333%;
     padding-right: 0.83333%;
   }
-  form.full-width .row > div:after {
+  form.full-width .row > div:first-child {
+    height: 52px;
+  }
+  form.full-width .row > div:first-child:after {
     content: "";
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+  }
+  form.full-width .row > div > span {
+    display: inline-block;
   }
   form.full-width .row > div + div {
     -moz-box-sizing: border-box;
@@ -1390,12 +1419,6 @@ form.full-width .row + .row {
   }
   form.full-width .row label {
     vertical-align: middle;
-  }
-  form.full-width .row.big {
-    height: 140px;
-  }
-  form.full-width .row.big > div:first-child {
-    height: 52px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1659,6 +1682,10 @@ form.full-width .row + .row {
      ========================================================================== */
   .leadership-headshot {
     margin-right: -40px;
+  }
+
+  .for_investors .form-container {
+    margin-top: 0;
   }
 }
 @media only screen and (min-width: 1140px) {

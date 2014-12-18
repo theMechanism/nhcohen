@@ -16,4 +16,7 @@ jQuery(document).ready(function($) {
 			$("body").removeClass("menu-active");
 		});
 	});
+	$("a[rel=external]").each(function() {
+		$(this).attr("target", "_blank");
+	});
 });

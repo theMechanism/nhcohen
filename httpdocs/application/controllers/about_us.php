@@ -51,7 +51,7 @@ class About_us extends MY_Controller {
 
 		$this->load->view('template', $this->data);
 	}
-	
+
 	public function for_sponsors()
 	{
 		$this->data['view'] = 'for_sponsors';
@@ -60,16 +60,14 @@ class About_us extends MY_Controller {
 		$this->load->view('template', $this->data);
 	}
 
-	public function in_the_news($url = FALSE)
+	public function in_the_news($action = FALSE, $offset = 0, $limit = 10)
 	{
 		$this->load->model('In_the_news_model');
 		$this->load->helper('in_the_news_helper');
 
-		$this->data['news'] = $this->In_the_news_model->news();
+		if ($action && $action !== 'page') {
 
-		if ($url) {
-
-			$news_item = $this->In_the_news_model->find_news($url);
+			$news_item = $this->In_the_news_model->specific_news($action);
 
 			if ($news_item) {
 
@@ -81,11 +79,15 @@ class About_us extends MY_Controller {
 
 			} else {
 
-				show_404('in-the-news/' . $url);
+				show_404();
 
 			}
 
 		} else {
+
+			$this->data['news'] = $this->In_the_news_model->list_news($offset, $limit);
+
+			if (!$this->data['news']) show_404();
 
 			$this->data['view'] = 'in_the_news';
 			$this->data['title'] = 'In The News';

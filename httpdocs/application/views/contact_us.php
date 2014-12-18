@@ -13,13 +13,18 @@
 
 <hr>
 
-<form action="#" method="POST" class="full-width">
+<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="full-width">
+<input type="hidden" name="debug" value=1>
+<input type="hidden" name="debugEmail" value="george.brassey@themechanism.com">
+<input type="hidden" name="oid" value="00Do0000000JCJr">
+<input type="hidden" name="retURL" value="http://www.nhcohenpartners.com/contact-us/success">
+<input type="hidden" value="NHCohen Website" name="lead_source">
 	<div class="row">
 		<div>
-			<label for="name">Name</label>
+			<label for="last_name">Name</label>
 		</div>
 		<div>
-			<input id="name" maxlength="40" name="name" type="text">
+			<input id="last_name" maxlength="80" name="last_name" type="text">
 		</div>
 	</div>
 	<div class="row">
@@ -27,7 +32,7 @@
 			<label for="email">Email Address</label>
 		</div>
 		<div>
-			<input id="email" maxlength="40" name="email" type="text">
+			<input id="email" maxlength="80" name="email" type="text">
 		</div>
 	</div>
 	<div class="row">
@@ -40,18 +45,10 @@
 	</div>
 	<div class="row">
 		<div>
-			<label for="address_1">Address</label>
+			<label for="street">Address</label>
 		</div>
 		<div>
-			<input id="address_1" maxlength="40" name="address_1" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="address_2">Address 2</label>
-		</div>
-		<div>
-			<input id="address_2" maxlength="40" name="address_2" type="text">
+			<textarea name="street" rows="2"></textarea><br>
 		</div>
 	</div>
 	<div class="row">
@@ -68,7 +65,7 @@
 		</div>
 		<div>
 			<div class="select-wrap">
-				<select name="state" id="state">
+				<select id="state" name="state">
 			        <option selected="selected">Select One</option>
 			        <?php foreach($states as $key => $value) { ?>
 			            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
@@ -82,18 +79,18 @@
 			<label for="zip">Zip Code</label>
 		</div>
 		<div>
-			<input id="zip" maxlength="40" name="zip" type="text">
+			<input id="zip" maxlength="20" name="zip" type="text">
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="investor">I am an Investor [or] Sponsor</label>
+			<span><label for="00No0000008vE3U">I am an Investor [or] Sponsor</label></span>
 		</div>
 		<div>
-			<input id="investor" name="investor" type="checkbox"><label for="investor"></label>
+			<input id="00No0000008vE3U" name="00No0000008vE3U" type="checkbox" value="1"><label for="00No0000008vE3U"></label>
 		</div>
 	</div>
-	<div class="row big">
+	<div class="row">
 		<div>
 			<label for="description">Message</label>
 		</div>

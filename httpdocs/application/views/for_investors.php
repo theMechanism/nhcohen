@@ -17,14 +17,14 @@
 	<div class="wrapper">
 		<div class="cont">
 <div class="form-container">
-	<a href="#">
+	<a href="<?php echo base_url('pdf/accredited-investor-form.pdf'); ?>">
 		<div class="form-button"><div class="pdf"></div></div>
 		<h3>Download</h3>
 	</a>
 	<p>Accredited Investor Form</p>
 </div>
 <div class="form-container">
-	<a href="#">
+	<a href="<?php echo base_url('for-investors/opening-an-account'); ?>">
 		<div class="form-button"><div class="form"></div></div>
 		<h3>Secure Form</h3>
 	</a>

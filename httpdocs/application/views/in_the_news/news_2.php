@@ -1,1 +1,0 @@
-<p>Content for News 2</p>

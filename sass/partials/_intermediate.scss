@@ -27,15 +27,20 @@
 		@include span(7 of 12);
 	}
 	form.full-width .row {
-		height: 52px;
+		@include clearfix;
 		> div {
-			height: 100%;
 			@include span(5 of 12);
-			&:after {
-				content: "";
+			&:first-child {
+				height: 52px;
+				&:after {
+					content: "";
+					display: inline-block;
+					height: 100%;
+					vertical-align: middle;
+				}
+			}
+			> span {
 				display: inline-block;
-				height: 100%;
-				vertical-align: middle;
 			}
 		}
 		> div + div {
@@ -43,12 +48,6 @@
 		}
 		label {
 			vertical-align: middle;
-		}
-		&.big {
-			height: 140px;
-			> div:first-child {
-				height: 52px;
-			}
 		}
 	}
 

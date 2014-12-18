@@ -42,10 +42,10 @@ class For_investors extends MY_Controller {
 		$this->load->view('template', $this->data);
 	}
 
-	public function tax_advantage()
+	public function tax_advantages()
 	{
-		$this->data['view'] = 'tax_advantage';
-		$this->data['title'] = 'Tax Advantage';
+		$this->data['view'] = 'tax_advantages';
+		$this->data['title'] = 'Tax Advantages';
 
 		$this->load->view('template', $this->data);
 	}

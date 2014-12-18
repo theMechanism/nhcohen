@@ -33,13 +33,13 @@ class Site_model extends CI_Model {
 					'accredited-investing' => array(
 						'title' => 'Accredited Investing'
 					),
-					'tax-advantage' => array(
-						'title' => 'Tax Advantage'
+					'tax-advantages' => array(
+						'title' => 'Tax Advantages'
 					),
 					'opening-an-account' => array(
 						'title' => 'Opening an Account'
 					),
-					'accredited-investor-form' => array(
+					'../pdf/accredited-investor-form.pdf' => array(
 						'title' => 'Accredited Investor Form'
 					)
 				)
