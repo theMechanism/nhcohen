@@ -91,6 +91,8 @@
 					echo '<li><a href="' . base_url(uri_string()) . '">' . $title . '</a></li>';
 				}
 			}
+		} else {
+			echo '<li><a href="' . base_url(uri_string()) . '">' . $title . '</a></li>';
 		}
 		echo '</ul>';
 	}

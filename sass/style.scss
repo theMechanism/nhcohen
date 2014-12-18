@@ -38,6 +38,9 @@ h1 {
 p, ul, ol, label {
 	color: $light-neutral;
 }
+li > ul, li > ol {
+	margin-top: 0;
+}
 
 .container {
 	@include container(12);

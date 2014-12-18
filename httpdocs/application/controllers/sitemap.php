@@ -29,7 +29,7 @@ class Sitemap extends MY_Controller {
 	public function index()
 	{
 		$this->data['view'] = 'sitemap';
-		$this->data['title'] = 'Sitemap';
+		$this->data['title'] = 'Site Map';
 
 		$this->load->view('template', $this->data);
 	}
