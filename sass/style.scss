@@ -553,9 +553,7 @@ textarea {
 }
 input:not([type="submit"]),
 textarea,
-.select-wrap,
-input[type="radio"] + label:before,
-input[type="checkbox"] + label:before {
+.select-wrap {
 	color: $neutral;
 	background-color: transparent;
 	border: 2px solid $lighter-neutral;
@@ -566,7 +564,12 @@ input[type="checkbox"] + label:before {
 	    box-shadow: 0 0 10px $neutral;
 	}
 }
-input[type="checkbox"], input[type="radio"] {
+.lt-ie9 input[type="checkbox"], .lt-ie9 input[type="radio"] {
+	display: inline-block;
+	min-width: none;
+	width: auto;
+}
+:not(.lt-ie9) input[type="checkbox"], input[type="radio"] {
 	visibility: hidden;
 	height: 1px;
 	margin-right: -40px;
@@ -591,8 +594,21 @@ input[type="checkbox"], input[type="radio"] {
 			}
 		}
 	}
-	&:checked + label:before, &.checked + label:before {
-		background-color: $link-color;
+}
+:not(.lt-ie9) input[type="checkbox"] {
+	+ label:before {
+		@include icons-sprite(check-unselected);
+	}
+	&:checked + label:before {
+		@include icons-sprite(check-selected);
+	}
+}
+:not(.lt-ie9) input[type="radio"] {
+	+ label:before {
+		@include icons-sprite(radio-unselected);
+	}
+	&:checked + label:before {
+		@include icons-sprite(radio-selected);
 	}
 }
 input[type="submit"] {
@@ -611,7 +627,7 @@ input[type="submit"] {
 }
 form.full-width {
 	.row {
-		input,
+		input:not([type="checkbox"]):not([type="radio"]),
 		textarea {
 			vertical-align: top;
 			width: 100%;

@@ -588,8 +588,8 @@ textarea {
   font-weight: normal;
   font-style: normal;
 }
-.icons-sprite, header .menu-button a span, header .title-container .title, .banner-container .sub-nav ul li a[href$=".pdf"]:before, .content-container .full-spread .investor-cta a:hover:after, .footer-container .socials li a.twitter, .footer-container .socials li a.twitter:hover, .footer-container .socials li a.twitter:active, .footer-container .socials li a.linked-in, .footer-container .socials li a.linked-in:hover, .footer-container .socials li a.linked-in:active, .for_investors .form-container .form-button div.pdf, .for_investors .form-container .form-button div.form, form.full-width .row .select-wrap:after {
-  background-image: url('../img/icons-s4a3f886b52.png');
+.icons-sprite, header .menu-button a span, header .title-container .title, .banner-container .sub-nav ul li a[href$=".pdf"]:before, .content-container .full-spread .investor-cta a:hover:after, .footer-container .socials li a.twitter, .footer-container .socials li a.twitter:hover, .footer-container .socials li a.twitter:active, .footer-container .socials li a.linked-in, .footer-container .socials li a.linked-in:hover, .footer-container .socials li a.linked-in:active, .for_investors .form-container .form-button div.pdf, .for_investors .form-container .form-button div.form, :not(.lt-ie9) input[type="checkbox"] + label:before, :not(.lt-ie9) input[type="checkbox"]:checked + label:before, :not(.lt-ie9) input[type="radio"] + label:before, :not(.lt-ie9) input[type="radio"]:checked + label:before, form.full-width .row .select-wrap:after {
+  background-image: url('../img/icons-s2bf5595c23.png');
   background-repeat: no-repeat;
 }
 
@@ -783,14 +783,14 @@ header .menu-button a span {
   text-indent: -999px;
   width: 39px;
   vertical-align: middle;
-  background-position: 0 -125px;
+  background-position: 0 -193px;
 }
 header .title-container {
   display: inline-block;
   vertical-align: middle;
 }
 header .title-container .title {
-  background-position: 0 -153px;
+  background-position: 0 -221px;
   height: 53px;
   margin: 0;
   overflow: hidden;
@@ -918,7 +918,7 @@ header nav {
   transition: border 0.3s ease, color 0.3s ease;
 }
 .banner-container .sub-nav ul li a[href$=".pdf"]:before {
-  background-position: 0 -206px;
+  background-position: 0 -274px;
   content: "";
   display: inline-block;
   height: 18px;
@@ -1014,7 +1014,7 @@ header nav {
   left: 0;
   right: 0;
   width: 18px;
-  background-position: 0 0;
+  background-position: 0 -68px;
 }
 
 .homepage-cta {
@@ -1157,22 +1157,22 @@ header nav {
   vertical-align: middle;
 }
 .footer-container .socials li a.twitter {
-  background-position: 0 -283px;
+  background-position: 0 -419px;
 }
 .footer-container .socials li a.twitter:active, .footer-container .socials li a.twitter.twitter-active {
-  background-position: 0 -263px;
+  background-position: 0 -399px;
 }
 .footer-container .socials li a.twitter:hover, .footer-container .socials li a.twitter:active {
-  background-position: 0 -263px;
+  background-position: 0 -399px;
 }
 .footer-container .socials li a.linked-in {
-  background-position: 0 -105px;
+  background-position: 0 -173px;
 }
 .footer-container .socials li a.linked-in:active, .footer-container .socials li a.linked-in.linked-in-active {
-  background-position: 0 -85px;
+  background-position: 0 -153px;
 }
 .footer-container .socials li a.linked-in:hover, .footer-container .socials li a.linked-in:active {
-  background-position: 0 -85px;
+  background-position: 0 -153px;
 }
 
 /* ==========================================================================
@@ -1224,11 +1224,11 @@ header nav {
   left: 0;
 }
 .for_investors .form-container .form-button div.pdf {
-  background-position: 0 -224px;
+  background-position: 0 -292px;
 }
 .for_investors .form-container .form-button div.form {
   width: 34px;
-  background-position: 0 -46px;
+  background-position: 0 -114px;
 }
 .for_investors .form-container a {
   display: inline-block;
@@ -1252,9 +1252,7 @@ textarea {
 
 input:not([type="submit"]),
 textarea,
-.select-wrap,
-input[type="radio"] + label:before,
-input[type="checkbox"] + label:before {
+.select-wrap {
   color: #696a6d;
   background-color: transparent;
   border: 2px solid #e8e8e8;
@@ -1264,28 +1262,32 @@ input[type="checkbox"] + label:before {
 }
 input:not([type="submit"]):focus,
 textarea:focus,
-.select-wrap:focus,
-input[type="radio"] + label:before:focus,
-input[type="checkbox"] + label:before:focus {
+.select-wrap:focus {
   outline: none !important;
   border-color: #999999;
   box-shadow: 0 0 10px #696a6d;
 }
 
-input[type="checkbox"], input[type="radio"] {
+.lt-ie9 input[type="checkbox"], .lt-ie9 input[type="radio"] {
+  display: inline-block;
+  min-width: none;
+  width: auto;
+}
+
+:not(.lt-ie9) input[type="checkbox"], input[type="radio"] {
   visibility: hidden;
   height: 1px;
   margin-right: -40px;
   margin-bottom: -1px;
   width: 40px !important;
 }
-input[type="checkbox"] + label, input[type="radio"] + label {
+:not(.lt-ie9) input[type="checkbox"] + label, input[type="radio"] + label {
   padding: 15px 0 15px 45px;
   display: inline-block;
   overflow: hidden;
   *zoom: 1;
 }
-input[type="checkbox"] + label:before, input[type="radio"] + label:before {
+:not(.lt-ie9) input[type="checkbox"] + label:before, input[type="radio"] + label:before {
   content: "";
   cursor: pointer;
   display: inline-block;
@@ -1294,11 +1296,22 @@ input[type="checkbox"] + label:before, input[type="radio"] + label:before {
   vertical-align: top;
   width: 34px;
 }
-input[type="checkbox"] + label + input[type="checkbox"] + label, input[type="checkbox"] + label + input[type="radio"] + label, input[type="radio"] + label + input[type="checkbox"] + label, input[type="radio"] + label + input[type="radio"] + label {
+:not(.lt-ie9) input[type="checkbox"] + label + input[type="checkbox"] + label, :not(.lt-ie9) input[type="checkbox"] + label + input[type="radio"] + label, input[type="radio"] + label + input[type="checkbox"] + label, input[type="radio"] + label + input[type="radio"] + label {
   margin-left: 10px;
 }
-input[type="checkbox"]:checked + label:before, input[type="checkbox"].checked + label:before, input[type="radio"]:checked + label:before, input[type="radio"].checked + label:before {
-  background-color: #56B3E0;
+
+:not(.lt-ie9) input[type="checkbox"] + label:before {
+  background-position: 0 -34px;
+}
+:not(.lt-ie9) input[type="checkbox"]:checked + label:before {
+  background-position: 0 0;
+}
+
+:not(.lt-ie9) input[type="radio"] + label:before {
+  background-position: 0 -365px;
+}
+:not(.lt-ie9) input[type="radio"]:checked + label:before {
+  background-position: 0 -331px;
 }
 
 input[type="submit"] {
@@ -1319,7 +1332,7 @@ input[type="submit"]:hover {
   background-color: #56B3E0;
 }
 
-form.full-width .row input,
+form.full-width .row input:not([type="checkbox"]):not([type="radio"]),
 form.full-width .row textarea {
   vertical-align: top;
   width: 100%;
@@ -1339,7 +1352,7 @@ form.full-width .row .select-wrap:after {
   right: 10px;
   margin: auto;
   position: absolute;
-  background-position: 0 -12px;
+  background-position: 0 -80px;
 }
 form.full-width .row .select-wrap select {
   background-color: transparent;
