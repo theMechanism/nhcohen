@@ -147,15 +147,13 @@ class For_investors extends MY_Controller {
 				$this->email->subject('[NHCohenPartners.com] Accredited Investor Suitability Form');
 				// 'Profession: ' . $this->input->post('txtProfession') . "\n" .
 				$msg = 'First name: ' . $this->input->post('txtFirstName') . "\n" .
-					'Middle initial: ' . $this->input->post('txtMi') . "\n" .
 					'Last name: ' . $this->input->post('txtLastName') . "\n" .
 					'Date of birth: ' . $this->input->post('txtDob') . "\n" .
 					'Social Security number: ' . $this->input->post('txtSSN') . "\n" .
 					'Address: ' . $this->input->post('txtAddress') . "\n" .
 					'City: ' . $this->input->post('txtCity') . "\n" .
 					'State: ' . $this->input->post('txtState') . "\n" .
-					'Zip: ' . $this->input->post('txtZip') . "\n" .
-					'Country: ' . $this->input->post('txtCountry') . "\n\n" .
+					'Zip: ' . $this->input->post('txtZip') . "\n\n" .
 					'Home phone: ' . $this->input->post('txtHomePhone') . "\n" .
 					'Second phone: ' . $this->input->post('txtSecondPhone') . "\n" .
 					'Mobile phone: ' . $this->input->post('txtMobilePhone') . "\n" .
