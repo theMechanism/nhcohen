@@ -24,7 +24,7 @@
 	<p>Accredited Investor Form</p>
 </div>
 <div class="form-container">
-	<a href="<?php echo base_url('for-investors/opening-an-account'); ?>">
+	<a href="<?php echo base_url('for-investors/accredited-investor-form'); ?>">
 		<div class="form-button"><div class="form"></div></div>
 		<h3>Secure Form</h3>
 	</a>

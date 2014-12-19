@@ -600,6 +600,7 @@ textarea {
 }
 
 body {
+  color: #999999;
   font: 16px "latoregular", helvetica, sans-serif;
   line-height: 1.4;
   margin: 0;
@@ -615,8 +616,12 @@ body a:hover, body a:active {
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
+body a[href^="tel:"] {
+  color: inherit;
+}
 
 h1, h2, h3, h4 {
+  color: #696a6d;
   font-family: "NewsGothicBT-BoldCondensed", arial, sans-serif;
   font-weight: normal;
 }
@@ -1240,16 +1245,16 @@ header nav {
   margin: 0;
 }
 
-form.full-width .row input, form.full-width .row textarea {
-  vertical-align: top;
+input,
+textarea {
   padding: 15px;
-  width: 100%;
 }
-form.full-width .row input:not([type="submit"]),
-form.full-width .row textarea,
-form.full-width .row .select-wrap,
-form.full-width .row input[type="radio"] + label,
-form.full-width .row input[type="checkbox"] + label {
+
+input:not([type="submit"]),
+textarea,
+.select-wrap,
+input[type="radio"] + label:before,
+input[type="checkbox"] + label:before {
   color: #696a6d;
   background-color: transparent;
   border: 2px solid #e8e8e8;
@@ -1257,30 +1262,46 @@ form.full-width .row input[type="checkbox"] + label {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-form.full-width .row input:not([type="submit"]):focus,
-form.full-width .row textarea:focus,
-form.full-width .row .select-wrap:focus,
-form.full-width .row input[type="radio"] + label:focus,
-form.full-width .row input[type="checkbox"] + label:focus {
+input:not([type="submit"]):focus,
+textarea:focus,
+.select-wrap:focus,
+input[type="radio"] + label:before:focus,
+input[type="checkbox"] + label:before:focus {
   outline: none !important;
   border-color: #999999;
   box-shadow: 0 0 10px #696a6d;
 }
-form.full-width .row input[type="checkbox"], form.full-width .row input[type="radio"] {
+
+input[type="checkbox"], input[type="radio"] {
   visibility: hidden;
-  width: 40px;
+  height: 1px;
+  margin-right: -40px;
+  margin-bottom: -1px;
+  width: 40px !important;
 }
-form.full-width .row input[type="checkbox"] + label, form.full-width .row input[type="radio"] + label {
+input[type="checkbox"] + label, input[type="radio"] + label {
+  padding: 15px 0 15px 45px;
+  display: inline-block;
+  overflow: hidden;
+  *zoom: 1;
+}
+input[type="checkbox"] + label:before, input[type="radio"] + label:before {
+  content: "";
   cursor: pointer;
   display: inline-block;
-  margin: 9px 0 9px -40px;
   height: 34px;
+  margin: -8px 6px -8px -45px;
+  vertical-align: top;
   width: 34px;
 }
-form.full-width .row input[type="checkbox"]:checked + label, form.full-width .row input[type="checkbox"].checked + label, form.full-width .row input[type="radio"]:checked + label, form.full-width .row input[type="radio"].checked + label {
+input[type="checkbox"] + label + input[type="checkbox"] + label, input[type="checkbox"] + label + input[type="radio"] + label, input[type="radio"] + label + input[type="checkbox"] + label, input[type="radio"] + label + input[type="radio"] + label {
+  margin-left: 10px;
+}
+input[type="checkbox"]:checked + label:before, input[type="checkbox"].checked + label:before, input[type="radio"]:checked + label:before, input[type="radio"].checked + label:before {
   background-color: #56B3E0;
 }
-form.full-width .row input[type="submit"] {
+
+input[type="submit"] {
   border: 0;
   background-color: #E7A614;
   color: white;
@@ -1294,8 +1315,14 @@ form.full-width .row input[type="submit"] {
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-form.full-width .row input[type="submit"]:hover {
+input[type="submit"]:hover {
   background-color: #56B3E0;
+}
+
+form.full-width .row input,
+form.full-width .row textarea {
+  vertical-align: top;
+  width: 100%;
 }
 form.full-width .row .select-wrap {
   background: #f5f5f5;
@@ -1328,6 +1355,35 @@ form.full-width .row .select-wrap select {
 }
 form.full-width .row + .row {
   margin-top: 20px;
+}
+form.full-width .notice {
+  background-color: #f5f5f5;
+  border: 2px solid #e8e8e8;
+  padding: 5px 10px;
+}
+form.full-width .prior-row {
+  margin-bottom: 15px;
+}
+form.full-width .objectives {
+  overflow: hidden;
+  *zoom: 1;
+}
+form.full-width .objectives > div {
+  float: left;
+  margin-bottom: 5px;
+  width: 50%;
+}
+form.full-width .objectives > div input {
+  width: 50px;
+}
+form.full-width .objectives > div input + span {
+  display: inline-block;
+  padding-left: 5px;
+  vertical-align: middle;
+  width: 90px;
+}
+form.full-width .push {
+  padding-left: 45px;
 }
 
 /* ==========================================================================
@@ -1690,6 +1746,11 @@ form.full-width .row + .row {
 
   .for_investors .form-container {
     margin-top: 0;
+  }
+
+  form.full-width .objectives > div {
+    width: 25%;
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 1140px) {

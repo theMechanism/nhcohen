@@ -26,28 +26,30 @@
 	.contact_us .contact-info {
 		@include span(7 of 12);
 	}
-	form.full-width .row {
-		@include clearfix;
-		> div {
-			@include span(5 of 12);
-			&:first-child {
-				height: 52px;
-				&:after {
-					content: "";
+	form.full-width {
+		.row {
+			@include clearfix;
+			> div {
+				@include span(5 of 12);
+				&:first-child {
+					height: 52px;
+					&:after {
+						content: "";
+						display: inline-block;
+						height: 100%;
+						vertical-align: middle;
+					}
+				}
+				> span {
 					display: inline-block;
-					height: 100%;
-					vertical-align: middle;
 				}
 			}
-			> span {
-				display: inline-block;
+			> div + div {
+				@include span(7 of 12);
 			}
-		}
-		> div + div {
-			@include span(7 of 12);
-		}
-		label {
-			vertical-align: middle;
+			label {
+				vertical-align: middle;
+			}
 		}
 	}
 

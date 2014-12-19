@@ -16,6 +16,7 @@
   box-sizing: border-box;
 }
 body {
+	color: $light-neutral;
 	font: 16px $body-font;
 	line-height: 1.4;;
 	margin: 0;
@@ -26,9 +27,13 @@ body {
 			color: $active-color;
 			@include transition(color 0.3s ease);
 		}
+		&[href^="tel:"] {
+			color: inherit;
+		}
 	}
 }
 h1, h2, h3, h4 {
+	color: $neutral;
 	font-family: $header-font;
 	font-weight: normal;
 }
@@ -542,55 +547,74 @@ header {
 		margin: 0;
 	}
 }
+input,
+textarea {
+	padding: 15px;
+}
+input:not([type="submit"]),
+textarea,
+.select-wrap,
+input[type="radio"] + label:before,
+input[type="checkbox"] + label:before {
+	color: $neutral;
+	background-color: transparent;
+	border: 2px solid $lighter-neutral;
+	@include border-radius(2px);
+	&:focus {
+	    outline: none !important;
+	    border-color: $light-neutral;
+	    box-shadow: 0 0 10px $neutral;
+	}
+}
+input[type="checkbox"], input[type="radio"] {
+	visibility: hidden;
+	height: 1px;
+	margin-right: -40px;
+	margin-bottom: -1px;
+	width: 40px !important;
+	+ label {
+		padding: 15px 0 15px 45px;
+		display: inline-block;
+		@include clearfix;
+		&:before {
+			content: "";
+			cursor: pointer;
+			display: inline-block;
+			height: 34px;
+			margin: -8px 6px -8px -45px;
+			vertical-align: top;
+			width: 34px;
+		}
+		+ input[type="checkbox"], + input[type="radio"] {
+			+ label {
+				margin-left: 10px;
+			}
+		}
+	}
+	&:checked + label:before, &.checked + label:before {
+		background-color: $link-color;
+	}
+}
+input[type="submit"] {
+	border: 0;
+	background-color: $active-color;
+	color: white;
+	font-weight: bold;
+	min-width: 200px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	width: auto;
+	@include transition(background-color 0.3s ease);
+	&:hover {
+		background-color: $link-color;
+	}
+}
 form.full-width {
 	.row {
-		input, textarea {
+		input,
+		textarea {
 			vertical-align: top;
-			padding: 15px;
 			width: 100%;
-		}
-		input:not([type="submit"]),
-		textarea,
-		.select-wrap,
-		input[type="radio"] + label,
-		input[type="checkbox"] + label {
-			color: $neutral;
-			background-color: transparent;
-			border: 2px solid $lighter-neutral;
-			@include border-radius(2px);
-			&:focus {
-			    outline: none !important;
-			    border-color: $light-neutral;
-			    box-shadow: 0 0 10px $neutral;
-			}
-		}
-		input[type="checkbox"], input[type="radio"] {
-			visibility: hidden;
-			width: 40px;
-			+ label {
-				cursor: pointer;
-				display: inline-block;
-				margin: 9px 0 9px -40px;
-				height: 34px;
-				width: 34px;
-			}
-			&:checked + label, &.checked + label {
-				background-color: $link-color;
-			}
-		}
-		input[type="submit"] {
-			border: 0;
-			background-color: $active-color;
-			color: white;
-			font-weight: bold;
-			min-width: 200px;
-			margin-bottom: 20px;
-			text-transform: uppercase;
-			width: auto;
-			@include transition(background-color 0.3s ease);
-			&:hover {
-				background-color: $link-color;
-			}
 		}
 		.select-wrap {
 			background: $lightest-neutral;
@@ -624,6 +648,34 @@ form.full-width {
 	}
 	.row + .row {
 		margin-top: 20px;
+	}
+	.notice {
+		background-color: $lightest-neutral;
+		border: 2px solid $lighter-neutral;
+		padding: 5px 10px;
+	}
+	.prior-row {
+		margin-bottom: 15px;
+	}
+	.objectives {
+		@include clearfix;
+		> div {
+			float: left;
+			margin-bottom: 5px;
+			width: 50%;
+			input {
+				width: 50px;
+				+ span {
+					display: inline-block;
+					padding-left: 5px;
+					vertical-align: middle;
+					width: 90px;
+				}
+			}
+		}
+	}
+	.push {
+		padding-left: 45px;
 	}
 }
 

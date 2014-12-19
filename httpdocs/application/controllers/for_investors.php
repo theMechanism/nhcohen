@@ -59,6 +59,17 @@ class For_investors extends MY_Controller {
 		$this->load->view('template', $this->data);
 	}
 
+	public function accredited_investor_form($action = FALSE)
+	{
+		$this->load->model('Address_model');
+		$this->data['states'] = $this->Address_model->states();
+
+		$this->data['view'] = 'accredited_investor_form';
+		$this->data['title'] = 'Accredited Investor Form';
+
+		$this->load->view('template', $this->data);
+	}
+
 }
 
 /* End of file welcome.php */

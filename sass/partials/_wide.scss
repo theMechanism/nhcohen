@@ -189,5 +189,14 @@
 	.for_investors .form-container {
 		margin-top: 0;
 	}
+	form.full-width {
+		.objectives {
+			> div {
+				width: 25%;
+				margin-bottom: 0;
+			}
+		}
+	}
+
 
 }

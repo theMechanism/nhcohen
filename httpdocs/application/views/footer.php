@@ -15,7 +15,7 @@
 	                            ><li><a href="<?php echo base_url('sitemap'); ?>">Site Map</a></li
 	                            ><li><a href="<?php echo base_url('terms-of-use'); ?>">Terms of Use</a></li
 	                            ><li><a href="<?php echo base_url('business-continuity-plan-disclosure'); ?>">Disclosure Statement</a></li
-	                            ><li><a href="<?php echo base_url('legal'); ?>">Legal</a></li>
+	                            ><li><a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a></li>
 	                        </ul>
 	                        <div class="info">
 								<span class="copyright">&copy;<?php echo date("Y"); ?> NHCohen Partners LLC</span
@@ -45,13 +45,14 @@
 		<!--<![endif]-->
         <script src="<?php echo base_url('js/main.js'); ?>"></script>
 
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-<?php echo API_GOOGLE ?>');ga('send','pageview');
-        </script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-<?php echo API_GOOGLE ?>', 'auto');
+			ga('send', 'pageview');
+		</script>
+
     </body>
 </html>

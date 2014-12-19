@@ -5,7 +5,7 @@
 		New York, NY 10016
 	</p>
 	<p class="contact-info">
-		o: 212.498.6960<br>
+		o: <a href="tel:+12124986960">212.498.6960</a><br>
 		f: 855.856.6483<br>
 		<a href="mailto:info@nhcohenpartners.com">info@nhcohenpartners.com</a>
 	</p>

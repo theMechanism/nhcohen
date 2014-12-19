@@ -15,5 +15,5 @@
 
 	<li><a href="<?php echo base_url('terms-of-use'); ?>">Terms of Use</li>
 	<li><a href="<?php echo base_url('business-continuity-plan-disclosure'); ?>">Disclore Statement</li>
-	<li><a href="<?php echo base_url('legal'); ?>">Legal</li>
+	<li><a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a></li>
 </ul>

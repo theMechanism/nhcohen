@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Sitemap extends MY_Controller {
+class Misc extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -46,6 +46,14 @@ class Sitemap extends MY_Controller {
 	{
 		$this->data['view'] = 'terms_of_use';
 		$this->data['title'] = 'Terms of Use';
+
+		$this->load->view('template', $this->data);
+	}
+
+	public function privacy_policy()
+	{
+		$this->data['view'] = 'privacy_policy';
+		$this->data['title'] = 'Privacy Policy';
 
 		$this->load->view('template', $this->data);
 	}
