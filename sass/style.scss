@@ -46,7 +46,6 @@ p, ul, ol, label {
 li > ul, li > ol {
 	margin-top: 0;
 }
-
 .container {
 	@include container(12);
 }
@@ -82,7 +81,7 @@ nav {
 				display: none;
 				li {
 					background-color: $brand-color;
-					a { height: 38px; }
+					a { padding: 7px 0; }
 					&:first-child { border-top-width: 1px; }
 				}
 			}
@@ -90,7 +89,7 @@ nav {
 			a {
 				display: block;
 				color: white;
-				height: 68px;
+				padding: 22px 0;
 				text-transform: uppercase;
 				vertical-align: middle;
 				&:before {
@@ -102,6 +101,9 @@ nav {
 				&:hover, &:active {
 					color: $active-color;
 				}
+			}
+			&.on > div > a {
+				color: $active-color;
 			}
 		}
 		.nav-background {
@@ -394,6 +396,9 @@ header {
 .latest-news {
 	background-color: $lightest-neutral;
 	padding: 15px 0;
+	hr {
+		display: none;
+	}
 }
 .news-item-container {
 	@include span(12);
@@ -418,6 +423,16 @@ header {
 		margin: 20px 0;
 		.date-wrap a { display: none; }
 		.news-container { border-left: 0; }
+	}
+}
+.in_the_news {
+	hr:first-of-type {
+		display: none;
+	}
+	hr {
+		display: block;
+		clear: both;
+		margin-bottom: 0;
 	}
 }
 

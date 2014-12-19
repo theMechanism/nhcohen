@@ -33,6 +33,9 @@
 				@include span(5 of 12);
 				&:first-child {
 					height: 52px;
+					&.big {
+						height: auto;
+					}
 					&:after {
 						content: "";
 						display: inline-block;

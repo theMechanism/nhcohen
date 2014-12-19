@@ -317,7 +317,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div>
+		<div class="big">
 			<span><label for="chkAddress">To which address would your prefer that correspondence be sent?</label></span>
 		</div>
 		<div>
@@ -434,7 +434,7 @@
 	</div>
 	<div class="prior-row">
 		<div class="row">
-			<div>
+			<div class="big">
 				<label for="txtPercent">Please estimate the percent of real estate in your investment portfolio (excluding personal residence)</label>
 			</div>
 			<div>
@@ -463,7 +463,7 @@
 
 	<div class="row">
 		<div>
-			<span><label for="txtReferred">I was referred to ESRT Management Services by:</label></span>
+			<span><label for="txtReferred">I was referred to NHCohen Partners LLC. by:</label></span>
 		</div>
 		<div>
 			<?php

@@ -9,7 +9,7 @@
 			$url = (!$external) ? base_url('about-us/in-the-news/' . $news_item['view']) : $news_item['url'];
 			$anchor = '<a href="' . $url . '"' . ($external ? 'rel="external"' : '') . '>';
 
-			echo '<div class="news-item-container">
+			echo '<hr><div class="news-item-container">
 				<div class="date-container">
 					<div class="date-wrap">
 						<div class="date">' . Date('n.j /', $news_item['date']) . '</div>

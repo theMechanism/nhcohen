@@ -18,9 +18,8 @@
 	                            ><li><a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a></li>
 	                        </ul>
 	                        <div class="info">
-								<span class="copyright">&copy;<?php echo date("Y"); ?> NHCohen Partners LLC</span
-								> <span>2 Park Avenue, 14th Floor New York, NY 10016</span
-								> <span>T: <a href="tel:+12124986960">212.498.6960</a></span
+								<span class="copyright">&copy;<?php echo date("Y"); ?> NHCohen Partners LLC NHCohen Capital LLC, Member: <a href="http://www.finra.org">FINRA</a></span
+								><br>2 Park Avenue, 14th Floor New York, NY 10016 <span>T: <a href="tel:+12124986960">212.498.6960</a></span
 								> <span>F: 855.856.6483</span>
 	                        </div>
 	                        <div class="disclaimer">Securities offered through NHCohen Capital LLC, a registered broker-dealer with the Securities and Exchange Commission and member of FINRA<br>

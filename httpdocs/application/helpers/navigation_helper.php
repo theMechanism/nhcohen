@@ -19,7 +19,11 @@
 					echo '	<ul class="menu-container">';
 
 					foreach ($topnav['children'] as $secondkey => $secondnav) {
-						echo '	<li class="menu-item"><div class="item-wrap"><a href="' . base_url($key . '/' . $secondkey) . '">' . $secondnav['title'] . '</a></div>';
+						echo '	<li class="menu-item';
+						if ($second_segment == $secondkey) {
+							echo ' on';
+						}
+						echo '"><div class="item-wrap"><a href="' . base_url($key . '/' . $secondkey) . '">' . $secondnav['title'] . '</a></div>';
 					}
 
 					echo '	</ul>';

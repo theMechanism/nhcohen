@@ -3,7 +3,7 @@
 		<div class="notice-container">
 			<div class="container">
         		<div class="title">Important Announcement</div
-        		><div class="notice"><a href=""><?php echo $notice; ?></a></div>
+        		><div class="notice"><?php echo $notice; ?></div>
     		</div>
 		</div>
 	<?php endif ?>
