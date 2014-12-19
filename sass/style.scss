@@ -9,6 +9,7 @@
 @import "partials/fonts";
 
 @import "icons/*.png";
+@import "form-icons/*.png";
 
 /* main stylesheet */
 * {
@@ -610,20 +611,20 @@ textarea,
 		}
 	}
 }
-:not(.lt-ie9) input[type="checkbox"] {
+input[type="checkbox"] {
 	+ label:before {
-		@include icons-sprite(check-unselected);
+		@include form-icons-sprite(check-unselected);
 	}
 	&:checked + label:before {
-		@include icons-sprite(check-selected);
+		@include form-icons-sprite(check-selected);
 	}
 }
-:not(.lt-ie9) input[type="radio"] {
+input[type="radio"] {
 	+ label:before {
-		@include icons-sprite(radio-unselected);
+		@include form-icons-sprite(radio-unselected);
 	}
 	&:checked + label:before {
-		@include icons-sprite(radio-selected);
+		@include form-icons-sprite(radio-selected);
 	}
 }
 input[type="submit"] {
@@ -642,10 +643,14 @@ input[type="submit"] {
 }
 form.full-width {
 	.row {
-		input:not([type="checkbox"]):not([type="radio"]),
+		input,
 		textarea {
 			vertical-align: top;
 			width: 100%;
+			&[type="checkbox"],
+			&[type="radio"] {
+				width: auto;
+			}
 		}
 		.select-wrap {
 			background: $lightest-neutral;
