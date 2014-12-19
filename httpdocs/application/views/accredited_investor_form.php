@@ -1,128 +1,167 @@
-<form action="" method="POST" class="full-width">
+<?php if (isset($success)) :
+		echo '<p class="success">' . $success . '</p>';
+	else:
+		echo form_open(current_url(), array('class' => 'full-width')); ?>
+	<p>To establish your eligibility for our new offerings, please complete the Accredited Investor Suitability Form.  Your personal information will be treated as strictly private – please see our <a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a>.</p>
+	<p><strong>All fields</strong> are required unless marked <span class="optional_inline">optional</span>.</p>
 	<h2>Personal Background Information</h2>
 	<div class="row">
 		<div>
-			<label for="first_name">First Name</label>
+			<label for="txtFirstName">First Name</label>
 		</div>
 		<div>
-			<input id="first_name" maxlength="80" name="first_name" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="last_name">Last Name</label>
-		</div>
-		<div>
-			<input id="last_name" maxlength="80" name="last_name" type="text">
+			<?php
+				echo form_input(array('id' => 'txtFirstName', 'name' => 'txtFirstName', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtFirstName')));
+				echo form_error('txtFirstName');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="dob">Date of Birth</label>
+			<label for="txtLastName">Last Name</label>
 		</div>
 		<div>
-			<input id="dob" maxlength="80" name="dob" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="social">Social Security No.</label>
-		</div>
-		<div>
-			<input id="social" maxlength="80" name="social" type="text">
+			<?php
+				echo form_input(array('id' => 'txtLastName', 'name' => 'txtLastName', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtLastName')));
+				echo form_error('txtLastName');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="street">Address</label>
+			<label for="txtDob">Date of Birth</label>
 		</div>
 		<div>
-			<textarea name="street" rows="2"></textarea><br>
+			<?php
+				echo form_input(array('id' => 'txtDob', 'name' => 'txtDob', 'class' => 'inputText', 'maxlength' => '10', 'value' => set_value('txtDob')));
+				echo '<span class="txtHelp">mm/dd/yyyy</span>';
+				echo form_error('txtDob');
+			?>		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="txtSSN">Social Security No.</label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtSSN', 'name' => 'txtSSN', 'class' => 'inputText', 'maxlength' => '11', 'value' => set_value('txtSSN')));
+				echo '<span class="txtHelp">xxx-xx-xxxx</span>';
+				echo form_error('txtSSN');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="city">City</label>
+			<label for="txtAddress">Address</label>
 		</div>
 		<div>
-			<input id="city" maxlength="40" name="city" type="text">
+			<?php
+				echo form_textarea(array('id' => 'txtAddress', 'name' => 'txtAddress', 'class' => 'inputText long', 'rows' => '2', 'value' => set_value('txtAddress')));
+				echo form_error('txtAddress');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="state">State</label>
+			<label for="txtCity">City</label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtCity', 'name' => 'txtCity', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtCity')));
+				echo form_error('txtCity');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="txtState">State</label>
 		</div>
 		<div>
 			<div class="select-wrap">
-				<select id="state" name="state">
-			        <option selected="selected">Select One</option>
-			        <?php foreach($states as $key => $value) { ?>
-			            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
-			        <?php } ?>
-				</select>
+				<?php
+					array_unshift($states, 'Select One');
+					echo form_dropdown('txtState', $states);
+					echo form_error('txtState');
+				?>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="zip">Zip Code</label>
+			<label for="txtZip">Zip Code</label>
 		</div>
 		<div>
-			<input id="zip" maxlength="20" name="zip" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="phone">Phone Number</label>
-		</div>
-		<div>
-			<input id="phone" maxlength="40" name="phone" type="text">
+			<?php
+				echo form_input(array('id' => 'txtZip', 'name' => 'txtZip', 'class' => 'inputText med', 'maxlength' => '5', 'value' => set_value('txtZip')));
+				echo form_error('txtZip');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="phone2">Second Phone</label>
+			<label for="txtHomePhone">Phone Number</label>
 		</div>
 		<div>
-			<input id="phone2" maxlength="40" name="phone2" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="phone3">Cell Phone</label>
-		</div>
-		<div>
-			<input id="phone3" maxlength="40" name="phone3" type="text">
+			<?php
+				echo form_input(array('id' => 'txtHomePhone', 'name' => 'txtHomePhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtHomePhone')));
+				echo form_error('txtHomePhone');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="fax">Fax</label>
+			<label for="txtSecondPhone">Second Phone<div class="optional">optional</div></label>
 		</div>
 		<div>
-			<input id="fax" maxlength="40" name="fax" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="email">Email Address</label>
-		</div>
-		<div>
-			<input id="email" maxlength="80" name="email" type="text">
+			<?php
+				echo form_input(array('id' => 'txtSecondPhone', 'name' => 'txtSecondPhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtSecondPhone')));
+				echo form_error('txtSecondPhone');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<span><label for="vote_state">In what state are you registered to vote?</label></span>
+			<label for="txtMobilePhone">Cell Phone<div class="optional">optional</div></label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtMobilePhone', 'name' => 'txtMobilePhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtMobilePhone')));
+				echo form_error('txtMobilePhone');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="txtFax">Fax<div class="optional">optional</div></label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtFax', 'name' => 'txtFax', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtFax')));
+				echo form_error('txtFax');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="txtEmail">Email Address</label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtEmail', 'name' => 'txtEmail', 'class' => 'inputText long', 'maxlength' => '255', 'value' => set_value('txtEmail')));
+				echo form_error('txtEmail');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<span><label for="txtVote">In what state are you registered to vote?</label></span>
 		</div>
 		<div>
 			<div class="select-wrap">
-				<select id="vote_state" name="vote_state">
-			        <option selected="selected">Select One</option>
-			        <?php foreach($states as $key => $value) { ?>
-			            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
-			        <?php } ?>
-				</select>
+				<?php
+					echo form_dropdown('txtVote', $states);
+					echo form_error('txtVote');
+				?>
 			</div>
 		</div>
 	</div>
@@ -133,122 +172,159 @@
 
 	<div class="row">
 		<div>
-			<label for="business">Business/Profession</label>
+			<label for="txtBusiness">Business/Profession<div class="optional">optional</div></label>
 		</div>
 		<div>
-			<input id="business" maxlength="80" name="business" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="title">Title</label>
-		</div>
-		<div>
-			<input id="title" maxlength="80" name="title" type="text">
+			<?php
+				echo form_input(array('id' => 'txtBusiness', 'name' => 'txtBusiness', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusiness')));
+				echo form_error('txtBusiness');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="company">Company</label>
+			<label for="txtTitle">Title<div class="optional">optional</div></label>
 		</div>
 		<div>
-			<input id="company" maxlength="80" name="company" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="employed_since">Employed Since</label>
-		</div>
-		<div>
-			<input id="employed_since" maxlength="80" name="employed_since" type="text">
+			<?php
+				echo form_input(array('id' => 'txtTitle', 'name' => 'txtTitle', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtTitle')));
+				echo form_error('txtTitle');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="biz_street">Business Address</label>
+			<label for="txtCompany">Company<div class="optional">optional</div></label>
 		</div>
 		<div>
-			<textarea name="biz_street" rows="2"></textarea><br>
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="biz_city">City</label>
-		</div>
-		<div>
-			<input id="biz_city" maxlength="40" name="biz_city" type="text">
+			<?php
+				echo form_input(array('id' => 'txtCompany', 'name' => 'txtCompany', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtCompany')));
+				echo form_error('txtCompany');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="biz_state">State</label>
+			<label for="txtEmployedSince">Employed Since<div class="optional">optional</div></label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtEmployedSince', 'name' => 'txtEmployedSince', 'class' => 'inputText med', 'maxlength' => '255', 'value' => set_value('txtEmployedSince')));
+				echo form_error('txtEmployedSince');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="txtBusAddress">Business Address<div class="optional">optional</div></label>
+		</div>
+		<div>
+			<?php
+				echo form_textarea(array('id' => 'txtBusAddress', 'name' => 'txtBusAddress', 'class' => 'inputText long', 'rows' => '2', 'value' => set_value('txtBusAddress')));
+				echo form_error('txtBusAddress');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="txtBusCity">City<div class="optional">optional</div></label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtBusCity', 'name' => 'txtBusCity', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusCity')));
+				echo form_error('txtBusCity');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="txtBusState">State<div class="optional">optional</div></label>
 		</div>
 		<div>
 			<div class="select-wrap">
-				<select id="biz_state" name="biz_state">
-			        <option selected="selected">Select One</option>
-			        <?php foreach($states as $key => $value) { ?>
-			            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
-			        <?php } ?>
-				</select>
+				<?php
+					echo form_dropdown('txtBusState', $states);
+					echo form_error('txtBusState');
+				?>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="biz_zip">Zip Code</label>
+			<label for="txtBusZip">Zip Code<div class="optional">optional</div></label>
 		</div>
 		<div>
-			<input id="biz_zip" maxlength="20" name="biz_zip" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="biz_phone">Business Phone Number</label>
-		</div>
-		<div>
-			<input id="biz_phone" maxlength="40" name="biz_phone" type="text">
+			<?php
+				echo form_input(array('id' => 'txtBusZip', 'name' => 'txtBusZip', 'class' => 'inputText short', 'maxlength' => '5', 'value' => set_value('txtBusZip')));
+				echo form_error('txtBusZip');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="biz_phone2">Second Phone</label>
+			<label for="txtBusPhone">Business Phone Number<div class="optional">optional</div></label>
 		</div>
 		<div>
-			<input id="biz_phone2" maxlength="40" name="biz_phone2" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="biz_phone3">Cell Phone</label>
-		</div>
-		<div>
-			<input id="biz_phone3" maxlength="40" name="biz_phone3" type="text">
+			<?php
+				echo form_input(array('id' => 'txtBusPhone', 'name' => 'txtBusPhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusPhone')));
+				echo form_error('txtBusPhone');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="biz_fax">Fax</label>
+			<label for="txtBusSecondPhone">Second Phone<div class="optional">optional</div></label>
 		</div>
 		<div>
-			<input id="biz_fax" maxlength="40" name="biz_fax" type="text">
-		</div>
-	</div>
-	<div class="row">
-		<div>
-			<label for="biz_email">Email Address</label>
-		</div>
-		<div>
-			<input id="biz_email" maxlength="80" name="biz_email" type="text">
+			<?php
+				echo form_input(array('id' => 'txtBusSecondPhone', 'name' => 'txtBusSecondPhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusSecondPhone')));
+				echo form_error('txtBusSecondPhone');
+			?>
 		</div>
 	</div>
 	<div class="row">
 		<div>
-			<span><label for="mail_pref">To which address would your prefer that correspondence be sent?</label></span>
+			<label for="txtBusMobilePhone">Cell Phone<div class="optional">optional</div></label>
 		</div>
 		<div>
-			<input id="mail_home" name="mail_pref" type="radio" value="mail_home"><label for="mail_home">Home</label
-			><input id="mail_business" name="mail_pref" type="radio" value="mail_business"><label for="mail_business">Business</label>
+			<?php
+				echo form_input(array('id' => 'txtBusMobilePhone', 'name' => 'txtBusMobilePhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusMobilePhone')));
+				echo form_error('txtBusMobilePhone');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="txtBusFax">Fax<div class="optional">optional</div></label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtBusFax', 'name' => 'txtBusFax', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusFax')));
+				echo form_error('txtBusFax');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="txtBusEmail">Email Address<div class="optional">optional</div></label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtBusEmail', 'name' => 'txtBusEmail', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusEmail')));
+				echo form_error('txtBusEmail');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<span><label for="chkAddress">To which address would your prefer that correspondence be sent?</label></span>
+		</div>
+		<div>
+			<fieldset id="fsAddress">
+				<input type="radio" id="chkHome" name="chkAddress" class="inputRad" value="Home" <?php echo set_radio('chkAddress', 'Home'); ?> /> <label for="chkHome">Home</label>
+				<input type="radio" id="chkBusiness" name="chkAddress" class="inputRad" value="Business" <?php echo set_radio('chkAddress', 'Business'); ?> /> <label for="chkBusiness">Business</label>
+			</fieldset>
+			<?php echo form_error('chkAddress'); ?>
 		</div>
 	</div>
 
@@ -256,18 +332,19 @@
 
 	<h2>Statement as to Accredited Investor Status</h2>
 	<p class="notice">For an <strong>Individual</strong>, please read carefully items 1, 2 and 3, and check <strong>ALL</strong> items that apply.</p>
-	<div><input id="s1" name="s1" type="checkbox" value="s1"><label for="s1">1. My net worth (either individually or with my spouse, if any), including investments and all property and other assets excluding my primary residence, exceeds $1,000,000 (note: if the mortgage on your primary residence is greater than its value, please subtract such difference from your net worth).</label></div>
-	<div><input id="s2" name="s2" type="checkbox" value="s2"><label for="s2">2. My individual annual income was at least $200,000 in each of the two most recent years, and I expect such income in the current year.</label></div>
-	<div><input id="s3" name="s3" type="checkbox" value="s3"><label for="s3">3. My annual income, jointly with my spouse, was at least $300,000 in each of the two most recent years, and I expect such income in the current year.</label></div>
+	<div><input type="checkbox" id="chk001" name="chk001" class="inputChk" value="My net worth exceeds 1,000,000" <?php echo set_checkbox('chk001', 'My net worth exceeds 1,000,000'); ?> /><label for="chk001">1. My net worth (either individually or with my spouse, if any), including investments and all property and other assets excluding my primary residence, exceeds $1,000,000 (note: if the mortgage on your primary residence is greater than its value, please subtract such difference from your net worth).</label></div>
+	<div><input type="checkbox" id="chk002" name="chk002" class="inputChk" value="My individual annual income was at least 200,000 in each of the two most recent years" <?php echo set_checkbox('chk002', 'My individual annual income was at least 200,000 in each of the two most recent years'); ?> /><label for="chk002">2. My individual annual income was at least $200,000 in each of the two most recent years, and I expect such income in the current year.</label></div>
+	<div><input type="checkbox" id="chk003" name="chk003" class="inputChk" value="My annual income, jointly with my spouse, was at least 300,000 in each of the two most recent years, and I expect such income in the current year" <?php echo set_checkbox('chk003', 'My annual income, jointly with my spouse, was at least 300,000 in each of the two most recent years, and I expect such income in the current year'); ?> /><label for="chk003">3. My annual income, jointly with my spouse, was at least $300,000 in each of the two most recent years, and I expect such income in the current year.</label></div>
 	<p class="notice">For a <strong>Partnership, Limited Liability Company or Corporation</strong>, please read carefully items 4 and 5, and check <strong>ALL</strong> items that apply.</p>
-	<div><input id="s4" name="s4" type="checkbox" value="s4"><label for="s4">4. All of the undersigned entity's equity owners meet at least one of the three tests listed above.</label></div>
-	<div><input id="s5" name="s5" type="checkbox" value="s5"><label for="s5">5. If the undersigned is a partnership, limited liability company or corporation, it has total assets in excess of $5,000,000.</label></div>
+	<div><input type="checkbox" id="chk004" name="chk004" class="inputChk" value="All of the undersigned entitys equity owners meet at least one of the three tests listed above" <?php echo set_checkbox('chk004', 'All of the undersigned entitys equity owners meet at least one of the three tests listed above'); ?> /><label for="chk004">4. All of the undersigned entity's equity owners meet at least one of the three tests listed above.</label></div>
+	<div><input type="checkbox" id="chk005a" name="chk005a" class="inputChk" value="If the undersigned is a partnership, limited liability company or corporation, it has total assets in excess of $5,000,000" <?php echo set_checkbox('chk005a', 'If the undersigned is a partnership, limited liability company or corporation, it has total assets in excess of $5,000,000'); ?> /><label for="chk005a">5. If the undersigned is a partnership, limited liability company or corporation, it has total assets in excess of $5,000,000.</label></div>
 	<p class="notice">For a <strong>Revocable Trust</strong>, please read carefully items 6, 7 and 8, and check <strong>ALL</strong> items that apply.<br>In addition, please have the Grantor of the Trust complete as an individual a separate<br>Accredited Investor Suitability Form.<br>For an <strong>Irrevocable Trust</strong>, please read carefully items 7 and 8, and check <strong>ALL</strong> items that apply.</p>
-	<div><input id="s6" name="s6" type="checkbox" value="s6"><label for="s6">6. If the undersigned is a revocable trust, it was created by an investor for his or her own benefit, and such investor meets at least one of the first three tests listed above.</label></div>
-	<div><input id="s7" name="s7" type="checkbox" value="s7"><label for="s7">7. If the undersigned is a trust, it has total assets in excess of $5,000,000 and its investment decisions are directed by a sophisticated person.</label></div>
-	<div><input id="s8" name="s8" type="checkbox" value="s8"><label for="s8">8. If the undersigned is a trust, one or more of its trustees is a bank or similar institution with the authority to direct the trust’s investments.</label></div>
+	<div><input type="checkbox" id="chk005b" name="chk005b" class="inputChk" value="If the undersigned is a revocable trust, it was created by an investor for his or her own benefit, and such investor meets at least one of the first three tests listed above." <?php echo set_checkbox('chk005b', 'If the undersigned is a revocable trust, it was created by an investor for his or her own benefit, and such investor meets at least one of the first three tests listed above'); ?> /><label for="chk005b">6. If the undersigned is a revocable trust, it was created by an investor for his or her own benefit, and such investor meets at least one of the first three tests listed above.</label></div>
+	<div><input type="checkbox" id="chk005c" name="chk005c" class="inputChk" value="If the undersigned is a trust, it has total assets in excess of $5,000,000 and its investment decisions are directed by a sophisticated person." <?php echo set_checkbox('chk005c', 'If the undersigned is a trust, it has total assets in excess of $5,000,000 and its investment decisions are directed by a sophisticated person'); ?> /><label for="chk005c">7. If the undersigned is a trust, it has total assets in excess of $5,000,000 and its investment decisions are directed by a sophisticated person.</label></div>
+	<div><input type="checkbox" id="chk005d" name="chk005d" class="inputChk" value="If the undersigned is a trust, one or more of its trustees is a bank or similar institution with the authority to direct the trusts investments." <?php echo set_checkbox('chk005d', 'If the undersigned is a trust, one or more of its trustees is a bank or similar institution with the authority to direct the trusts investments'); ?> /><label for="chk005d">8. If the undersigned is a trust, one or more of its trustees is a bank or similar institution with the authority to direct the trust’s investments.</label></div>
 	<p class="notice">If <strong>NONE</strong> of the items 1 through 8 apply, please check the box below:</p>
-	<div><input id="s9" name="s9" type="checkbox" value="s9"><label for="s9">The applicant is not an Accredited Investor because <strong>None of the Above Apply</strong>.</label></div>
+	<div><input type="checkbox" id="chk005e" name="chk005e" class="inputChk" value="The applicant is not an Accredited Investor because None of the Above Apply." <?php echo set_checkbox('chk005e', 'The applicant is not an Accredited Investor because None of the Above Apply'); ?> /><label for="chk005e">The applicant is not an Accredited Investor because <strong>None of the Above Apply</strong>.</label></div>
+	<?php echo form_error('chk001'); ?>
 
 	<hr>
 
@@ -277,104 +354,121 @@
 	<div class="prior-row"><div>Overall Investment Objectives<br>(from 1 through 4 in order of priority; 1 being the highest)</div>
 		<div class="objectives">
 			<div>
-				<input id="growth" maxlength="1" name="growth" type="text">
-				<label for="growth">Growth</label>
+				<input type="text" id="txtGrowth" name="txtGrowth" class="inputText short" maxlength="1" value="<?php echo set_value('txtGrowth'); ?>" /> <label for="txtGrowth">Growth</label>
 			</div>
 			<div>
-				<input id="income" maxlength="1" name="income" type="text"
-				><span><label for="income">Current Income</label></span>
+				<input type="text" id="txtIncome" name="txtIncome" class="inputText short" maxlength="1" value="<?php echo set_value('txtIncome'); ?>" /> <label for="txtIncome">Current Income</label>
 			</div>
 			<div>
-				<input id="tax_deferral" maxlength="1" name="tax_deferral" type="text"
-				><span><label for="tax_deferral">Tax Deferral</label></span>
+				<input type="text" id="txtTax" name="txtTax" class="inputText short" maxlength="1" value="<?php echo set_value('txtTax'); ?>" /> <label for="txtTax">Tax Deferral</label>
 			</div>
 			<div>
-				<input id="liquidity" maxlength="1" name="liquidity" type="text">
-				<label for="liquidity">Liquidity</label>
+				<input type="text" id="txtLiquidity" name="txtLiquidity" class="inputText short" maxlength="1" value="<?php echo set_value('txtLiquidity'); ?>" /> <label for="txtLiquidity">Liquidity</label>
 			</div>
 		</div>
+		<?php echo form_error('txtGrowth'); ?>
+		<?php echo form_error('txtIncome'); ?>
+		<?php echo form_error('txtTax'); ?>
+		<?php echo form_error('txtLiquidity'); ?>
 	</div>
 	<div class="prior-row">
 		<div>Real Estate Objectives<br>(from 1 through 4 in order of priority; 1 being the highest)</div>
 		<div class="objectives">
 			<div>
-				<input id="growth2" maxlength="1" name="growth2" type="text">
-				<label for="growth2">Growth</label>
+				<input type="text" id="txtGrowthRE" name="txtGrowthRE" class="inputText short" maxlength="1" value="<?php echo set_value('txtGrowthRE'); ?>" /> <label for="txtGrowthRE">Growth</label>
 			</div>
 			<div>
-				<input id="income2" maxlength="1" name="income2" type="text"
-				><span><label for="income2">Current Income</label></span>
+				<input type="text" id="txtIncomeRE" name="txtIncomeRE" class="inputText short" maxlength="1" value="<?php echo set_value('txtIncomeRE'); ?>" /> <label for="txtIncomeRE">Current Income</label>
 			</div>
 			<div>
-				<input id="tax_deferral3" maxlength="1" name="tax_deferral3" type="text"
-				><span><label for="tax_deferral3">Tax Deferral</label></span>
+				<input type="text" id="txtTaxRE" name="txtTaxRE" class="inputText short" maxlength="1" value="<?php echo set_value('txtTaxRE'); ?>" /> <label for="txtTaxRE">Tax Deferral</label>
 			</div>
 			<div>
-				<input id="liquidity4" maxlength="1" name="liquidity4" type="text">
-				<label for="liquidity4">Liquidity</label>
+				<input type="text" id="txtLiquidityRE" name="txtLiquidityRE" class="inputText short" maxlength="1" value="<?php echo set_value('txtLiquidityRE'); ?>" /> <label for="txtLiquidityRE">Liquidity</label>
 			</div>
 		</div>
+		<?php echo form_error('txtGrowthRE'); ?>
+		<?php echo form_error('txtIncomeRE'); ?>
+		<?php echo form_error('txtTaxRE'); ?>
+		<?php echo form_error('txtLiquidityRE'); ?>
 	</div>
 	<div class="prior-row">
 		<div>Risk Tolerance:</div>
 		<div class="objectives">
 			<div>
-				<input id="aggro" name="risk_tolerance" type="radio" value="aggro"><label for="aggro">Aggressive</label>
+				<input type="radio" id="chkAggressive" name="chkRisk" class="inputRad" value="Aggressive" <?php echo set_radio('chkRisk', 'Aggressive'); ?> /> <label for="chkAggressive">Aggressive</label>
 			</div>
 			<div>
-				<input id="moderate" name="risk_tolerance" type="radio" value="moderate"><label for="moderate">Moderate</label>
+				<input type="radio" id="chkModerate" name="chkRisk" class="inputRad" value="Moderate" <?php echo set_radio('chkRisk', 'Moderate'); ?> /> <label for="chkModerate">Moderate</label>
 			</div>
 			<div>
-				<input id="conservative" name="risk_tolerance" type="radio" value="conservative"><label for="conservative">Conservative</label>
+				<input type="radio" id="chkConservative" name="chkRisk" class="inputRad" value="Conservative" <?php echo set_radio('chkRisk', 'Conservative'); ?> /> <label for="chkConservative">Conservative</label>
 			</div>
 		</div>
+		<?php echo form_error('chkRisk'); ?>
+	</div>
+	<div class="prior-row">
 		<div>Do Investment Objectives Allow Speculation?</div>
 		<div class="objectives">
 			<div>
-				<input id="spec_yes" name="allow_speculation" type="radio" value="spec_yes"><label for="spec_yes">Yes</label>
+				<input type="radio" id="chkYes" name="chkSpeculation" class="inputRad" value="Yes" <?php echo set_radio('chkSpeculation', 'Yes'); ?> /> <label for="chkYes">Yes</label>
 			</div>
 			<div>
-				<input id="spec_no" name="allow_speculation" type="radio" value="spec_no"><label for="spec_no">No</label>
+				<input type="radio" id="chkNo" name="chkSpeculation" class="inputRad" value="No" <?php echo set_radio('chkSpeculation', 'No'); ?> /> <label for="chkNo">No</label>
 			</div>
 		</div>
+		<?php echo form_error('chkSpeculation'); ?>
 	</div>
 	<div class="prior-row">
 		<div>Primary Source of Income:</div>
 		<div class="objectives">
 			<div>
-				<input id="investments_income" name="primary_income" type="radio" value="investments_income"><label for="investments_income">Investments</label>
+				<input type="radio" id="chkInvestments" name="chkPrimary" class="inputRad" value="Investments" <?php echo set_radio('chkPrimary', 'Investments'); ?> /> <label for="chkInvestments">Investments</label>
 			</div>
 			<div>
-				<input id="compensation_income" name="primary_income" type="radio" value="compensation_income"><label for="compensation_income">Compensation</label>
+				<input type="radio" id="chkCompensation" name="chkPrimary" class="inputRad" value="Compensation" <?php echo set_radio('chkPrimary', 'Compensation'); ?> /> <label for="chkCompensation">Compensation</label>
 			</div>
 		</div>
+		<?php echo form_error('chkPrimary'); ?>
+	</div>
+	<div class="prior-row">
 		<div class="row">
 			<div>
-				<label for="percent_real_estate">Please estimate the percent of real estate in your investment portfolio (excluding personal residence)</label>
+				<label for="txtPercent">Please estimate the percent of real estate in your investment portfolio (excluding personal residence)</label>
 			</div>
 			<div>
-				<input id="percent_real_estate" maxlength="80" name="percent_real_estate" type="text">
+				<?php
+					echo form_input(array('id' => 'txtPercent', 'name' => 'txtPercent', 'class' => 'inputText short', 'maxlength' => '3', 'value' => set_value('txtPercent')));
+					echo form_error('txtPercent');
+				?>
 			</div>
 		</div>
 	</div>
-	<div><input id="r1" name="r1" type="checkbox" value="r1"><label for="r1">My business or investment experience is such that I can analyze a prospective investment and determine whether it is suitable for me.</label></div>
-	<div><input id="r2" name="r2" type="checkbox" value="r2"><label for="r2">I normally consult with an investment advisor before making a real estate investment decision.</label></div>
-	<div><input id="r3" name="r3" type="checkbox" value="r3"><label for="r3">I have experience as an investor in Stocks which are listed on a national securities exchange.</label></div>
-	<div><input id="r4" name="r4" type="checkbox" value="r4"><label for="r4">I have experience as an investor in Mutual funds which hold a portfolio primarily consisting of stocks.</label></div>
-	<div><input id="r5" name="r5" type="checkbox" value="r5"><label for="r5">I have experience as an investor in Taxable bonds or other debt instruments.</label></div>
-	<div><input id="r6" name="r6" type="checkbox" value="r6"><label for="r6">I have experience as an investor in Tax exempt bonds.</label></div>
-	<div><input id="r7" name="r7" type="checkbox" value="r7"><label for="r7">I have experience as an investor in Partnerships, limited liability companies, corporations which invest in real estate or real estate investment trusts (REITs).</label></div>
-	<div><input id="r8" name="r8" type="checkbox" value="r8"><label for="r8">I have experience as an investor in Other types of investments not mentioned in any of the previous categories. (Describe)</label></div>
-	<div class="push"><input id="other_investments" maxlength="40" name="other_investments" type="text"></div>
+	<div><input type="checkbox" id="chk006" name="chk006" class="inputChk" value="My business or investment experience is such that I can analyze a prospective investment and determine whether it is suitable for me" <?php echo set_checkbox('chk006', 'My business or investment experience is such that I can analyze a prospective investment and determine whether it is suitable for me'); ?> /><label for="chk006">My business or investment experience is such that I can analyze a prospective investment and determine whether it is suitable for me.</label></div>
+	<div><input type="checkbox" id="chk007" name="chk007" class="inputChk" value="I normally consult with an investment advisor before making a real estate investment decision" <?php echo set_checkbox('chk007', 'I normally consult with an investment advisor before making a real estate investment decision'); ?> /><label for="chk007">I normally consult with an investment advisor before making a real estate investment decision.</label></div>
+	<div><input type="checkbox" id="chk008" name="chk008" class="inputChk" value="Stocks which are listed on a national securities exchange" <?php echo set_checkbox('chk008', 'Stocks which are listed on a national securities exchange'); ?> /><label for="chk008">I have experience as an investor in Stocks which are listed on a national securities exchange.</label></div>
+	<div><input type="checkbox" id="chk010" name="chk010" class="inputChk" value="Mutual funds which hold a portfolio primarily consisting of stocks"<?php echo set_checkbox('chk010', 'Mutual funds which hold a portfolio primarily consisting of stocks'); ?>  /><label for="chk010">I have experience as an investor in Mutual funds which hold a portfolio primarily consisting of stocks.</label></div>
+	<div><input type="checkbox" id="chk011" name="chk011" class="inputChk" value="Taxable bonds or other debt instruments" <?php echo set_checkbox('chk011', 'Taxable bonds or other debt instruments'); ?> /><label for="chk011">I have experience as an investor in Taxable bonds or other debt instruments.</label></div>
+	<div><input type="checkbox" id="chk012" name="chk012" class="inputChk" value="Tax exempt bonds" <?php echo set_checkbox('chk012', 'Tax exempt bonds'); ?> /><label for="chk012">I have experience as an investor in Tax exempt bonds.</label></div>
+	<div><input type="checkbox" id="chk013" name="chk013" class="inputChk" value="Partnerships, limited liability companies, corporations which invest in real estate or real estate investment trusts" <?php echo set_checkbox('chk013', 'Partnerships, limited liability companies, corporations which invest in real estate or real estate investment trusts'); ?> /><label for="chk013">I have experience as an investor in Partnerships, limited liability companies, corporations which invest in real estate or real estate investment trusts (REITs).</label></div>
+	<div><input type="checkbox" id="chk014" name="chk014" class="inputChk" value="Other types of investments not mentioned in any of the previous categories" <?php echo set_checkbox('chk014', 'Other types of investments not mentioned in any of the previous categories'); ?> /><label for="chk014">I have experience as an investor in Other types of investments not mentioned in any of the previous categories. (Describe)</label></div>
+	<div class="push">
+		<input type="text" id="txtOther" name="txtOther" class="inputText long" value="<?php echo set_value('txtOther'); ?>" />
+		<?php echo form_error('chk014'); ?>
+	</div>
+	<?php echo form_error('chk006'); ?>
 
 	<hr>
 
 	<div class="row">
 		<div>
-			<span><label for="referred_by">I was referred to ESRT Management Services by:</label></span>
+			<span><label for="txtReferred">I was referred to ESRT Management Services by:</label></span>
 		</div>
 		<div>
-			<input id="referred_by" maxlength="20" name="referred_by" type="text">
+			<?php
+				echo form_input(array('id' => 'txtReferred', 'name' => 'txtReferred', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtReferred')));
+				echo form_error('txtReferred');
+			?>
 		</div>
 	</div>
 
@@ -388,4 +482,7 @@
 			<input id="submit" name="submit" type="submit" value="submit">
 		</div>
 	</div>
-</form>
+<?php
+		echo form_close();
+	endif;
+?>

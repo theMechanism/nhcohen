@@ -693,6 +693,14 @@ form.full-width {
 	.push {
 		padding-left: 45px;
 	}
+	.optional {
+		color: $brand-color;
+		font-size: 12px;
+	}
+	.txtError {
+		color: #C00;
+		margin: 0;
+	}
 }
 
 

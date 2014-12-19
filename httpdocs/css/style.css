@@ -589,7 +589,7 @@ textarea {
   font-style: normal;
 }
 .icons-sprite, header .menu-button a span, header .title-container .title, .banner-container .sub-nav ul li a[href$=".pdf"]:before, .content-container .full-spread .investor-cta a:hover:after, .footer-container .socials li a.twitter, .footer-container .socials li a.twitter:hover, .footer-container .socials li a.twitter:active, .footer-container .socials li a.linked-in, .footer-container .socials li a.linked-in:hover, .footer-container .socials li a.linked-in:active, .for_investors .form-container .form-button div.pdf, .for_investors .form-container .form-button div.form, :not(.lt-ie9) input[type="checkbox"] + label:before, :not(.lt-ie9) input[type="checkbox"]:checked + label:before, :not(.lt-ie9) input[type="radio"] + label:before, :not(.lt-ie9) input[type="radio"]:checked + label:before, form.full-width .row .select-wrap:after {
-  background-image: url('../img/icons-s2bf5595c23.png');
+  background-image: url('../img/icons-s5d0435a2bf.png');
   background-repeat: no-repeat;
 }
 
@@ -1397,6 +1397,14 @@ form.full-width .objectives > div input + span {
 }
 form.full-width .push {
   padding-left: 45px;
+}
+form.full-width .optional {
+  color: #002D62;
+  font-size: 12px;
+}
+form.full-width .txtError {
+  color: #C00;
+  margin: 0;
 }
 
 /* ==========================================================================
