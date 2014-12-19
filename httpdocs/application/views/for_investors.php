@@ -5,8 +5,8 @@
 <div class="full-spread">
 	<div class="container">
 		<div class="wrapper">
-			<div class="cont">
-				<div class="investor-cta"><a href="<?php echo base_url('for-investors/accredited-investing'); ?>">What is an<br>Accredited Investor</a></div
+			<div class="cont"
+			><div class="investor-cta"><a href="<?php echo base_url('for-investors/accredited-investing'); ?>">What is an<br>Accredited Investor</a></div
 				><div class="investor-cta"><a href="<?php echo base_url('for-investors/tax-advantages'); ?>">What are the<br>Tax Advantages?</a></div
 				><div class="investor-cta"><a href="<?php echo base_url('for-investors/opening-an-account'); ?>">How to Open<br>an Account</a></div>
 			</div>

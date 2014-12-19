@@ -1008,6 +1008,11 @@ header nav {
   display: block;
   position: relative;
 }
+@media (max-width: 415px) {
+  .content-container .full-spread .investor-cta a {
+    font-size: 14px;
+  }
+}
 .content-container .full-spread .investor-cta a:hover {
   color: #E7A614;
 }
@@ -1145,7 +1150,6 @@ header nav {
 }
 .footer-container .info span {
   margin-left: 7px;
-  white-space: nowrap;
 }
 .footer-container .info span a {
   vertical-align: top;
