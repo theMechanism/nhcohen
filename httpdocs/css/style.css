@@ -1822,7 +1822,7 @@ form.full-width .txtError {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -120px;
+    margin: 0 auto -124px;
   }
   .body-container:after {
     content: "";
@@ -1833,7 +1833,7 @@ form.full-width .txtError {
   }
 
   .footer-container, .body-container:after {
-    height: 120px;
+    height: 124px;
   }
 }
 /* ==========================================================================
