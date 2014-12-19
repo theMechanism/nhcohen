@@ -39,7 +39,7 @@ class Site_model extends CI_Model {
 					'opening-an-account' => array(
 						'title' => 'Opening an Account'
 					),
-					'../pdf/accredited-investor-form.pdf' => array(
+					'accredited-investor-form' => array(
 						'title' => 'Accredited Investor Form'
 					)
 				)

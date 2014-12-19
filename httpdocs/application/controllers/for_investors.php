@@ -67,6 +67,8 @@ class For_investors extends MY_Controller {
 
 		if ($_POST) {
 
+			$this->load->helper('validation_helper');
+
 			$this->form_validation->set_rules('txtFirstName', 'first name', 'trim|required|max_length[255]');
 			$this->form_validation->set_rules('txtLastName', 'last name', 'trim|required|max_length[255]');
 			$this->form_validation->set_rules('txtDob', 'date of birth', 'trim|required|max_length[10]|callback_date_check');
@@ -294,6 +296,7 @@ class For_investors extends MY_Controller {
 
 		$this->load->view('template', $this->data);
 	}
+
 
 }
 

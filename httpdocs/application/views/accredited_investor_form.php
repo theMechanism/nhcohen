@@ -3,6 +3,7 @@
 	else:
 		echo form_open(current_url(), array('class' => 'full-width')); ?>
 	<p>To establish your eligibility for our new offerings, please complete the Accredited Investor Suitability Form.  Your personal information will be treated as strictly private – please see our <a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a>.</p>
+	<p>Click here to donwload the <a href="<?php echo base_url('pdf/accredited-investor-form.pdf'); ?>">Accredited Investor Form</a>.</p>
 	<p><strong>All fields</strong> are required unless marked <span class="optional_inline">optional</span>.</p>
 	<h2>Personal Background Information</h2>
 	<div class="row">

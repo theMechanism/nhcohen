@@ -1004,11 +1004,11 @@ header nav {
   color: #E7A614;
 }
 .content-container .full-spread .investor-cta a:hover:after {
-  border-top: 10px solid transparent;
   content: "";
   display: block;
   height: 12px;
   margin: auto;
+  margin-top: 10px;
   position: absolute;
   top: 100%;
   left: 0;
