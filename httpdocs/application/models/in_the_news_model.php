@@ -14,6 +14,12 @@ class In_the_news_model extends CI_Model {
 
 		$news = array(
 			array(
+				'title' => 'Cohen: Inflation Will Bring Investors Yield',
+				'url' => 'http://www.globest.com/news/12_1012/newyork/finance/Cohen-Inflation-Will-Bring-Investors-Yield-353532.html',
+				'date' => strtotime('12/22/2014'),
+				'extract' => 'NEW YORK CITY—After starting his own set of companies last month, former Malkin executive Ned Cohen tells GlobeSt.com in this EXCLUSIVE Q&A about market conditions and other factors that were conducive to him striking out on his own.'
+			),
+			array(
 				'title' => 'Ned Cohen starts his own firm',
 				'url' => 'http://www.rew-online.com/2014/12/03/ned-cohen-starts-his-own-firm/',
 				'date' => strtotime('12/03/2014'),
