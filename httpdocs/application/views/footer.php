@@ -38,7 +38,7 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="<?php echo base_url('js/vendor/jquery-1.11.1.min.js'); ?>"><\/script>')</script>
-
+        <script src="<?php echo base_url('js/vendor/masked-input.js'); ?>"></script>
         <!--[if gt IE 8]>-->
 		<script src="<?php echo base_url('js/vendor/fastclick.js'); ?>"></script>
 		<!--<![endif]-->
@@ -53,17 +53,7 @@
 			ga('send', 'pageview');
 		</script>
 
-		<script type="text/javascript">
-			setTimeout(
-				function(){
-					var a = document.createElement("script");
-					var b = document.getElementsByTagName("script")[0];
-					a.src = "http://arcane-coast-4951.herokuapp.com/mech-bug-tracker.js?projectID=6";
-					a.async = true;
-					a.type = "text/javascript";
-					b.parentNode.insertBefore(a,b)
-			}, 1);
-		</script>
+		
 
 
     </body>

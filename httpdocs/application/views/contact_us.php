@@ -40,7 +40,7 @@
 			<label for="phone">Phone Number</label>
 		</div>
 		<div>
-			<input id="phone" maxlength="40" name="phone" type="text">
+			<input id="phone" maxlength="40" class='phone' name="phone" type="text">
 		</div>
 	</div>
 	<div class="row">

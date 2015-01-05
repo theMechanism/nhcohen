@@ -34,7 +34,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtDob', 'name' => 'txtDob', 'class' => 'inputText', 'maxlength' => '10', 'value' => set_value('txtDob')));
+				echo form_input(array('id' => 'txtDob', 'name' => 'txtDob', 'class' => 'inputText date', 'maxlength' => '10', 'value' => set_value('txtDob')));
 				echo '<span class="txtHelp">mm/dd/yyyy</span>';
 				echo form_error('txtDob');
 			?>		</div>
@@ -45,7 +45,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtSSN', 'name' => 'txtSSN', 'class' => 'inputText', 'maxlength' => '11', 'value' => set_value('txtSSN')));
+				echo form_input(array('id' => 'txtSSN', 'name' => 'txtSSN', 'class' => 'inputText ss', 'maxlength' => '11', 'value' => set_value('txtSSN')));
 				echo '<span class="txtHelp">xxx-xx-xxxx</span>';
 				echo form_error('txtSSN');
 			?>
@@ -104,7 +104,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtHomePhone', 'name' => 'txtHomePhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtHomePhone')));
+				echo form_input(array('id' => 'txtHomePhone', 'name' => 'txtHomePhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtHomePhone')));
 				echo form_error('txtHomePhone');
 			?>
 		</div>
@@ -115,7 +115,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtSecondPhone', 'name' => 'txtSecondPhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtSecondPhone')));
+				echo form_input(array('id' => 'txtSecondPhone', 'name' => 'txtSecondPhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtSecondPhone')));
 				echo form_error('txtSecondPhone');
 			?>
 		</div>
@@ -126,7 +126,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtMobilePhone', 'name' => 'txtMobilePhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtMobilePhone')));
+				echo form_input(array('id' => 'txtMobilePhone', 'name' => 'txtMobilePhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtMobilePhone')));
 				echo form_error('txtMobilePhone');
 			?>
 		</div>
@@ -137,7 +137,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtFax', 'name' => 'txtFax', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtFax')));
+				echo form_input(array('id' => 'txtFax', 'name' => 'txtFax', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtFax')));
 				echo form_error('txtFax');
 			?>
 		</div>
@@ -267,7 +267,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtBusPhone', 'name' => 'txtBusPhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusPhone')));
+				echo form_input(array('id' => 'txtBusPhone', 'name' => 'txtBusPhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtBusPhone')));
 				echo form_error('txtBusPhone');
 			?>
 		</div>
@@ -278,7 +278,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtBusSecondPhone', 'name' => 'txtBusSecondPhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusSecondPhone')));
+				echo form_input(array('id' => 'txtBusSecondPhone', 'name' => 'txtBusSecondPhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtBusSecondPhone')));
 				echo form_error('txtBusSecondPhone');
 			?>
 		</div>
@@ -289,7 +289,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtBusMobilePhone', 'name' => 'txtBusMobilePhone', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusMobilePhone')));
+				echo form_input(array('id' => 'txtBusMobilePhone', 'name' => 'txtBusMobilePhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtBusMobilePhone')));
 				echo form_error('txtBusMobilePhone');
 			?>
 		</div>
@@ -300,7 +300,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtBusFax', 'name' => 'txtBusFax', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtBusFax')));
+				echo form_input(array('id' => 'txtBusFax', 'name' => 'txtBusFax', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtBusFax')));
 				echo form_error('txtBusFax');
 			?>
 		</div>
@@ -483,6 +483,11 @@
 			<input id="submit" name="submit" type="submit" value="submit">
 		</div>
 	</div>
+	
+	
+	   
+	
+	
 <?php
 		echo form_close();
 	endif;

@@ -3,6 +3,11 @@
 "use strict";
 
 jQuery(document).ready(function($) {
+	
+	$(".ss").mask("999-99-9999");
+	$(".date").mask("99/99/9999");
+	$(".phone").mask("999-999-9999");
+
 
 	Origami.fastclick(document.body);
 
