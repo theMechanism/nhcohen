@@ -1,4 +1,4 @@
-<p>NHCohen Partners is an investment firm that identifies quality opportunities for high-net-worth individuals and family entities to diversify their holdings, with a special emphasis on real estate.  The firm carefully evaluates partnership structures to help investors realize all of the potential benefits of real estate, including income, capital appreciation, and tax and estate planning advantages, with preservation of capital receiving the highest priority.</p>
+<p>NHCohen Partners is an investment firm that identifies quality opportunities for high-net-worth individuals and family entities to diversify their holdings, with a special emphasis on real estate.  The firm carefully evaluates partnership structures to help investors realize all of the potential benefits of real estate, including income, capital appreciation, and tax and estate planning advantages, with preservation of capital receiving the highest priority. The firm provides no assurance that any investment strategy described herein will result in a profit or protect against a loss.</p>
 </div> <!-- end .cont -->
 </div> <!-- end .wrapper -->
 </div> <!-- end .containter -->

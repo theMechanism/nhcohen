@@ -4,6 +4,6 @@
 	<li>Deal Structuring – we help structure the terms of capital formation for prospective offerings</li>
 	<li>Private Placement Memorandum (PPM) Offering Materials – we assist with preparation of the PPM and supporting materials associated with an offering</li>
 	<li>Due Diligence – we perform due diligence services for a prospective offering</li>
-	<li>Private Funds Placement – we raise private capital through our broker-dealer affiliate NHCohen Capital LLC Please Contact Us to learn more</li>
+	<li>Private Funds Placement – we raise private capital through our broker-dealer affiliate NHCohen Capital LLC</li>
 </ul>
 <p>Please <a href="<?php echo base_url('contact-us'); ?>">Contact Us</a> to learn more.</p>
