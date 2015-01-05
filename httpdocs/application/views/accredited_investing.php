@@ -12,6 +12,6 @@
 </ul>
 <p>There may be additional persons and entities that may qualify as Accredited Investors.</p>
 
-<h2><a href="<?php echo base_url('for-investors/opening-an-account'); ?>">Become an Investor</a></h2>
+<h2>Become an Investor</h2>
 <p>Diversify your portfolio with real estate investment offerings that may provide the benefits of regular cash distributions, conservative leverage, tax benefits and protection against inflation. </p>
-<p>If you are interested in learning more or becoming an investor, please contact us at 212-498-6960 or register as an <a href="<?php echo base_url('for-investors/accredited-investor-form'); ?>">Accredited Investor</a>.</p>
+<p>If you are interested in learning more or <a href="<?php echo base_url('for-investors/opening-an-account'); ?>">becoming an investor</a>, please contact us at 212-498-6960 or register as an <a href="<?php echo base_url('for-investors/accredited-investor-form'); ?>">Accredited Investor</a>.</p>

@@ -25,7 +25,7 @@ class Home extends MY_Controller {
 
 		$this->data['view'] = 'home';
 		$this->data['title'] = 'Home';
-		$this->data['notice'] = 'Ned Cohen announces new offering. Contact us at 212 221 3444 for more details';
+		// $this->data['notice'] = 'Ned Cohen announces new offering. Contact us at 212 221 3444 for more details';
 		$this->data['latest_news'] = $this->In_the_news_model->latest();
 		$this->load->view('template', $this->data);
 	}
