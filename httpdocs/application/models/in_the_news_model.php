@@ -20,6 +20,12 @@ class In_the_news_model extends CI_Model {
 				'extract' => 'NEW YORK CITY—After starting his own set of companies last month, former Malkin executive Ned Cohen tells GlobeSt.com in this EXCLUSIVE Q&A about market conditions and other factors that were conducive to him striking out on his own.'
 			),
 			array(
+				'title' => 'NHCohen Partners President Ned H. Cohen Is Elected To Board of Advisors of 5 Stone Green Capital',
+				'view' => 'nhcohen-partners-president-ned-h-cohen-is-elected-to-board-of-advisors-of-5-stone-green-capital',
+				'date' => strtotime('12/09/2014'),
+				'extract' => 'NEW YORK CITY, December 09, 2014 – Ned H. Cohen, founder and president of NHCohen Partners LLC, has been elected to serve on the Board of Advisors of 5 Stone Green Capital, a real estate investment fund focused on sustainability and the use of clean energy.'
+			),
+			array(
 				'title' => 'Ned Cohen starts his own firm',
 				'url' => 'http://www.rew-online.com/2014/12/03/ned-cohen-starts-his-own-firm/',
 				'date' => strtotime('12/03/2014'),
@@ -30,12 +36,6 @@ class In_the_news_model extends CI_Model {
 				'url' => 'http://www.globest.com/news/12_984/newyork/finance/Former-Malkin-Exec-Forms-Real-Estate-Investment-Firm-352388.html',
 				'date' => strtotime('11/10/2014'),
 				'extract' => 'NEW YORK CITY—Ned H. Cohen, a former executive vice president with Malkin Securities Corp., has launched NHCohen Partners, LLC'
-			),
-			array(
-				'title' => 'Internal Article',
-				'view' => 'something-in-an-article',
-				'date' => strtotime('11/01/2014'),
-				'extract' => 'NEW Corp. NHCohen CITY—H. Cohen executive YORK, a launched vice with Malkin Securities, Ned has vice Partners former, LLC president'
 			)
 		);
 

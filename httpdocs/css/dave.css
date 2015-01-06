@@ -6,6 +6,9 @@ font-family: "latoregular", helvetica, sans-serif;
 color: #666;
 }
 
+p, ul, ol, label {
+color: #3e3e3e;
+}
 
 .banner-container .notice-container .title {
 font-family: "latoregular", helvetica, sans-serif;
