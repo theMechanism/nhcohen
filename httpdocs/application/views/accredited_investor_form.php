@@ -474,11 +474,9 @@
 	</div>
 
 
-
+	<p class="notice">Note: Additional information may be required including a form of personal identification.</p>
 	<div class="row">
-		<div>
-			<div></div>
-		</div>
+		<div></div>
 		<div>
 			<input id="submit" name="submit" type="submit" value="submit">
 		</div>

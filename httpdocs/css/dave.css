@@ -14,7 +14,10 @@ color: #3e3e3e;
 color: #999999;
 }
 
-
+form.full-width .required {
+  color: #002D62;
+  font-size: 12px;
+}
 .banner-container .notice-container .title {
 font-family: "latoregular", helvetica, sans-serif;
 font-size: .9em;
@@ -34,6 +37,13 @@ color: #333;
 text-transform: uppercase;
 }
 
+
+
+.select-wrap select {
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
 
 @media only screen and (min-width: 1140px) {
 .banner-container.big .hero-container {
