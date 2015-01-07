@@ -16,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
         <link rel="stylesheet" href="<?php echo base_url('css/style.css'); ?>" media="screen">
-        <link rel="stylesheet" href="<?php echo base_url('css/dave.css'); ?>" media="screen">
+        <link rel="stylesheet" href="<?php echo base_url('css/dave.css'); ?>">
 
         <script src="<?php echo base_url('js/vendor/modernizr-2.6.2-respond-1.1.0.min.js'); ?>"></script>
     </head>
@@ -33,7 +33,7 @@
 		            <header class="wrapper clearfix">
 		                <div class="container">
 			                <div class="menu-button"><a href="#" id="menu-trigger"><span>menu</span></a></div>
-		                    <div class="title-container"><a href="<?php echo base_url(); ?>"><h1 class="title">NHCohen Partners, LLC.</h1></a></div>
+		                    <div class="title-container"><a href="<?php echo base_url(); ?>"><h1 class="title">NHCohen Partners, LLC</h1></a></div>
 		                    <?php generate_main_nav($sitemap, $this->uri->segment(1)); ?>
 		                </div>
 		            </header>
