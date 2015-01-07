@@ -1,4 +1,4 @@
-<p>An investment in an offering presented by NHCohen Capital LLC is suitable only for individuals and entities considered to be a qualified or <a href="<?php echo base_url('for-investors/accredited-investing'); ?>">Accredited Investor</a>.</p>
+<p>An investment in an offering presented by NHCohen Capital LLC is suitable only for individuals and entities considered to be a qualified or <a href="<?php echo base_url('for-investors/what-is-an-accredited-investor'); ?>">Accredited Investor</a>.</p>
 <h2>Accredited Investor Registration</h2>
 <p>You may electronically submit to NHCohen Capital via the <a href="<?php echo base_url('for-investors/accredited-investor-form'); ?>">Accredited Investor Suitability Form</a>.</p>
 <p>You may also <a href="<?php echo base_url('/pdf/accredited-investor-form.pdf'); ?>">download and print the form</a> (Note: In order to download the form, you will need Adobe Acrobat Reader, which can be <a href="https://get.adobe.com/reader/">downloaded from here</a>).

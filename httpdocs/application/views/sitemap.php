@@ -14,6 +14,6 @@
 	<?php endforeach; ?>
 
 	<li><a href="<?php echo base_url('terms-of-use'); ?>">Terms of Use</li>
-	<li><a href="<?php echo base_url('business-continuity-plan-disclosure'); ?>">Disclore Statement</li>
+	<li><a href="<?php echo base_url('business-continuity-plan-disclosure'); ?>">Disclosure Statement</li>
 	<li><a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a></li>
 </ul>

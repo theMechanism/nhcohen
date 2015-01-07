@@ -56,6 +56,7 @@ font-size: 1.1em;
 color: #333;
 text-transform: uppercase;
 }
+
 /*Dhruv changes TODO: MOVE TO SCSS*/
 .opacity-layer {
   background-image: none !important;
@@ -104,11 +105,6 @@ text-transform: uppercase;
     text-overflow: '';
 }
 
-@media only screen and (max-width: 940px) {
-	.arrow{display:none;}
-}
-
-/*******************************************/
 @media only screen and (min-width: 1140px) {
 .banner-container.big .hero-container {
 height: 750px;
@@ -145,12 +141,20 @@ margin-top: 150px;
 
 @media print {
 
-header nav { display: none; }
-.menu-slider nav ul li a { display: none; }
-a { text-decoration: none; }
+img, 
+header .menu-button,
+nav ul, 
+nav ul li,
+.footer-container nav ul, 
+.footer-container .socials ul, 
+.footer-container .socials li a,
+.menu-slider nav ul li a, 
+.menu-slider nav ul,
+.breadcrumbs { display: none; }
 
+.banner-container .hero-text h2, .title-container .title img { display: block; }
 
-
+a, a:visited { text-decoration: underline; color: blue; }
 
 }
 
