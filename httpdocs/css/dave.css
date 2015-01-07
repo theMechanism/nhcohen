@@ -41,8 +41,30 @@ font-size: 1.1em;
 color: #333;
 text-transform: uppercase;
 }
-
-
+/*Dhruv changes TODO: MOVE TO SCSS*/
+#checkForm{
+	background: #A6D9F2;
+	border: 0px;
+	padding:13.5px;
+	position: relative;
+	font-weight: 700;
+	font-size: 15px;
+	opacity:0;
+	-webkit-transition: all .5s ease-in-out; /* Safari, Chrome and Opera > 1.5.1 */
+       -moz-transition: all .5s ease-in-out; /* Firefox < 16 */
+        -ms-transition: all .5s ease-in-out; /* Internet Explorer */
+         -o-transition: all .5s ease-in-out; /* Opera < 1.5.1 */
+            transition: all .5s ease-in-out;
+}
+.arrow{
+	position:absolute;
+	right:5px;
+	color:#56B3E0;
+}
+#checkForm.active{
+	margin-top:0px;
+	opacity:1;
+}
 
 .select-wrap select {
     -moz-appearance: none;
@@ -50,6 +72,11 @@ text-transform: uppercase;
     text-overflow: '';
 }
 
+@media only screen and (max-width: 940px) {
+	.arrow{display:none;}
+}
+
+/*******************************************/
 @media only screen and (min-width: 1140px) {
 .banner-container.big .hero-container {
 height: 750px;
