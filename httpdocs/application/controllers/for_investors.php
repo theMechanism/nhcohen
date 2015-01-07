@@ -37,7 +37,7 @@ class For_investors extends MY_Controller {
 	public function accredited_investing()
 	{
 		$this->data['view'] = 'accredited_investing';
-		$this->data['title'] = 'Accredited Investing';
+		$this->data['title'] = 'What is an Accredited Investor?';
 
 		$this->load->view('template', $this->data);
 	}

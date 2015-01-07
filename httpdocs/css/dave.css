@@ -44,6 +44,11 @@ letter-spacing: .5px;
 color: #f2f8ff;
 }
 
+.banner-container .sub-nav ul li {
+font-family: "latobold", helvetica, sans-serif;
+margin-right: 25px;
+font-size: .9em;
+}
 
 .latest-news .news-container h2 {
 font-family: "latoregular", helvetica, sans-serif;
