@@ -30,6 +30,9 @@ class Site_model extends CI_Model {
 			'for-investors' => array(
 				'title' => 'For Investors',
 				'children' => array(
+					'why-invest-in-real-estate' => array(
+						'title' => 'Why Invest?'
+					),
 					'accredited-investing' => array(
 						'title' => 'Accredited Investing'
 					),

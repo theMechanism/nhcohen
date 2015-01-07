@@ -56,6 +56,10 @@ $route['for-investors/accredited-investor-form'] = 'for_investors/accredited_inv
 $route['for-investors/accredited-investor-form/(:any)'] = 'for_investors/accredited_investor_form/$1';
 $route['for-investors/tax-advantages'] = 'for_investors/tax_advantages';
 $route['for-investors/tax-advantages/(:any)'] = 'for_investors/tax_advantages/$1';
+
+$route['for-investors/why-invest-in-real-estate'] = 'for_investors/why_invest_in_real_estate';
+$route['for-investors/why-invest-in-real-estate/(:any)'] = 'for_investors/why_invest_in_real_estate/$1';
+
 $route['for-investors'] = 'for_investors';
 $route['for-investors/(:any)'] = 'for_investors/$1';
 $route['contact-us'] = 'contact_us';
