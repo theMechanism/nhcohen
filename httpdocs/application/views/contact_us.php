@@ -21,7 +21,7 @@
 <input type="hidden" value="NHCohen Website" name="lead_source">
 	<div class="row">
 		<div>
-			<label for="last_name">Name</label>
+			<label for="last_name">Name<div class="required">required</div></label>
 		</div>
 		<div>
 			<input id="last_name" maxlength="80" name="last_name" type="text">
@@ -29,7 +29,7 @@
 	</div>
 	<div class="row">
 		<div>
-			<label for="email">Email Address</label>
+			<label for="email">Email Address<div class="required">required</div></label>
 		</div>
 		<div>
 			<input id="email" maxlength="80" name="email" type="text">
@@ -61,7 +61,7 @@
 	</div>
 	<div class="row">
 		<div>
-			<label for="state">State</label>
+			<label for="state">State<div class="required">if in U.S</div></label>
 		</div>
 		<div>
 			<div class="select-wrap">
@@ -76,6 +76,14 @@
 	</div>
 	<div class="row">
 		<div>
+			<label for="outside_us">Other<div class="required">if outside U.S</div></label>
+		</div>
+		<div>
+			<input id="other" maxlength="20" name="outside_us" type="text">
+		</div>
+	</div>
+	<div class="row">
+		<div>
 			<label for="zip">Zip Code</label>
 		</div>
 		<div>
@@ -84,10 +92,16 @@
 	</div>
 	<div class="row">
 		<div>
-			<span><label for="00No0000008vE3U">I am an Investor [or] Sponsor</label></span>
+			<span><label for="00No0000008vE3U">I am an</label></span>
 		</div>
-		<div>
-			<input id="00No0000008vE3U" name="00No0000008vE3U" type="checkbox" value="1"><label for="00No0000008vE3U"></label>
+		<div class="select-wrap">
+			<select id="iam" name="00No0000008vE3U">
+		        <option selected="selected">Select One</option>
+		        <option value="investor">Investor</option>
+		        <option value="sponsor">Sponsor</option>
+		        <option value="advisor">Advisor</option>
+		        <option value="other">Other</option>
+			</select>
 		</div>
 	</div>
 	<div class="row">
@@ -95,7 +109,7 @@
 			<label for="description">Message</label>
 		</div>
 		<div>
-			<textarea id="description" name="description" rows="6"></textarea>
+			<textarea id="description" name="description" maxlength="200" rows="6"></textarea>
 		</div>
 	</div>
 	<div class="row">
