@@ -37,7 +37,7 @@ class For_investors extends MY_Controller {
 	public function accredited_investing()
 	{
 		$this->data['view'] = 'accredited_investing';
-		$this->data['title'] = 'Accredited Investing';
+		$this->data['title'] = 'What is an Accredited Investor?';
 
 		$this->load->view('template', $this->data);
 	}
@@ -54,10 +54,19 @@ class For_investors extends MY_Controller {
 	{
 		$this->data['view'] = 'opening_an_account';
 		$this->data['title'] = 'Opening an Account';
+
+		$this->load->view('template', $this->data);
+	}
+
+	public function why_invest_in_real_estate()
+	{
+		$this->data['view'] = 'why_invest_in_real_estate';
+		$this->data['title'] = 'Why Invest?';
 		$this->data['subtitle'] = 'Investing in real estate should be a key part of any investor\'s financial planning';
 
 		$this->load->view('template', $this->data);
 	}
+
 
 	public function accredited_investor_form($action = FALSE)
 	{

@@ -50,12 +50,16 @@ $route['about-us'] = 'about_us';
 $route['about-us/(:any)'] = 'about_us/$1';
 $route['for-investors/opening-an-account'] = 'for_investors/opening_an_account';
 $route['for-investors/opening-an-account/(:any)'] = 'for_investors/opening_an_account/$1';
-$route['for-investors/accredited-investing'] = 'for_investors/accredited_investing';
-$route['for-investors/accredited-investing/(:any)'] = 'for_investors/accredited_investing/$1';
+$route['for-investors/what-is-an-accredited-investor'] = 'for_investors/accredited_investing';
+$route['for-investors/what-is-an-accredited-investor/(:any)'] = 'for_investors/accredited_investing/$1';
 $route['for-investors/accredited-investor-form'] = 'for_investors/accredited_investor_form';
 $route['for-investors/accredited-investor-form/(:any)'] = 'for_investors/accredited_investor_form/$1';
 $route['for-investors/tax-advantages'] = 'for_investors/tax_advantages';
 $route['for-investors/tax-advantages/(:any)'] = 'for_investors/tax_advantages/$1';
+
+$route['for-investors/why-invest-in-real-estate'] = 'for_investors/why_invest_in_real_estate';
+$route['for-investors/why-invest-in-real-estate/(:any)'] = 'for_investors/why_invest_in_real_estate/$1';
+
 $route['for-investors'] = 'for_investors';
 $route['for-investors/(:any)'] = 'for_investors/$1';
 $route['contact-us'] = 'contact_us';

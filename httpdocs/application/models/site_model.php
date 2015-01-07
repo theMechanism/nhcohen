@@ -30,8 +30,11 @@ class Site_model extends CI_Model {
 			'for-investors' => array(
 				'title' => 'For Investors',
 				'children' => array(
-					'accredited-investing' => array(
-						'title' => 'Accredited Investing'
+					'why-invest-in-real-estate' => array(
+						'title' => 'Why Invest?'
+					),
+					'what-is-an-accredited-investor' => array(
+						'title' => 'What is an Accredited Investor?'
 					),
 					'tax-advantages' => array(
 						'title' => 'Tax Advantages'

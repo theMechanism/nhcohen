@@ -14,6 +14,11 @@ color: #3e3e3e;
 color: #999999;
 }
 
+bold, strong {
+font-family: "latobold", helvetica, sans-serif;
+}
+
+
 .content-container .full-spread .investor-cta {
 width: 24%; 
 }
@@ -22,6 +27,11 @@ form.full-width .required {
   color: #002D62;
   font-size: 12px;
 }
+
+.for_investors .form-container {
+margin: 20px 0 40px 0;
+}
+
 
 .banner-container .notice-container .title {
 font-family: "latoregular", helvetica, sans-serif;
@@ -34,6 +44,11 @@ letter-spacing: .5px;
 color: #f2f8ff;
 }
 
+.banner-container .sub-nav ul li {
+font-family: "latobold", helvetica, sans-serif;
+margin-right: 25px;
+font-size: .9em;
+}
 
 .latest-news .news-container h2 {
 font-family: "latoregular", helvetica, sans-serif;
@@ -108,3 +123,24 @@ margin-top: 150px;
 }
 
 }
+
+
+
+@media print {
+
+header nav { display: none; }
+.menu-slider nav ul li a { display: none; }
+a { text-decoration: none; }
+
+
+
+
+}
+
+
+
+
+
+
+
+
