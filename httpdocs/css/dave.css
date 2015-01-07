@@ -82,7 +82,11 @@ text-transform: uppercase;
 	position: relative;
 	font-weight: 700;
 	font-size: 15px;
-	opacity:0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  	filter: alpha(opacity=0);
+  	-moz-opacity: 0.0;
+  	-khtml-opacity: 0.0;
+  	opacity: 0.0;
 	-webkit-transition: all .5s ease-in-out; /* Safari, Chrome and Opera > 1.5.1 */
        -moz-transition: all .5s ease-in-out; /* Firefox < 16 */
         -ms-transition: all .5s ease-in-out; /* Internet Explorer */
@@ -96,7 +100,11 @@ text-transform: uppercase;
 }
 #checkForm.active{
 	margin-top:0px;
-	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+  	filter: alpha(opacity=1);
+  	-moz-opacity: 1;
+  	-khtml-opacity: 1;
+  	opacity: 1;
 }
 
 .select-wrap select {
