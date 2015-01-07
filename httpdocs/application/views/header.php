@@ -40,7 +40,9 @@
 		        </div>
 	            <?php if (isset($banner)) : ?>
 		            <div class="banner-container">
+
 		                <div class="bg-container"></div>
+		                <div class='bg-container opacity-layer'></div>
 						<?php generate_sub_nav($sitemap, $this->uri->segment(1), $this->uri->segment(2)); ?>
 		            </div>
 					<div class="content-container">
