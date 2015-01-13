@@ -343,14 +343,14 @@ header {
 		.investor-cta {
 			display: inline-block;
 			text-align: center;
-			width: 33%;
+			width: 25%;
 			vertical-align: middle;
 			a {
 				color: inherit;
 				display: block;
 				position: relative;
-				@media (max-width: 415px) {
-					font-size: 14px;
+				@media (max-width: 440px) {
+					font-size: 12px;
 				}
 				&:hover {
 					color: $active-color;

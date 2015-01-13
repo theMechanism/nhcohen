@@ -18,11 +18,6 @@ bold, strong {
 font-family: "latobold", helvetica, sans-serif;
 }
 
-
-.content-container .full-spread .investor-cta {
-width: 24%; 
-}
-
 form.full-width .required {
   color: #002D62;
   font-size: 12px;
@@ -96,14 +91,14 @@ margin-top: 150px;
 
 @media print {
 
-img, 
+img,
 header .menu-button,
-nav ul, 
+nav ul,
 nav ul li,
-.footer-container nav ul, 
-.footer-container .socials ul, 
+.footer-container nav ul,
+.footer-container .socials ul,
 .footer-container .socials li a,
-.menu-slider nav ul li a, 
+.menu-slider nav ul li a,
 .menu-slider nav ul,
 .breadcrumbs { display: none; }
 

@@ -830,20 +830,20 @@ header nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../img/about_us-banner.jpg?1420491624');
+  background-image: url('../img/about_us-banner.jpg?1419277146');
 }
 @media only screen and (min-width: 768px) {
   .banner-container .bg-container {
-    background-image: url('../img/about_us-banner-wide.jpg?1420491624');
+    background-image: url('../img/about_us-banner-wide.jpg?1419277146');
   }
 }
 .home .banner-container .bg-container {
   background-position: center bottom;
-  background-image: url('../img/hero-banner.jpg?1420491624');
+  background-image: url('../img/hero-banner.jpg?1419277146');
 }
 @media only screen and (min-width: 768px) {
   .home .banner-container .bg-container {
-    background-image: url('../img/hero-banner-wide.jpg?1420491624');
+    background-image: url('../img/hero-banner-wide.jpg?1419277146');
   }
 }
 .banner-container .notice-container {
@@ -1000,7 +1000,7 @@ header nav {
 .content-container .full-spread .investor-cta {
   display: inline-block;
   text-align: center;
-  width: 33%;
+  width: 25%;
   vertical-align: middle;
 }
 .content-container .full-spread .investor-cta a {
@@ -1008,9 +1008,9 @@ header nav {
   display: block;
   position: relative;
 }
-@media (max-width: 415px) {
+@media (max-width: 440px) {
   .content-container .full-spread .investor-cta a {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .content-container .full-spread .investor-cta a:hover {
@@ -1888,7 +1888,7 @@ form.full-width .txtError {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -124px;
+    margin: 0 auto -141px;
   }
   .body-container:after {
     content: "";
@@ -1899,7 +1899,7 @@ form.full-width .txtError {
   }
 
   .footer-container, .body-container:after {
-    height: 124px;
+    height: 141px;
   }
 }
 /* ==========================================================================
