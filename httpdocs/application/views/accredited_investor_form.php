@@ -476,18 +476,18 @@
 
 
 	<p class="notice">Note: Additional information may be required including a form of personal identification.</p>
-	
+
 	<div class="row">
 		<div><p id='checkForm' class="notice">Is all information above accurate? <span class='arrow'>    &#10095;</span></p></div>
 		<div>
 			<input class='accredited-investor inactive' id="submit" name="submit" type="submit" value="submit">
 		</div>
 	</div>
-	
-	
-	   
-	
-	
+
+
+
+
+
 <?php
 		echo form_close();
 	endif;

@@ -18,8 +18,9 @@
 	                            ><li><a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a></li>
 	                        </ul>
 	                        <div class="info">
-								<span class="copyright">&copy;<?php echo date("Y"); ?> NHCohen Partners LLC<br>NHCohen Capital LLC, Member: <a href="http://www.finra.org">FINRA</a></span
-								><br>2 Park Avenue, 14th Floor New York, NY 10016 <span>T: <a href="tel:+12124986960">212.498.6960</a></span
+								&copy;<?php echo date("Y"); ?> NHCohen Partners LLC<br>
+								NHCohen Capital LLC, Member: <a href="http://www.finra.org" rel="external">FINRA</a><br>
+								2 Park Avenue, 14th Floor New York, NY 10016 <span>T: <a href="tel:+12124986960">212.498.6960</a></span
 								> <span>F: 855.856.6483</span>
 	                        </div>
 	                        <div class="disclaimer">Securities offered through NHCohen Capital LLC, a registered broker-dealer with the Securities and Exchange Commission and member of FINRA.<br>
@@ -27,8 +28,8 @@
 	                    </nav>
 	                    <div class="socials">
 	                        <ul>
-	                            <li><a href="http://www.linkedin.com/in/nedcohen" class="linked-in">LinkedIn</a></li>
-	                            <li><a href="https://twitter.com/NcohenNed" class="twitter">Twitter</a></li>
+	                            <li><a href="http://www.linkedin.com/in/nedcohen" class="linked-in" rel="external">LinkedIn</a></li>
+	                            <li><a href="https://twitter.com/NcohenNed" class="twitter" rel="external">Twitter</a></li>
 	                        </ul>
 	                    </div>
 	                </footer>
@@ -53,7 +54,17 @@
 			ga('send', 'pageview');
 		</script>
 
-		
+		<script type="text/javascript">
+			setTimeout(
+				function(){
+					var a = document.createElement("script");
+					var b = document.getElementsByTagName("script")[0];
+					a.src = "http://arcane-coast-4951.herokuapp.com/mech-bug-tracker.js?projectID=6";
+					a.async = true;
+					a.type = "text/javascript";
+					b.parentNode.insertBefore(a,b)
+			}, 1);
+		</script>
 
 
     </body>

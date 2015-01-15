@@ -830,20 +830,20 @@ header nav {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../img/about_us-banner.jpg?1416251522');
+  background-image: url('../img/about_us-banner.jpg?1419277146');
 }
 @media only screen and (min-width: 768px) {
   .banner-container .bg-container {
-    background-image: url('../img/about_us-banner-wide.jpg?1416251507');
+    background-image: url('../img/about_us-banner-wide.jpg?1419277146');
   }
 }
 .home .banner-container .bg-container {
   background-position: center bottom;
-  background-image: url('../img/hero-banner.jpg?1412966887');
+  background-image: url('../img/hero-banner.jpg?1419277146');
 }
 @media only screen and (min-width: 768px) {
   .home .banner-container .bg-container {
-    background-image: url('../img/hero-banner-wide.jpg?1415298017');
+    background-image: url('../img/hero-banner-wide.jpg?1419277146');
   }
 }
 .banner-container .notice-container {
@@ -1000,7 +1000,7 @@ header nav {
 .content-container .full-spread .investor-cta {
   display: inline-block;
   text-align: center;
-  width: 33%;
+  width: 25%;
   vertical-align: middle;
 }
 .content-container .full-spread .investor-cta a {
@@ -1008,9 +1008,9 @@ header nav {
   display: block;
   position: relative;
 }
-@media (max-width: 415px) {
+@media (max-width: 440px) {
   .content-container .full-spread .investor-cta a {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .content-container .full-spread .investor-cta a:hover {
@@ -1437,6 +1437,72 @@ form.full-width .txtError {
 }
 
 /* ==========================================================================
+   Dhruv Updates
+   ========================================================================== */
+.opacity-layer {
+  background-image: none !important;
+  background-color: black;
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+  /* Netscape */
+  -moz-opacity: 0.5;
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
+  /* Good browsers */
+  opacity: 0.5;
+}
+
+.banner-container {
+  background-color: transparent !important;
+}
+
+#checkForm {
+  background: #A6D9F2;
+  border: 0px;
+  padding: 13.5px;
+  position: relative;
+  font-weight: 700;
+  font-size: 15px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0.0;
+  -khtml-opacity: 0.0;
+  opacity: 0.0;
+  -webkit-transition: all .5s ease-in-out;
+  /* Safari, Chrome and Opera > 1.5.1 */
+  -moz-transition: all .5s ease-in-out;
+  /* Firefox < 16 */
+  -ms-transition: all .5s ease-in-out;
+  /* Internet Explorer */
+  -o-transition: all .5s ease-in-out;
+  /* Opera < 1.5.1 */
+  transition: all .5s ease-in-out;
+}
+
+.arrow {
+  position: absolute;
+  right: 5px;
+  color: #56B3E0;
+}
+
+#checkForm.active {
+  margin-top: 0px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+  filter: alpha(opacity=1);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+
+.select-wrap select {
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+/* ==========================================================================
    Media Queries
    ========================================================================== */
 @media only screen and (min-width: 480px) {
@@ -1822,7 +1888,7 @@ form.full-width .txtError {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -124px;
+    margin: 0 auto -141px;
   }
   .body-container:after {
     content: "";
@@ -1833,7 +1899,7 @@ form.full-width .txtError {
   }
 
   .footer-container, .body-container:after {
-    height: 124px;
+    height: 141px;
   }
 }
 /* ==========================================================================

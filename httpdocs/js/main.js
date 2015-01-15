@@ -3,7 +3,7 @@
 "use strict";
 
 jQuery(document).ready(function($) {
-	
+
 	$(".ss").mask("999-99-9999");
 	$(".date").mask("99/99/9999");
 	$(".phone").mask("999-999-9999");
@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
 	$('.accredited-investor#submit.inactive').on('click',function(e) {
 		if (e.target.className == 'accredited-investor inactive') {
 			e.preventDefault();
-			
+
 			$(e.target).css('background','#56B3E0').attr('value', 'YES, IT IS ACCURATE');
 			$('#checkForm').addClass('active');
 			$('.accredited-investor#submit').removeClass('inactive');

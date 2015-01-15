@@ -94,14 +94,16 @@
 		<div>
 			<span><label for="00No0000008vE3U">I am an</label></span>
 		</div>
-		<div class="select-wrap">
-			<select id="iam" name="00No0000008vE3U">
-		        <option selected="selected">Select One</option>
-		        <option value="investor">Investor</option>
-		        <option value="sponsor">Sponsor</option>
-		        <option value="advisor">Advisor</option>
-		        <option value="other">Other</option>
-			</select>
+		<div>
+			<div class="select-wrap">
+				<select id="iam" name="00No0000008vE3U">
+			        <option selected="selected">Select One</option>
+			        <option value="investor">Investor</option>
+			        <option value="sponsor">Sponsor</option>
+			        <option value="advisor">Advisor</option>
+			        <option value="other">Other</option>
+				</select>
+			</div>
 		</div>
 	</div>
 	<div class="row">
