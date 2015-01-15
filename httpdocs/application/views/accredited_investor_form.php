@@ -2,8 +2,8 @@
 		echo '<p class="success">' . $success . '</p>';
 	else:
 		echo form_open(current_url(), array('class' => 'full-width')); ?>
-	<p>To establish your eligibility for our new offerings, please complete the Accredited Investor Suitability Form.  Your personal information will be treated as strictly private – please see our <a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a>.</p>
-	<p>Click here to download the <a href="<?php echo base_url('pdf/accredited-investor-form.pdf'); ?>">Accredited Investor Form</a>.</p>
+	<p>To establish your eligibility for our new offerings, please complete the online Accredited Investor Suitability Form below.  Your personal information will be treated as strictly private – please see our <a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a>.</p>
+	<p>You may also download the <a href="<?php echo base_url('pdf/accredited-investor-form.pdf'); ?>">Accredited Investor Form</a>. (Note: In order to download the Form, you will need Adobe Acrobat Reader, which can be <a href="http://get.adobe.com/reader/">downloaded from here</a>.)</p>
 	<p><strong>All fields</strong> are required unless marked <span class="optional_inline">optional</span>.</p>
 	<h2>Personal Background Information</h2>
 	<div class="row">
@@ -170,6 +170,7 @@
 	<hr>
 
 	<h2>Business Information</h2>
+	<small>(Required unless not currently employed or retired.)</small>
 
 	<div class="row">
 		<div>

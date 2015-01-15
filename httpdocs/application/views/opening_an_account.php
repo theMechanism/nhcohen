@@ -3,11 +3,13 @@
 <p>You may electronically submit to NHCohen Capital via the <a href="<?php echo base_url('for-investors/accredited-investor-form'); ?>">Accredited Investor Suitability Form</a>.</p>
 <p>You may also <a href="<?php echo base_url('/pdf/accredited-investor-form.pdf'); ?>">download and print the form</a> (Note: In order to download the form, you will need Adobe Acrobat Reader, which can be <a href="https://get.adobe.com/reader/">downloaded from here</a>).
 <p><em>If the Accredited Investor Suitability Form is printed it should be mailed to:</em><br>  
-<strong>NHCohen Capital LLC <br>  
+<strong>NHCohen Capital LLC<br>  
 2 Park Place, 14th Floor<br>  
 New York, NY 10016<br>  
 Attention: Dept. AISF</strong><p>
-<p>OR</p>
+<p><em>OR</em></p>
+<p>You can <strong>email</strong> a scanned Accredited Investor Suitability to: <a href="mailto:info@nhcohenpartners.com">info@nhcohenpartners.com</a></P>
+<p><em>OR</em></p>
 <p><em>You may fax the Accredited Investor Suitability Form to:</em><br> 
 <strong>NHCohen Capital LLC<br> 
 855-856-6483</strong></p> 
@@ -30,4 +32,4 @@ Attention: Dept. AISF</strong><p>
 </ul>
 <p>A corporation, partnership, trust or other legal entity may need to provide other information, such as its principal place of business, local office, employer identification number, certified articles of incorporation, government-issued business license, a partnership agreement or a trust agreement.</p>
 <p>U.S. Department of the Treasury, Securities and Exchange Commission, FINRA, and the New York Stock Exchange rules already require you to provide most of this information. These rules also may require you to provide additional information, such as your net worth, annual income, occupation, employment information, investment experience and objectives, and risk tolerance.</p>
-<p><strong>All information will be used only by NHCohen Partners LLC and/or NHCohen Capital LLC.  Such information shall remain absolutely confidential and shall not be shared with any other provider or vendor.  Please see our Privacy Policy.</strong></p>
+<p><strong>All information will be used only by NHCohen Partners LLC and/or NHCohen Capital LLC.  Such information shall remain absolutely confidential and may be shared with any other provider or vendor in very limited circumstances.  Please see our <a href="../privacy-policy">Privacy Policy</a> for additional information.</strong></p>
