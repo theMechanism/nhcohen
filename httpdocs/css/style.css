@@ -1428,6 +1428,7 @@ form.full-width .push {
   padding-left: 45px;
 }
 form.full-width .optional {
+  font-family: "latoregular", helvetica, sans-serif;
   color: #002D62;
   font-size: 12px;
 }

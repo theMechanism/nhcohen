@@ -5,7 +5,28 @@
 	<p>To establish your eligibility for our new offerings, please complete the online Accredited Investor Suitability Form below.  Your personal information will be treated as strictly private – please see our <a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a>.</p>
 	<p>You may also download the <a href="<?php echo base_url('pdf/accredited-investor-form.pdf'); ?>">Accredited Investor Form</a>. (Note: In order to download the Form, you will need Adobe Acrobat Reader, which can be <a href="http://get.adobe.com/reader/">downloaded from here</a>.)</p>
 	<p><strong>All fields</strong> are required unless marked <span class="optional_inline">optional</span>.</p>
-	<h2>Personal Background Information</h2>
+	<h2>Personal Information</h2>
+	<div class="row">
+		<div class="big"></div>
+		<div>
+			<fieldset id="fsAcount">
+				<input type="radio" id="chkIndividual" name="chkIndorTrust" class="inputRad" value="Individual" <?php echo set_radio('chkIndorTrust', 'Individual'); ?> /> <label for="chkIndividual">Individual Account</label>
+				<input type="radio" id="chkTrust" name="chkIndorTrust" class="inputRad" value="Trust" <?php echo set_radio('chkIndorTrust', 'Trust'); ?> /> <label for="chkTrust">Trust Account</label>
+			</fieldset>
+			<?php echo form_error('chkIndorTrust'); ?>
+		</div>
+	</div>
+	<div class="row" id="trustNameRow">
+		<div>
+			<label for="txtTrustName">Trust Name</label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtTrustName', 'name' => 'txtTrustName', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtTrustName')));
+				echo form_error('txtTrustName');
+			?>
+		</div>
+	</div>
 	<div class="row">
 		<div>
 			<label for="txtFirstName">First Name</label>
@@ -14,6 +35,17 @@
 			<?php
 				echo form_input(array('id' => 'txtFirstName', 'name' => 'txtFirstName', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtFirstName')));
 				echo form_error('txtFirstName');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="txtMiddleName">Middle Name<div class="optional">optional</div></label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtMiddleName', 'name' => 'txtMiddleName', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtMiddleName')));
+				echo form_error('txtMiddleName');
 			?>
 		</div>
 	</div>
@@ -30,23 +62,23 @@
 	</div>
 	<div class="row">
 		<div>
-			<label for="txtDob">Date of Birth</label>
+			<label for="txtDob">Date of Birth<div class="optional">Required for an individual.<br>If a Trust, enter DOB for the beneficiary.</div></label>
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtDob', 'name' => 'txtDob', 'class' => 'inputText date', 'maxlength' => '10', 'value' => set_value('txtDob')));
+				echo form_input(array('id' => 'txtDob', 'name' => 'txtDob', 'class' => 'inputText maskdate', 'maxlength' => '10', 'value' => set_value('txtDob')));
 				echo '<span class="txtHelp">mm/dd/yyyy</span>';
 				echo form_error('txtDob');
 			?>		</div>
 	</div>
 	<div class="row">
 		<div>
-			<label for="txtSSN">Social Security No.</label>
+			<label for="txtSSN">Social Security No./Tax ID</label>
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtSSN', 'name' => 'txtSSN', 'class' => 'inputText ss', 'maxlength' => '11', 'value' => set_value('txtSSN')));
-				echo '<span class="txtHelp">xxx-xx-xxxx</span>';
+				echo form_input(array('id' => 'txtSSN', 'name' => 'txtSSN', 'class' => 'inputText maskss', 'maxlength' => '11', 'value' => set_value('txtSSN')));
+				echo '<span class="txtHelp">xxx-xx-xxxx OR xx-xxxxxxx</span>';
 				echo form_error('txtSSN');
 			?>
 		</div>
@@ -80,11 +112,11 @@
 		<div>
 			<div class="select-wrap">
 				<?php
-					array_unshift($states, 'Select One');
+					$states = array_merge(array(NULL => 'Select One'), $states);
 					echo form_dropdown('txtState', $states);
-					echo form_error('txtState');
 				?>
 			</div>
+			<?php echo form_error('txtState'); ?>
 		</div>
 	</div>
 	<div class="row">
@@ -104,7 +136,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtHomePhone', 'name' => 'txtHomePhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtHomePhone')));
+				echo form_input(array('id' => 'txtHomePhone', 'name' => 'txtHomePhone', 'class' => 'inputText maskphone', 'maxlength' => '255', 'value' => set_value('txtHomePhone')));
 				echo form_error('txtHomePhone');
 			?>
 		</div>
@@ -115,7 +147,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtSecondPhone', 'name' => 'txtSecondPhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtSecondPhone')));
+				echo form_input(array('id' => 'txtSecondPhone', 'name' => 'txtSecondPhone', 'class' => 'inputText maskphone', 'maxlength' => '255', 'value' => set_value('txtSecondPhone')));
 				echo form_error('txtSecondPhone');
 			?>
 		</div>
@@ -126,7 +158,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtMobilePhone', 'name' => 'txtMobilePhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtMobilePhone')));
+				echo form_input(array('id' => 'txtMobilePhone', 'name' => 'txtMobilePhone', 'class' => 'inputText maskphone', 'maxlength' => '255', 'value' => set_value('txtMobilePhone')));
 				echo form_error('txtMobilePhone');
 			?>
 		</div>
@@ -137,7 +169,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtFax', 'name' => 'txtFax', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtFax')));
+				echo form_input(array('id' => 'txtFax', 'name' => 'txtFax', 'class' => 'inputText maskphone', 'maxlength' => '255', 'value' => set_value('txtFax')));
 				echo form_error('txtFax');
 			?>
 		</div>
@@ -155,22 +187,35 @@
 	</div>
 	<div class="row">
 		<div>
+			<label for="txtEmailConf">Confirm Email Address</label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtEmailConf', 'name' => 'txtEmailConf', 'class' => 'inputText long', 'maxlength' => '255', 'value' => set_value('txtEmailConf')));
+				echo form_error('txtEmailConf');
+			?>
+		</div>
+	</div>
+	<div class="row">
+		<div>
 			<span><label for="txtVote">In what state are you registered to vote?</label></span>
 		</div>
 		<div>
 			<div class="select-wrap">
 				<?php
 					echo form_dropdown('txtVote', $states);
-					echo form_error('txtVote');
 				?>
 			</div>
+			<?php echo form_error('txtVote'); ?>
 		</div>
 	</div>
 
 	<hr>
 
-	<h2>Business Information</h2>
-	<small>(Required unless not currently employed or retired.)</small>
+	<h2>
+		Business Information
+		<div class="optional">(Required unless not currently employed or retired.)</div>
+	</h2>
 
 	<div class="row">
 		<div>
@@ -246,9 +291,9 @@
 			<div class="select-wrap">
 				<?php
 					echo form_dropdown('txtBusState', $states);
-					echo form_error('txtBusState');
 				?>
 			</div>
+			<?php echo form_error('txtBusState'); ?>
 		</div>
 	</div>
 	<div class="row">
@@ -268,7 +313,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtBusPhone', 'name' => 'txtBusPhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtBusPhone')));
+				echo form_input(array('id' => 'txtBusPhone', 'name' => 'txtBusPhone', 'class' => 'inputText maskphone', 'maxlength' => '255', 'value' => set_value('txtBusPhone')));
 				echo form_error('txtBusPhone');
 			?>
 		</div>
@@ -279,7 +324,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtBusSecondPhone', 'name' => 'txtBusSecondPhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtBusSecondPhone')));
+				echo form_input(array('id' => 'txtBusSecondPhone', 'name' => 'txtBusSecondPhone', 'class' => 'inputText maskphone', 'maxlength' => '255', 'value' => set_value('txtBusSecondPhone')));
 				echo form_error('txtBusSecondPhone');
 			?>
 		</div>
@@ -290,7 +335,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtBusMobilePhone', 'name' => 'txtBusMobilePhone', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtBusMobilePhone')));
+				echo form_input(array('id' => 'txtBusMobilePhone', 'name' => 'txtBusMobilePhone', 'class' => 'inputText maskphone', 'maxlength' => '255', 'value' => set_value('txtBusMobilePhone')));
 				echo form_error('txtBusMobilePhone');
 			?>
 		</div>
@@ -301,7 +346,7 @@
 		</div>
 		<div>
 			<?php
-				echo form_input(array('id' => 'txtBusFax', 'name' => 'txtBusFax', 'class' => 'inputText phone', 'maxlength' => '255', 'value' => set_value('txtBusFax')));
+				echo form_input(array('id' => 'txtBusFax', 'name' => 'txtBusFax', 'class' => 'inputText maskphone', 'maxlength' => '255', 'value' => set_value('txtBusFax')));
 				echo form_error('txtBusFax');
 			?>
 		</div>
@@ -477,10 +522,12 @@
 
 	<p class="notice">Note: Additional information may be required including a form of personal identification.</p>
 
+	<p class="notice">Submission of this form is equivalent to a written signature.</p>
+
 	<div class="row">
 		<div><p id='checkForm' class="notice">Is all information above accurate? <span class='arrow'>    &#10095;</span></p></div>
 		<div>
-			<input class='accredited-investor inactive' id="submit" name="submit" type="submit" value="submit">
+			<input class='accredited-investor' id="submit" name="submit" type="submit" value="submit">
 		</div>
 	</div>
 

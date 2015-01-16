@@ -13,7 +13,7 @@
 
 <hr>
 
-<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="full-width">
+<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="full-width" id="contact-form">
 <input type="hidden" name="debug" value=1>
 <input type="hidden" name="debugEmail" value="george.brassey@themechanism.com">
 <input type="hidden" name="oid" value="00Do0000000JCJr">
@@ -33,6 +33,15 @@
 		</div>
 		<div>
 			<input id="email" maxlength="80" name="email" type="text">
+		</div>
+	</div>
+	<div class="row">
+		<div>
+			<label for="email">Confirm Email Address<div class="required">required</div></label>
+		</div>
+		<div>
+			<input id="emailConf" maxlength="80" name="emailConf" type="text">
+			<p class="txtError" id="emailConfError"></p>
 		</div>
 	</div>
 	<div class="row">

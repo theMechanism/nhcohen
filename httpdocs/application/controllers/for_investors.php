@@ -78,11 +78,16 @@ class For_investors extends MY_Controller {
 
 			$this->load->helper('validation_helper');
 
+			$this->form_validation->set_rules('chkIndorTrust', 'individual or trustee', 'trim|required');
+			if ($this->input->post('chkIndorTrust') == 'Trust') {
+				$this->form_validation->set_rules('txtTrustName', 'trust name', 'trim|required|max_length[255]');
+			}
 			$this->form_validation->set_rules('txtFirstName', 'first name', 'trim|required|max_length[255]');
+			$this->form_validation->set_rules('txtMiddleName', 'middle name', 'trim|max_length[255]');
 			$this->form_validation->set_rules('txtLastName', 'last name', 'trim|required|max_length[255]');
 			$this->form_validation->set_rules('txtDob', 'date of birth', 'trim|required|max_length[10]|callback_date_check');
 			$this->form_validation->set_message('date_check', 'This is not a valid date!');
-			$this->form_validation->set_rules('txtSSN', 'SSN', 'trim|required|max_length[11]|callback_account_check');
+			$this->form_validation->set_rules('txtSSN', 'SSN/Tax ID', 'trim|required|max_length[11]|callback_account_check');
 			$this->form_validation->set_message('account_check', 'This is not a valid Social Security number!');
 			$this->form_validation->set_rules('txtAddress', 'address', 'trim|required|max_length[255]');
 			$this->form_validation->set_rules('txtCity', 'city', 'trim|required|max_length[255]');
@@ -95,7 +100,9 @@ class For_investors extends MY_Controller {
 			$this->form_validation->set_rules('txtMobilePhone', 'mobile phone', 'trim|max_length[255]|callback_phone_check');
 			$this->form_validation->set_rules('txtFax', 'fax', 'trim|max_length[255]|callback_phone_check');
 			$this->form_validation->set_rules('txtEmail', 'email', 'trim|required|valid_email|max_length[255]');
-			$this->form_validation->set_rules('txtVote', 'what state are you registered to vote', 'trim|required|max_length[255]');
+			$this->form_validation->set_rules('txtEmailConf', 'email confirmation', 'trim|required|valid_email|max_length[255]|matches[txtEmail]');
+			$this->form_validation->set_message('matches', 'The emails provided do not match');
+			$this->form_validation->set_rules('txtVote', 'state you are registered to vote', 'trim|required|max_length[255]');
 			$this->form_validation->set_rules('txtBusiness', 'business', 'trim|max_length[255]');
 			//$this->form_validation->set_rules('txtProfession', 'profession', 'trim|required|max_length[255]');
 			$this->form_validation->set_rules('txtTitle', 'title', 'trim|max_length[255]');
@@ -154,11 +161,13 @@ class For_investors extends MY_Controller {
 				$this->email->from('no-reply@nhcohenpartners.com');
 				$this->email->to('george.brassey@themechanism.com');
 				$this->email->subject('[NHCohenPartners.com] Accredited Investor Suitability Form');
-				// 'Profession: ' . $this->input->post('txtProfession') . "\n" .
-				$msg = 'First name: ' . $this->input->post('txtFirstName') . "\n" .
+				$msg = 'Type of Investor ' . $this->input->post('chkIndorTrust') . "\n" .
+					'Trust name: ' . $this->input->post('txtTrustName') . "\n" .
+					'First name: ' . $this->input->post('txtFirstName') . "\n" .
+					'Middle name: ' . $this->input->post('txtMiddleName') . "\n" .
 					'Last name: ' . $this->input->post('txtLastName') . "\n" .
 					'Date of birth: ' . $this->input->post('txtDob') . "\n" .
-					'Social Security number: ' . $this->input->post('txtSSN') . "\n" .
+					'Social Security/Tax ID: ' . $this->input->post('txtSSN') . "\n" .
 					'Address: ' . $this->input->post('txtAddress') . "\n" .
 					'City: ' . $this->input->post('txtCity') . "\n" .
 					'State: ' . $this->input->post('txtState') . "\n" .
