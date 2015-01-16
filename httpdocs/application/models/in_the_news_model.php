@@ -26,6 +26,12 @@ class In_the_news_model extends CI_Model {
 				'extract' => 'NEW YORK CITY, December 09, 2014 – Ned H. Cohen, founder and president of NHCohen Partners LLC, has been elected to serve on the Board of Advisors of 5 Stone Green Capital, a real estate investment fund focused on sustainability and the use of clean energy.'
 			),
 			array(
+				'title' => 'Newly minted brokerage firm targets property syndications',
+				'view' => 'newly-minted-brokerage-firm-targets-property-syndications',
+				'date' => strtotime('12/08/2014'),
+				'extract' => 'Ned Cohen, a commercial real estate syndica- tion veteran, has formed an investment company that will identify opportunities for high-net-worth investors to participate in limited partnerships as equity investors. NHCohen Partners, and its affiliate broker-dealer NHCohen Capital, hopes to invest nationally in transactions of $15-50m.'
+			),
+			array(
 				'title' => 'Ned Cohen starts his own firm',
 				'url' => 'http://www.rew-online.com/2014/12/03/ned-cohen-starts-his-own-firm/',
 				'date' => strtotime('12/03/2014'),
