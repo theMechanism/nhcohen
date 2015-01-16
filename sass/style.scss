@@ -669,6 +669,12 @@ form.full-width {
 				margin: auto;
 				position: absolute;
 				@include icons-sprite(dropdown-arrow);
+				.lt-ie9 & {
+					display: none;
+				}
+			}
+			select::-ms-expand {
+				display: none;
 			}
 			select {
 				background-color: transparent;

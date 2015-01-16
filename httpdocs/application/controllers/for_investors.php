@@ -159,9 +159,9 @@ class For_investors extends MY_Controller {
 				// send message
 				$this->load->library('email');
 				$this->email->from('no-reply@nhcohenpartners.com');
-				$this->email->to('george.brassey@themechanism.com');
+				$this->email->to('investorservices@nhcohenpartners.com');
 				$this->email->subject('[NHCohenPartners.com] Accredited Investor Suitability Form');
-				$msg = 'Type of Investor ' . $this->input->post('chkIndorTrust') . "\n" .
+				$msg = 'Type of Investor: ' . $this->input->post('chkIndorTrust') . "\n" .
 					'Trust name: ' . $this->input->post('txtTrustName') . "\n" .
 					'First name: ' . $this->input->post('txtFirstName') . "\n" .
 					'Middle name: ' . $this->input->post('txtMiddleName') . "\n" .
@@ -307,7 +307,7 @@ class For_investors extends MY_Controller {
 
 		if ('success' == $action)
 		{
-			$this->data['success'] = 'Thank you for submitting the Accredited Investor Suitability Form. You will be contacted shortly by a NHCohen Partners LLC. representative.';
+			$this->data['success'] = 'Thank you for submitting your inquiry. We will respond shortly.</p><p>If you require immediate assistance, please contact investor services at <a href="tel:+12124986962">212.498.6962</a>';
 		}
 
 		$this->load->view('template', $this->data);

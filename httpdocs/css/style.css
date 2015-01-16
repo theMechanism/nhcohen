@@ -1383,6 +1383,12 @@ form.full-width .row .select-wrap:after {
   position: absolute;
   background-position: 0 -12px;
 }
+.lt-ie9 form.full-width .row .select-wrap:after {
+  display: none;
+}
+form.full-width .row .select-wrap select::-ms-expand {
+  display: none;
+}
 form.full-width .row .select-wrap select {
   background-color: transparent;
   border: 0;

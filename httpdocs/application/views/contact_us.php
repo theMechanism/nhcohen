@@ -14,8 +14,8 @@
 <hr>
 
 <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="full-width" id="contact-form">
-<input type="hidden" name="debug" value=1>
-<input type="hidden" name="debugEmail" value="george.brassey@themechanism.com">
+<!-- <input type="hidden" name="debug" value=1>
+<input type="hidden" name="debugEmail" value="***"> -->
 <input type="hidden" name="oid" value="00Do0000000JCJr">
 <input type="hidden" name="retURL" value="http://www.nhcohenpartners.com/contact-us/success">
 <input type="hidden" value="NHCohen Website" name="lead_source">
