@@ -27,11 +27,11 @@ jQuery(document).ready(function($) {
 	$(".maskdate").mask("99/99/9999");
 	$(".maskphone").mask("999-999-9999");
 
-	$(".accredited-investor#submit").on("click",function(e) {
+	$("#investor-form").submit(function(e) {
 		if (!$("#checkForm").hasClass("active")) {
 			e.preventDefault();
 
-			$(e.target).css("background","#56B3E0").attr("value", "YES, IT IS ACCURATE");
+			$('#submit', this).css("background","#56B3E0").attr("value", "YES, IT IS ACCURATE");
 			$("#checkForm").addClass("active");
 		}
 	});
