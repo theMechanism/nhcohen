@@ -4,7 +4,10 @@
 
 jQuery(document).ready(function($) {
 
-	Origami.fastclick(document.body);
+	if (window.addEventListener) {
+		// wrapped in an if statement to protect against IE8 — no addEventListener
+		Origami.fastclick(document.body);
+	}
 
 	$("#menu-trigger").click(function(e) {
 		e.preventDefault();
