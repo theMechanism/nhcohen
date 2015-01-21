@@ -524,6 +524,37 @@
 
 	<p class="notice">Submission of this form is equivalent to a written signature.</p>
 
+	<hr>
+
+	<div>
+		<input type="checkbox" id="chkSigned" name="chkSigned" class="inputChk" value="Electronically signed" <?php echo set_checkbox('chkSigned', 'Electronically signed'); ?> /><label for="chkSigned">By checking this box and typing my name below, I am electronically signing my application.</label>
+		<?php echo form_error('chkSigned'); ?>
+	</div>
+
+	<div class="row">
+		<div>
+			<label for="txtSignedName">Name</label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtSignedName', 'name' => 'txtSignedName', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtSignedName')));
+				echo form_error('txtSignedName');
+			?>
+		</div>
+	</div>
+
+	<div class="row" id="trustSignRow">
+		<div class="big">
+			<label for="txtSignedTrust">Please indicate in the space provided that the signer is a Trustee for the named trust</label>
+		</div>
+		<div>
+			<?php
+				echo form_input(array('id' => 'txtSignedTrust', 'name' => 'txtSignedTrust', 'class' => 'inputText', 'maxlength' => '255', 'value' => set_value('txtSignedTrust')));
+				echo form_error('txtSignedTrust');
+			?>
+		</div>
+	</div>
+
 	<div class="row">
 		<div><p id='checkForm' class="notice">Is all information above accurate? <span class='arrow'>    &#10095;</span></p></div>
 		<div>

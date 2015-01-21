@@ -2,31 +2,31 @@
 <h2>Accredited Investor Registration</h2>
 <p>You may electronically submit to NHCohen Capital via the <a href="<?php echo base_url('for-investors/accredited-investor-form'); ?>">Accredited Investor Suitability Form</a>.</p>
 <p>You may also <a href="<?php echo base_url('/pdf/accredited-investor-form.pdf'); ?>">download and print the form</a> (Note: In order to download the form, you will need Adobe Acrobat Reader, which can be <a href="https://get.adobe.com/reader/">downloaded from here</a>).
-<p><em>If the Accredited Investor Suitability Form is printed it should be mailed to:</em><br>  
-<strong>NHCohen Capital LLC<br>  
-2 Park Place, 14th Floor<br>  
-New York, NY 10016<br>  
-Attention: Dept. AISF</strong><p>
+<p><em>If the Accredited Investor Suitability Form is printed it should be mailed to:</em><p>
+<p><strong>NHCohen Capital LLC<br>
+2 Park Place, 14th Floor<br>
+New York, NY 10016<br>
+Attention: Dept. AISF</strong></p>
 <p><em>OR</em></p>
-<p>You can <strong>email</strong> a scanned Accredited Investor Suitability to: <a href="mailto:info@nhcohenpartners.com">info@nhcohenpartners.com</a></P>
+<p>You can <strong>email</strong> a scanned Accredited Investor Suitability to: <a href="mailto:info@nhcohenpartners.com">info@nhcohenpartners.com</a></p>
 <p><em>OR</em></p>
-<p><em>You may fax the Accredited Investor Suitability Form to:</em><br> 
-<strong>NHCohen Capital LLC<br> 
-855-856-6483</strong></p> 
+<p><em>You may fax the Accredited Investor Suitability Form to:</em><p>
+<p><strong>NHCohen Capital LLC<br>
+855-856-6483</strong></p>
 <h2>Important Information About Procedures for Opening a New Account</h2>
 <p>To help the government fight the funding of terrorism and money laundering activities, federal law requires financial institutions to obtain, verify, and record information that identifies each person who opens an account.</p>
-<p>This Notice answers some questions about our Customer Identification Program.</p> 
+<p>This Notice answers some questions about our Customer Identification Program.</p>
 <h2>What types of information will I need to provide?</h2>
 <p>When you open an account, we are required to collect information such as the following:</p>
 <ul>
-	<li>Your name 
-	<li>Date of Birth 
-	<li>Address 
-	<li>Identification Number  
+	<li>Your name
+	<li>Date of Birth
+	<li>Address
+	<li>Identification Number
 		<ul>
-			<li>U.S. Citizen: taxpayer identification number (social security number or employer identification number)</li> 
-			<li>Non-U.S. Citizen: taxpayer identification number, passport number, and country of issuance, alien identification card number, or government-issued identification showing nationality, residence, and a photograph of you.</li> 
-			<li>You may also need to show your driver's license or other identifying documents.</li> 
+			<li>U.S. Citizen: taxpayer identification number (social security number or employer identification number)</li>
+			<li>Non-U.S. Citizen: taxpayer identification number, passport number, and country of issuance, alien identification card number, or government-issued identification showing nationality, residence, and a photograph of you.</li>
+			<li>You may also need to show your driver's license or other identifying documents.</li>
 		</ul>
 	</li>
 </ul>

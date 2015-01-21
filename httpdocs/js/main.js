@@ -46,6 +46,7 @@ jQuery(document).ready(function($) {
 
 	if (($("input[name=chkIndorTrust]:checked").val() == "Individual")) {
 		$("#trustNameRow").hide();
+		$("#trustSignRow").hide();
 	} else if (($("input[name=chkIndorTrust]:checked").val() == "Trust")) {
 		$(".maskss").mask("99-9999999");
 	}
@@ -53,9 +54,11 @@ jQuery(document).ready(function($) {
 	$("input[name=chkIndorTrust]").change(function() {
 		if (this.value === "Individual") {
 			$("#trustNameRow").slideUp();
+			$("#trustSignRow").slideUp();
 			$(".maskss").mask("999-99-9999");
 		} else {
 			$("#trustNameRow").slideDown();
+			$("#trustSignRow").slideDown();
 			$(".maskss").mask("99-9999999");
 		}
 	});

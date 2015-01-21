@@ -81,6 +81,7 @@ class For_investors extends MY_Controller {
 			$this->form_validation->set_rules('chkIndorTrust', 'individual or trustee', 'trim|required');
 			if ($this->input->post('chkIndorTrust') == 'Trust') {
 				$this->form_validation->set_rules('txtTrustName', 'trust name', 'trim|required|max_length[255]');
+				$this->form_validation->set_rules('txtSignedTrust', 'trust name', 'trim|required|max_length[255]');
 			}
 			$this->form_validation->set_rules('txtFirstName', 'first name', 'trim|required|max_length[255]');
 			$this->form_validation->set_rules('txtMiddleName', 'middle name', 'trim|max_length[255]');
@@ -152,6 +153,8 @@ class For_investors extends MY_Controller {
 			$this->form_validation->set_message('prior_experience', 'At least one prior experience must be checked.');
 			$this->form_validation->set_rules('txtOther', '', 'trim');
 			$this->form_validation->set_rules('txtPercent', 'percent of real estate in your investment portfolio', 'trim|required');
+			$this->form_validation->set_rules('chkSigned', 'signed', 'trim|required');
+			$this->form_validation->set_rules('txtSignedName', 'signed name', 'trim|required|max_length[255]');
 
 			$this->form_validation->set_rules('txtReferred', 'speculation', 'trim|max_length[255]');
 			if (TRUE == $this->form_validation->run())
@@ -285,7 +288,9 @@ class For_investors extends MY_Controller {
 						$msg .= '** ' . $this->input->post('txtOther') . "\n";
 					}
 				}
-				$msg .= "\n" . 'Referred by: ' . $this->input->post('txtReferred') . "\n" .
+				$msg .= $this->input->post('chkSigned') . ' by: ' . $this->input->post('txtSignedName') . "\n" .
+					$this->input->post('txtSignedTrust') . "\n" .
+					'Referred by: ' . $this->input->post('txtReferred') . "\n" .
 					"\r\n\r\n" . 'Sent at ' . date('Y-m-d H:i:s') . ' from <' . current_url() . '> by ' . $_SERVER['REMOTE_ADDR'];
 				$this->email->message($msg);
 				if ($this->email->send())
