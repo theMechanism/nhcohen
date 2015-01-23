@@ -698,6 +698,15 @@ form.full-width {
 		border: 2px solid $lighter-neutral;
 		padding: 5px 10px;
 	}
+	.highlight {
+		background-color: $link-color;
+		border-color: $brand-color;
+		color: white;
+		label {
+			font-family: latobold;
+			color: white;
+		}
+	}
 	.prior-row {
 		margin-bottom: 15px;
 	}

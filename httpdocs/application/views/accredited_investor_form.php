@@ -526,10 +526,10 @@
 
 	<hr>
 
-	<div>
+	<p class="highlight notice">
 		<input type="checkbox" id="chkSigned" name="chkSigned" class="inputChk" value="Electronically signed" <?php echo set_checkbox('chkSigned', 'Electronically signed'); ?> /><label for="chkSigned">By checking this box and typing my name below, I am electronically signing my application.</label>
 		<?php echo form_error('chkSigned'); ?>
-	</div>
+	</p>
 
 	<div class="row">
 		<div>
@@ -545,7 +545,7 @@
 
 	<div class="row" id="trustSignRow">
 		<div class="big">
-			<label for="txtSignedTrust">Please indicate in the space provided that the signer is a Trustee for the named trust</label>
+			<label for="txtSignedTrust">If a Trust, please indicate in the space provided that the signer is a Trustee for the named trust.</label>
 		</div>
 		<div>
 			<?php
