@@ -21,7 +21,7 @@
 	<div class="container">
 		<ul>
 			<li><a href="about-us/our-approach">Our Approach</a></li>
-			<li><a href="for-investors/accredited-investing">What is an Accredited Investor?</a></li>
+			<li><a href="for-investors/what-is-an-accredited-investor">What is an Accredited Investor?</a></li>
 			<li><a href="for-investors">Become an Investor</a></li>
 		</ul>
 	</div>
