@@ -54,18 +54,5 @@
 			ga('send', 'pageview');
 		</script>
 
-		<script type="text/javascript">
-			setTimeout(
-				function(){
-					var a = document.createElement("script");
-					var b = document.getElementsByTagName("script")[0];
-					a.src = "http://arcane-coast-4951.herokuapp.com/mech-bug-tracker.js?projectID=6";
-					a.async = true;
-					a.type = "text/javascript";
-					b.parentNode.insertBefore(a,b)
-			}, 1);
-		</script>
-
-
     </body>
 </html>
