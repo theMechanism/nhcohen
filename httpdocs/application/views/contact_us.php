@@ -75,7 +75,7 @@
 		<div>
 			<div class="select-wrap">
 				<select id="state" name="state">
-			        <option selected="selected">Select One</option>
+			        <option value="" selected="selected">Select One</option>
 			        <?php foreach($states as $key => $value) { ?>
 			            <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
 			        <?php } ?>
@@ -85,10 +85,10 @@
 	</div>
 	<div class="row">
 		<div>
-			<label for="outside_us">Other<div class="required">if outside U.S</div></label>
+			<label for="00No0000008wHqP">Other<div class="required">if outside U.S</div></label>
 		</div>
 		<div>
-			<input id="other" maxlength="20" name="outside_us" type="text">
+			<input id="other" maxlength="50" name="00No0000008wHqP" type="text">
 		</div>
 	</div>
 	<div class="row">
@@ -101,12 +101,12 @@
 	</div>
 	<div class="row">
 		<div>
-			<span><label for="00No0000008vE3U">I am an</label></span>
+			<span><label for="00No0000008wHqF">I am an</label></span>
 		</div>
 		<div>
 			<div class="select-wrap">
-				<select id="iam" name="00No0000008vE3U">
-			        <option selected="selected">Select One</option>
+				<select id="iam" name="00No0000008wHqF">
+			        <option value="" selected="selected">Select One</option>
 			        <option value="investor">Investor</option>
 			        <option value="sponsor">Sponsor</option>
 			        <option value="advisor">Advisor</option>
