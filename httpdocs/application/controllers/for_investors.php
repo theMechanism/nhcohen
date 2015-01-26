@@ -153,8 +153,8 @@ class For_investors extends MY_Controller {
 			$this->form_validation->set_message('prior_experience', 'At least one prior experience must be checked.');
 			$this->form_validation->set_rules('txtOther', '', 'trim');
 			$this->form_validation->set_rules('txtPercent', 'percent of real estate in your investment portfolio', 'trim|required');
-			$this->form_validation->set_rules('chkSigned', 'signed', 'trim|required');
-			$this->form_validation->set_rules('txtSignedName', 'signed name', 'trim|required|max_length[255]');
+			$this->form_validation->set_rules('chkSigned', 'acknowledgement of signature', 'trim|required');
+			$this->form_validation->set_rules('txtSignedName', 'signature', 'trim|required|max_length[255]');
 
 			$this->form_validation->set_rules('txtReferred', 'speculation', 'trim|max_length[255]');
 			if (TRUE == $this->form_validation->run())
@@ -312,7 +312,7 @@ class For_investors extends MY_Controller {
 
 		if ('success' == $action)
 		{
-			$this->data['success'] = 'Thank you for submitting your inquiry. We will respond shortly.</p><p>If you require immediate assistance, please contact investor services at <a href="tel:+12124986962">212.498.6962</a>';
+			$this->data['success'] = 'Thank you for submitting your inquiry. We will respond shortly.</p><p>If you require immediate assistance, please contact Investor Services at <a href="tel:+12124986962">212.498.6962</a>';
 		}
 
 		$this->load->view('template', $this->data);
