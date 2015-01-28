@@ -18,6 +18,32 @@
         <link rel="stylesheet" href="<?php echo base_url('css/style.css'); ?>" media="screen">
         <link rel="stylesheet" href="<?php echo base_url('css/dave.css'); ?>">
 
+		<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url('img/favicon/favicon.ico'); ?>">
+		<!-- non-retina iPhone pre iOS 7 -->
+		<link rel="apple-touch-icon" href="<?php echo base_url('img/favicon/nhc-57x57.png'); ?>" sizes="57x57">
+		<!-- non-retina iPad pre iOS 7 -->
+		<link rel="apple-touch-icon" href="<?php echo base_url('img/favicon/nhc-72x72.png'); ?>" sizes="72x72">
+		<!-- non-retina iPad iOS 7 -->
+		<link rel="apple-touch-icon" href="<?php echo base_url('img/favicon/nhc-76x76.png'); ?>" sizes="76x76">
+		<!-- retina iPhone pre iOS 7 -->
+		<link rel="apple-touch-icon" href="<?php echo base_url('img/favicon/nhc-114x114.png'); ?>" sizes="114x114">
+		<!-- retina iPhone iOS 7 -->
+		<link rel="apple-touch-icon" href="<?php echo base_url('img/favicon/nhc-120x120.png'); ?>" sizes="120x120">
+		<!-- retina iPad pre iOS 7 -->
+		<link rel="apple-touch-icon" href="<?php echo base_url('img/favicon/nhc-144x144.png'); ?>" sizes="144x144">
+		<!-- retina iPad iOS 7 -->
+		<link rel="apple-touch-icon" href="<?php echo base_url('img/favicon/nhc-152x152.png'); ?>" sizes="152x152">
+		<!-- Win8 tile -->
+		<meta name="msapplication-TileImage" content="<?php echo base_url('img/favicon/nhc-144x144.png'); ?>">
+		<meta name="msapplication-TileColor" content="#B20099"/>
+		<meta name="application-name" content="name" />
+
+		<!-- IE11 tiles -->
+		<meta name="msapplication-square70x70logo" content="<?php echo base_url('img/favicon/nhc-70x70.png'); ?>"/>
+		<meta name="msapplication-square150x150logo" content="<?php echo base_url('img/favicon/nhc-150x150.png'); ?>"/>
+		<meta name="msapplication-wide310x150logo" content="<?php echo base_url('img/favicon/nhc-310x150.png'); ?>"/>
+		<meta name="msapplication-square310x310logo" content="<?php echo base_url('img/favicon/nhc-310x310.png'); ?>"/>
+
         <script src="<?php echo base_url('js/vendor/modernizr-2.6.2-respond-1.1.0.min.js'); ?>"></script>
     </head>
     <body class="<?php echo $view; ?>">
