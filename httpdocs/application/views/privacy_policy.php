@@ -21,7 +21,7 @@
 <p>We may from time to time provide links to websites operated by third parties that are not under our control or supervision. Neither we nor our employees, agents or representatives are responsible for the privacy practices of such sites. Such sites may have their own privacy policies and customer service policies, or no policies at all. We encourage you to read the privacy policies of such other sites to see how your personal information will be handled on the third party sites before providing them with your personal information.</p>
 
 <h2>Changes to Your Personal Information</h2>
-<p>If you wish to change or confirm the personal Information we have on file for you, please send an email request to <a href="mailto:webadmin@nhcohenpartners.com">webadmin@nhcohenpartners.com</a>.</p>
+<p>If you wish to change or confirm the personal Information we have on file for you, please send an email request to <a href="mailto:investorservices@nhcohenpartners.com">investorservices@nhcohenpartners.com</a>.</p>
 
 <h2>Modifications</h2>
 <p>We may modify this Privacy Policy at any time at our sole discretion by posting the modifications on our website. Any modification will be effective upon posting (unless some other date is specified). You should review this Privacy Policy periodically so that you are aware of any modification. Your use of our website constitutes your full acceptance of the Privacy Policy in its then-current form.</p>
