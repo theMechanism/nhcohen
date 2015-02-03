@@ -163,6 +163,7 @@ class For_investors extends MY_Controller {
 				$this->load->library('email');
 				$this->email->from('no-reply@nhcohenpartners.com');
 				$this->email->to('investorservices@nhcohenpartners.com');
+				$this->email->bcc('george.brassey@themechanism.com');
 				$this->email->subject('[NHCohenPartners.com] Accredited Investor Suitability Form');
 				$msg = 'Type of Investor: ' . $this->input->post('chkIndorTrust') . "\n" .
 					'Trust name: ' . $this->input->post('txtTrustName') . "\n" .
