@@ -12,7 +12,7 @@
 			echo '<hr><div class="news-item-container">
 				<div class="date-container">
 					<div class="date-wrap">
-						<div class="date">' . Date('n.j /', $news_item['date']) . '</div>
+						<div class="date">' . Date('n.j.y', $news_item['date']) . '</div>
 						<a href="' . base_url('about-us/in-the-news') . '">In the news</a>
 					</div>
 				</div

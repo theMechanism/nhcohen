@@ -14,6 +14,12 @@ class In_the_news_model extends CI_Model {
 
 		$news = array(
 			array(
+				'title' => 'Cohen elected to board of 5 Stone Green',
+				'url' => 'http://www.rew-online.com/2015/01/28/cohen-elected-to-board-of-5-stone-green/',
+				'date' => strtotime('01/28/2015'),
+				'extract' => 'Ned H. Cohen, founder and president of NHCohen Partners LLC, has been elected to serve on the Board of Advisors of 5 Stone Green Capital...'
+			),
+			array(
 				'title' => 'Cohen: Inflation Will Bring Investors Yield',
 				'url' => 'http://www.globest.com/news/12_1012/newyork/finance/Cohen-Inflation-Will-Bring-Investors-Yield-353532.html',
 				'date' => strtotime('12/22/2014'),

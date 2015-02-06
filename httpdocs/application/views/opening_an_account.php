@@ -8,7 +8,7 @@
 New York, NY 10016<br>
 Attention: Dept. AISF</strong></p>
 <p><em>OR</em></p>
-<p>You can <strong>email</strong> a scanned Accredited Investor Suitability to: <a href="mailto:info@nhcohenpartners.com">info@nhcohenpartners.com</a></p>
+<p>You can <strong>email</strong> a scanned Accredited Investor Suitability form to: <a href="mailto:info@nhcohenpartners.com">info@nhcohenpartners.com</a></p>
 <p><em>OR</em></p>
 <p><em>You may fax the Accredited Investor Suitability Form to:</em><p>
 <p><strong>NHCohen Capital LLC<br>
