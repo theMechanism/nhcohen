@@ -10,7 +10,7 @@
 
 If you need to change the .htaccess file, run this command to prevent committing it to the repo:
 ```
-git update-index --assume-unchanged .htaccess
+git update-index --assume-unchanged httpdocs/.htaccess
 ```
 
 To revert it:
