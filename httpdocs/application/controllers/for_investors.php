@@ -255,9 +255,8 @@ class For_investors extends MY_Controller {
 		$this->email->set_mailtype("html");
 		$this->email->from('no-reply@nhcohenpartners.com', 'NHCohen Partners');
 		$this->email->to($this->input->post('txtEmail'));
-		$this->email->bcc('george.brassey@themechanism.com');
 		$this->email->subject('NHCohen Partners Accredited Form');
-		$msg = '<p><img src="https://nhcohenpartners.com/img/nhcohen-logo.png" alt="NHCohen Partners LLC"></p>' .
+		$msg = '<p><a href="https://nhcohenpartners.com/" title="NHCohen Partners"><img src="https://nhcohenpartners.com/img/nhcohen-logo.png" alt="NHCohen Partners LLC"></a></p>' .
 				'<p>Dear ' . $this->input->post('txtFirstName') . ',</p>' .
 				'<p>Thank you for your interest in NHCohen Partners and submission of the Accredited Investor Suitability Form.</p>' .
 				'<p>NHCohen Partners has built enduring relationships with our clients based upon integrity and respect.  We are dedicated to identifying quality opportunities for investors to diversify their holdings, with a special emphasis on real estate.</p>' .
@@ -283,7 +282,7 @@ class For_investors extends MY_Controller {
 				'<p>Should you have any question regarding your submission or about required documentation, please call Investor Services at 212-498-6962 or <a href="mailto:investorservices@nhcohenpartners.com">investorservices@nhcohenpartners.com.</a></p>' .
 				'<p><small>All information will be used only by NHCohen Partners LLC and/or NHCohen Capital LLC. Such information shall remain absolutely confidential and may be shared with any other provider or vendor in very limited circumstances. Please see our <a href="https://nhcohenpartners.com/privacy-policy">Privacy Policy</a> for additional information.</small></p>' .
 				'<hr>' .
-				'<p><small>©2015 NHCohen Partners LLC<br>
+				'<p><small>©' . date("Y") . ' NHCohen Partners LLC<br>
 					NHCohen Capital LLC, Member: <a href="http://www.finra.org/">FINRA</a><br>
 					2 Park Avenue, 14th Floor New York, NY 10016 T: <a href="tel:+12124986960">212.498.6960</a> F: 855.856.6483 <br>
 					Securities offered through NHCohen Capital LLC, a registered broker-dealer with the Securities and Exchange Commission and member of FINRA.<br>
