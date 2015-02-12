@@ -283,11 +283,11 @@ class For_investors extends MY_Controller {
 				'<p>Should you have any question regarding your submission or about required documentation, please call Investor Services at 212-498-6962 or <a href="mailto:investorservices@nhcohenpartners.com">investorservices@nhcohenpartners.com.</a></p>' .
 				'<p><small>All information will be used only by NHCohen Partners LLC and/or NHCohen Capital LLC. Such information shall remain absolutely confidential and may be shared with any other provider or vendor in very limited circumstances. Please see our <a href="https://nhcohenpartners.com/privacy-policy">Privacy Policy</a> for additional information.</small></p>' .
 				'<hr>' .
-				'<p>©2015 NHCohen Partners LLC<br>
+				'<p><small>©2015 NHCohen Partners LLC<br>
 					NHCohen Capital LLC, Member: <a href="http://www.finra.org/">FINRA</a><br>
 					2 Park Avenue, 14th Floor New York, NY 10016 T: <a href="tel:+12124986960">212.498.6960</a> F: 855.856.6483 <br>
 					Securities offered through NHCohen Capital LLC, a registered broker-dealer with the Securities and Exchange Commission and member of FINRA.<br>
-					NHCohen Capital LLC and NHCohen Partners LLC are affiliated companies.</p>';
+					NHCohen Capital LLC and NHCohen Partners LLC are affiliated companies.</small></p>';
 
 		$this->email->message($msg);
 		return $this->email->send();
