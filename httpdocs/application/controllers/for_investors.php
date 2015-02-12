@@ -257,7 +257,8 @@ class For_investors extends MY_Controller {
 		$this->email->to($this->input->post('txtEmail'));
 		$this->email->bcc('george.brassey@themechanism.com');
 		$this->email->subject('NHCohen Partners Accredited Form');
-		$msg = '<p>Dear ' . $this->input->post('txtFirstName') . ',</p>' .
+		$msg = '<p><img src="https://nhcohenpartners.com/img/nhcohen-logo.png" alt="NHCohen Partners LLC"></p>' .
+				'<p>Dear ' . $this->input->post('txtFirstName') . ',</p>' .
 				'<p>Thank you for your interest in NHCohen Partners and submission of the Accredited Investor Suitability Form.</p>' .
 				'<p>NHCohen Partners has built enduring relationships with our clients based upon integrity and respect.  We are dedicated to identifying quality opportunities for investors to diversify their holdings, with a special emphasis on real estate.</p>' .
 				'<p>We look forward to your participation in our investment programs.</p>' .
