@@ -1,5 +1,6 @@
 .DS_Store
 .sass-cache/
+.htaccess
 */config/development
 */logs/log-*.php
 */logs/!index.html

@@ -1,3 +1,5 @@
+# This is the htaccess for production. Rename it '.htaccess'. Edit it to suit your environment
+
 RewriteEngine on
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
