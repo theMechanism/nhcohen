@@ -1,10 +1,8 @@
-<?php if (isset($success)) :
-		echo '<p class="success">' . $success . '</p>';
-	else:
-		echo form_open(current_url(), array('id' => 'investor-form','class' => 'full-width')); ?>
+<?php echo form_open(current_url(), array('id' => 'investor-form','class' => 'full-width')); ?>
 	<p>To establish your eligibility for our new offerings, please complete the online Accredited Investor Suitability Form below.  Your personal information will be treated as strictly private – please see our <a href="<?php echo base_url('privacy-policy'); ?>">Privacy Policy</a>.</p>
 	<p>You may also download the <a href="<?php echo base_url('pdf/accredited-investor-form.pdf'); ?>">Accredited Investor Form</a>. (Note: In order to download the Form, you will need Adobe Acrobat Reader, which can be <a href="http://get.adobe.com/reader/">downloaded from here</a>.)</p>
 	<p><strong>All fields</strong> are required unless marked <span class="optional_inline">optional</span>.</p>
+	<?php if ($error) { echo $error; } ?>
 	<h2>Personal Information</h2>
 	<div class="row">
 		<div class="big"></div>
@@ -567,6 +565,5 @@
 
 
 <?php
-		echo form_close();
-	endif;
+	echo form_close();
 ?>
