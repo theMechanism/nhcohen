@@ -88,6 +88,39 @@ margin-top: 150px;
 }
 
 
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 479px) {
+
+.banner-container .hero-text h2 {
+font-size: 31px;
+line-height: 1em;
+}
+		
+.footer-container .info {
+padding-top: 10px;
+font-size: 13px;
+line-height: 1.2em;
+}
+
+.latest-news .news-container h2 {
+line-height: 19px;
+padding-top: 12px;
+}
+
+.banner-container .hero-text .hero-cta {
+font-size: 20px;
+padding: 10px 40px 9px;
+}
+
+}
+
 
 @media print {
 
