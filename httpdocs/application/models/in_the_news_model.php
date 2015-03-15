@@ -14,6 +14,18 @@ class In_the_news_model extends CI_Model {
 
 		$news = array(
 			array(
+				'title' => 'NHCohen and Herrick, Feinstein Team Up',
+				'url' => 'http://www.globest.com/news/12_1064/newyork/office/NHCohen-and-Herrick-Feinstein-Team-Up-356108-1.html?CMP=OTC-RSS',
+				'date' => strtotime('03/12/2015'),
+				'extract' => 'Real estate investment firm NHCohen Partners LLC and Herrick, Feinstein LLP, a leader in commercial real estate law since 1928, have formed a strategic alliance...'
+			),
+			array(
+				'title' => 'Ex-Empire State Bldg. owners new chance to invest',
+				'url' => 'http://www.globest.com/news/12_1064/newyork/office/NHCohen-and-Herrick-Feinstein-Team-Up-356108-1.html?CMP=OTC-RSS',
+				'date' => strtotime('03/11/2015'),
+				'extract' => 'Ned Cohen hopes to raise tens of millions of dollars from the former stakeholders of the Empire State Building....'
+			),
+			array(
 				'title' => 'Cohen elected to board of 5 Stone Green',
 				'url' => 'http://www.rew-online.com/2015/01/28/cohen-elected-to-board-of-5-stone-green/',
 				'date' => strtotime('01/28/2015'),
