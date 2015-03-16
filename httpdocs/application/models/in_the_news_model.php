@@ -21,7 +21,7 @@ class In_the_news_model extends CI_Model {
 			),
 			array(
 				'title' => 'Ex-Empire State Bldg. owners new chance to invest',
-				'url' => 'http://www.globest.com/news/12_1064/newyork/office/NHCohen-and-Herrick-Feinstein-Team-Up-356108-1.html?CMP=OTC-RSS',
+				'url' => 'http://www.crainsnewyork.com/article/20150311/REAL_ESTATE/150319967/ex-empire-state-bldg-owners-new-chance-to-invest',
 				'date' => strtotime('03/11/2015'),
 				'extract' => 'Ned Cohen hopes to raise tens of millions of dollars from the former stakeholders of the Empire State Building....'
 			),
