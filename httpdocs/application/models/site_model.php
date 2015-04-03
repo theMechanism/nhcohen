@@ -52,7 +52,7 @@ class Site_model extends CI_Model {
 			),
 			'login' => array(
 				'title' => 'Login',
-				'url' => 'http://www.example.com'
+				'url' => 'https://nhcohenpartners.sharefile.com'
 			)
 		);
 

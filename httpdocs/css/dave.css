@@ -6,6 +6,14 @@ font-family: "latoregular", helvetica, sans-serif;
 color: #666;
 }
 
+header nav .menu-item {
+width: 25%;
+}
+
+nav .menu-item {
+font: 17px "NewsGothicBT-BoldCondensed", arial, sans-serif;
+}
+
 p, ul, ol, label, .news-item-container .news-container p {
 color: #3e3e3e;
 }
