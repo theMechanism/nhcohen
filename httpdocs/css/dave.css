@@ -13,8 +13,13 @@ width: 25%;
 
 
 header nav ul .menu-item + .menu-item + .menu-item + .menu-item a {
-color: red;
+color: #7c003a;
 }
+
+header nav ul .menu-item + .menu-item + .menu-item + .menu-item a:hover {
+color: #9d0049;
+}
+
 
 nav .menu-item {
 font: 17px "NewsGothicBT-BoldCondensed", arial, sans-serif;
