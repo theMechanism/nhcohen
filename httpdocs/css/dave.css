@@ -4,10 +4,16 @@ header nav .menu-item a {
 font-family: "latoregular", helvetica, sans-serif;
 /* font-size: .9em;*/
 color: #666;
+min-width: 100px;
 }
 
 header nav .menu-item {
 width: 25%;
+}
+
+
+header nav ul .menu-item + .menu-item + .menu-item + .menu-item a {
+color: red;
 }
 
 nav .menu-item {
