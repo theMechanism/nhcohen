@@ -13,14 +13,17 @@ width: 25%;
 
 
 header nav ul .menu-item + .menu-item + .menu-item + .menu-item a {
-color: #7c003a;
+color: #0065b7;
 }
 
-header nav ul .menu-item + .menu-item + .menu-item + .menu-item a:hover {
-color: #9d0049;
+header nav ul .menu-item + .menu-item + .menu-item + .menu-item {
+width: 10%;
 }
 
 
+header nav ul .menu-item .item-wrap + .menu-item .item-wrap + .menu-item .item-wrap + .menu-item .item-wrap a {
+background: blue;
+}
 nav .menu-item {
 font: 17px "NewsGothicBT-BoldCondensed", arial, sans-serif;
 }

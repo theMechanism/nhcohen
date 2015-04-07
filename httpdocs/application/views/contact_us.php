@@ -101,7 +101,7 @@
 	</div>
 	<div class="row">
 		<div>
-			<span><label for="00No0000008wHqF">I am an</label></span>
+			<span><label for="00No0000008wHqF">I am a(n)</label></span>
 		</div>
 		<div>
 			<div class="select-wrap">
