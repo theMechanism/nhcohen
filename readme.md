@@ -9,3 +9,5 @@
 ## .htaccess
 
 .htaccess has been gitignored to allow easier changes for local development. Copy and rename ```htaccess-copy``` -> ```.htaccess```, making edits necessary for your environment.
+
+test
