@@ -14,6 +14,12 @@ class In_the_news_model extends CI_Model {
 
 		$news = array(
 			array(
+				'title' => 'Derping with fox rosen',
+				'url' => 'www.derping.com',
+				'date' => strtotime('07/13/2015'),
+				'extract' => '"I am eating a derp sandwich!"'
+			),
+			array(
 				'title' => 'Q&A with Ned H. Cohen — Commercial Observer',
 				'url' => 'http://moweekly.commercialobserver.com/04242015.pdf',
 				'date' => strtotime('04/24/2015'),
