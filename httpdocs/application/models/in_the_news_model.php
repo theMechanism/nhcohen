@@ -14,10 +14,10 @@ class In_the_news_model extends CI_Model {
 
 		$news = array(
 			array(
-				'title' => 'Derping with fox rosen',
-				'url' => 'www.derping.com',
-				'date' => strtotime('07/13/2015'),
-				'extract' => '"I am eating a derp sandwich!"'
+				'title' => 'Ned H. Cohen featured in CityBizList',
+				'url' => 'http://citybizlist.com/article/273861/ned-h-cohen-cites-peril-posed-by-low-interest-rates-for-direct-ownership-investments-in-real-estate',
+				'date' => strtotime('06/04/2015'),
+				'extract' => 'Ned H. Cohen Cites Peril Posed by Low Interest Rates For Direct Ownership Investments in Real Estate'
 			),
 			array(
 				'title' => 'Q&A with Ned H. Cohen — Commercial Observer',
