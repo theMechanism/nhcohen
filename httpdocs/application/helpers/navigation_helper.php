@@ -13,7 +13,7 @@
 				if ($first_segment == $key) {
 					echo ' on';
 				}
-				echo '"><div class="item-wrap"><a href="' . base_url($key) . '">' . $topnav['title'] . '</a></div>';
+				echo '"><div class="item-wrap"><a href="' . ((isset($topnav['url'])) ? $topnav['url'] : base_url($key)) . '">' . $topnav['title'] . '</a></div>';
 
 				if (isset($topnav['children'])) {
 					echo '	<ul class="menu-container">';
@@ -51,7 +51,7 @@
 				if (isset($first_segment) && $key == $first_segment) {
 					echo ' on';
 				}
-				echo '"><div class="item-wrap"><a href="' . base_url($key) . '">' . $topnav['title'] . '</a></div></li>';
+				echo '"><div class="item-wrap"><a href="' . ((isset($topnav['url'])) ? $topnav['url'] : base_url($key)) . '">' . $topnav['title'] . '</a></div></li>';
 			}
 
 			echo '</ul>

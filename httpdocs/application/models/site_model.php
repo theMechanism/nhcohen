@@ -49,6 +49,10 @@ class Site_model extends CI_Model {
 			),
 			'contact-us' => array(
 				'title' => 'Contact Us'
+			),
+			'login' => array(
+				'title' => 'Login',
+				'url' => 'https://nhcohenpartners.sharefile.com'
 			)
 		);
 
