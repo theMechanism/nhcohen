@@ -14,6 +14,12 @@ class In_the_news_model extends CI_Model {
 
 		$news = array(
 			array(
+				'title' => 'Stock market volatility shines spotlight on real estate attributes',
+				'view' => 'stock-market-volatility-shines-spotlight-on-real-estate-attributes',
+				'date' => strtotime('09/03/2015'),
+				'extract' => 'The performance of direct real estate investments is not correlated to the stock market and will generally provide a more stable flow of distributions.'
+			),
+			array(
 				'title' => 'Ned H. Cohen featured in CityBizList',
 				'url' => 'http://citybizlist.com/article/273861/ned-h-cohen-cites-peril-posed-by-low-interest-rates-for-direct-ownership-investments-in-real-estate',
 				'date' => strtotime('06/04/2015'),
