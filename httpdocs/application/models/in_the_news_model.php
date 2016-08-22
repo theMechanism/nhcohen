@@ -14,6 +14,12 @@ class In_the_news_model extends CI_Model {
 
 		$news = array(
 			array(
+				'title' => 'NHCohen Partners Completes Equity Raise for Acquisition of Comfort Suites in NC',
+				'url' => 'http://www.hotelbusiness.com/RealEstate/NHCohen-Raises-Capital-to-Enable-LBP-Hotels-to-Acquire-Comfort-Suites-in-NC/54815',
+				'date' => strtotime('08/15/2016'),
+				'extract' => 'NHCohen Partners has completed the equity raise for the acquisition of the Comfort Suites Raleigh Durham Airport/RTP hotel'
+			),
+			array(
 				'title' => 'Stock market volatility shines spotlight on real estate attributes',
 				'view' => 'stock-market-volatility-shines-spotlight-on-real-estate-attributes',
 				'date' => strtotime('09/03/2015'),
