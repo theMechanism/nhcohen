@@ -1,4 +1,4 @@
-<img src="../img/comfort-suites-nc.jpg" alt="comfort suites image" />
+<img src="../../img/comfort-suites-nc.jpg" alt="comfort suites image" />
 <p>NEW YORK—NHCohen Partners has completed the equity raise for the acquisition of the Comfort Suites Raleigh Durham Airport/RTP hotel, located two miles from Research Triangle Park and five miles from Raleigh-Durham International Airport in Raleigh-Durham, NC.</p>
 <p>The property is a five-story, 125-key all-suites, select-service hotel managed by Interstate Hotels and Resorts, a U.S.-based global hotel management company. The $8.5-million acquisition was sponsored by LBP Hotels, LLC, a venture headed by Paul Stern, a veteran in the hospitality investment space. The seller was a private investment group.</p>
 <p>The hotel lies along Interstate 40, the primary commercial route through the Research Triangle area. Also nearby are Duke University, the University of North Carolina at Chapel Hill and other educational institutions and corporate demand generators.</p>
