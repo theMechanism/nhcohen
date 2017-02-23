@@ -4,7 +4,7 @@
 <p>You may also <a href="<?php echo base_url('/pdf/accredited-investor-form.pdf'); ?>">download and print the form</a> (Note: In order to download the form, you will need Adobe Acrobat Reader, which can be <a href="https://get.adobe.com/reader/">downloaded from here</a>).
 <p><em>If the Accredited Investor Suitability Form is printed it should be mailed to:</em><p>
 <p><strong>NHCohen Capital LLC<br>
-2 Park Place, 14th Floor<br>
+2 Park Avenue, 14th Floor<br>
 New York, NY 10016<br>
 Attention: Dept. AISF</strong></p>
 <p><em>OR</em></p>
