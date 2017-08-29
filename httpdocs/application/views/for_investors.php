@@ -1,4 +1,4 @@
-<p>NHCohen Partners is an investment firm that identifies quality opportunities for high-net-worth individuals and family entities to diversify their holdings, with a special emphasis on real estate.  The firm carefully evaluates partnership structures to help investors realize all of the potential benefits of real estate, including income, capital appreciation, and tax and estate planning advantages, with preservation of capital receiving the highest priority. The firm provides no assurance that any investment strategy described herein will result in a profit or protect against a loss.</p>
+<p>NHCohen Partners is an investment firm that identifies quality opportunities for high-net-worth individuals and family entities to diversify their holdings, with a special emphasis on real estate.  The firm carefully evaluates partnership structures to help investors realize the many potential benefits of real estate, including income, capital appreciation, and tax and estate planning advantages, with preservation of capital receiving the highest priority. The firm provides no assurance that any investment strategy described herein will result in a profit or protect against a loss.</p>
 </div> <!-- end .cont -->
 </div> <!-- end .wrapper -->
 </div> <!-- end .containter -->
@@ -17,7 +17,7 @@
 <div class="container">
 	<div class="wrapper">
 		<div class="cont">
-			<p>Equity raised by the partnerships is invested in the projects of well-established real estate entrepreneurs with successful track records in various types of income-producing real estate, including office, retail, industrial, multi-family residential, and mixed-use properties.</p>
+			<p>Equity raised by the partnerships is invested in the projects of well-established real estate entrepreneurs with successful track records in various types of income-producing real estate, including office, retail, multi-family residential, industrial, hospitality, and mixed-use properties.</p>
 			<p>The firm's founder and president, Ned H. Cohen, has 35 years of marketplace experience in real estate.  "The perspective and insight I've attained over the decades underscores the value of prudence and realistic expectations, together with the indispensable need for thorough due diligence, carefully planned exit strategies, and safeguards against the unexpected," says Mr. Cohen.  Most recently he served as executive vice president of Malkin Securities Corp., where for 15 years he directed the securities offerings of the real estate syndications of Malkin Holdings LLC.</p>
 			<div class="form-container">
 				<a href="<?php echo base_url('pdf/accredited-investor-form.pdf'); ?>">
