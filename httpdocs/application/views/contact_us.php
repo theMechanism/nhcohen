@@ -13,9 +13,10 @@
 
 <hr>
 
-<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="full-width" id="contact-form">
-<!-- <input type="hidden" name="debug" value=1>
-<input type="hidden" name="debugEmail" value="***"> -->
+<!--
+<form novalidate autocomplete="on" data-processing="false" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="full-width" id="contact-form">
+<!~~ <input type="hidden" name="debug" value=1>
+<input type="hidden" name="debugEmail" value="***"> ~~>
 <input type="hidden" name="oid" value="00Do0000000JCJr">
 <input type="hidden" name="retURL" value="<?php echo base_url('contact-us/success'); ?>">
 <input type="hidden" value="Contact Form" name="lead_source">
@@ -24,7 +25,7 @@
 			<label for="last_name">Name<div class="required">required</div></label>
 		</div>
 		<div>
-			<input id="last_name" maxlength="80" name="last_name" type="text">
+			<input inputmode="latin-name" x-inputmode="latin-name" autocomplete="name" id="last_name" maxlength="80" name="last_name" type="text" />
 		</div>
 	</div>
 	<div class="row">
@@ -32,7 +33,7 @@
 			<label for="email">Email Address<div class="required">required</div></label>
 		</div>
 		<div>
-			<input id="email" maxlength="80" name="email" type="text">
+			<input id="email" name="email" type="email" autocomplete="email" />
 		</div>
 	</div>
 	<div class="row">
@@ -40,7 +41,7 @@
 			<label for="email">Confirm Email Address<div class="required">required</div></label>
 		</div>
 		<div>
-			<input id="emailConf" maxlength="80" name="emailConf" type="text">
+			<input id="emailConf" maxlength="80" name="emailConf" type="email" autocomplete="email" />
 			<p class="txtError" id="emailConfError"></p>
 		</div>
 	</div>
@@ -49,7 +50,7 @@
 			<label for="phone">Phone Number</label>
 		</div>
 		<div>
-			<input id="phone" maxlength="40" class='phone' name="phone" type="text">
+			<input id="phone" class="phone" name="phone" type="tel" autocomplete="tel" />
 		</div>
 	</div>
 	<div class="row">
@@ -132,3 +133,4 @@
 		</div>
 	</div>
 </form>
+ -->
