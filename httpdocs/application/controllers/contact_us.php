@@ -41,10 +41,9 @@ class Contact_us extends MY_Controller {
 	public function success()
 	{
 
-		//$from_email = "investorservices@nhcohenpartners.com"; 
-		//$to_email = "investorservices@nhcohenpartners.com";
-		$from_email = "lyle@huzzahstudios.com"; 
-		$to_email = "lyle@huzzahstudios.com";
+		$from_email = "investorservices@nhcohenpartners.com"; 
+		$to_email = "investorservices@nhcohenpartners.com";
+		
 		//$to_email = $this->input->post('email'); 
 		$user_name = $this->input->post('last_name');
 		$user_email = $this->input->post('email');
