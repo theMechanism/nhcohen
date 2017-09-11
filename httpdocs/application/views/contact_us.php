@@ -13,12 +13,11 @@
 
 <hr>
 
-<!--
-<form novalidate autocomplete="on" data-processing="false" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" class="full-width" id="contact-form">
-<!~~ <input type="hidden" name="debug" value=1>
-<input type="hidden" name="debugEmail" value="***"> ~~>
+
+<form novalidate autocomplete="on" data-processing="false" action="<?php echo base_url('contact-us/success'); ?>" method="POST" class="full-width" id="contact-form">
+<!-- <input type="hidden" name="debug" value=1>
+<input type="hidden" name="debugEmail" value="***"> -->
 <input type="hidden" name="oid" value="00Do0000000JCJr">
-<input type="hidden" name="retURL" value="<?php echo base_url('contact-us/success'); ?>">
 <input type="hidden" value="Contact Form" name="lead_source">
 	<div class="row">
 		<div>
@@ -133,4 +132,3 @@
 		</div>
 	</div>
 </form>
- -->
