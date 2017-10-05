@@ -42,7 +42,7 @@ class Contact_us extends MY_Controller {
 	{
 
 		$from_email = "investorservices@nhcohenpartners.com"; 
-		$to_email = "investorservices@nhcohenpartners.com";
+		$to_email = "investorservices@nhcohenpartners.com,dave.fletcher@themechanism.com";
 		
 		//$to_email = $this->input->post('email'); 
 		$user_name = $this->input->post('last_name');
