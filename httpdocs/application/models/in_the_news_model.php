@@ -81,7 +81,7 @@ class In_the_news_model extends CI_Model {
 			),
 			array(
 				'title' => 'Ned Cohen starts his own firm',
-				'url' => 'http://www.rew-online.com/2014/12/03/ned-cohen-starts-his-own-firm/',
+				'view' => 'ned-cohen-starts-his-own-firm',
 				'date' => strtotime('12/03/2014'),
 				'extract' => 'Ned H. Cohen, a 35-year veteran of real estate finance, has formed a new Manhattan-based investment firm, NHCohen Partners LLC, along with an affiliated registered broker-dealer, NHCohen Capital LLC'
 			),
