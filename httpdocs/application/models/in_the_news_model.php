@@ -125,7 +125,7 @@ class In_the_news_model extends CI_Model {
 
 	}
 
-	private function get_list($news, $offset = 0, $limit = 10) {
+	private function get_list($news, $offset = 0, $limit = 20) {
 		$data = array();
 		$k = 0;
 		$news = $this->sort_news($news);
