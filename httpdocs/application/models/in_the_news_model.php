@@ -38,7 +38,7 @@ class In_the_news_model extends CI_Model {
 				'extract' => 'Ned H. Cohen Cites Peril Posed by Low Interest Rates For Direct Ownership Investments in Real Estate'
 			),
 			array(
-				'title' => 'Q&A with Ned H. Cohen — Commercial Observer',
+				'title' => 'Q&A with Ned H. Cohen Commercial Observer',
 				'view' => 'qa-with-ned-h-cohen-commercial-observer',
 				'date' => strtotime('04/24/2015'),
 				'extract' => '"I\'ll be raising equity for a fund sponsored by one of New York\'s best-known real estate entities ... with a conservative approach similar to mine."'
@@ -65,19 +65,19 @@ class In_the_news_model extends CI_Model {
 				'title' => 'Cohen: Inflation Will Bring Investors Yield',
 				'view' => 'cohen-inflation-will-bring-investors-yield',
 				'date' => strtotime('12/22/2014'),
-				'extract' => 'NEW YORK CITY—After starting his own set of companies last month, former Malkin executive Ned Cohen tells GlobeSt.com in this EXCLUSIVE Q&A about market conditions and other factors that were conducive to him striking out on his own.'
+				'extract' => 'NEW YORK CITYAfter starting his own set of companies last month, former Malkin executive Ned Cohen tells GlobeSt.com in this EXCLUSIVE Q&A about market conditions and other factors that were conducive to him striking out on his own.'
 			),
 			array(
 				'title' => 'NHCohen Partners President Ned H. Cohen Is Elected To Board of Advisors of 5 Stone Green Capital',
 				'view' => 'nhcohen-partners-president-ned-h-cohen-is-elected-to-board-of-advisors-of-5-stone-green-capital',
 				'date' => strtotime('12/09/2014'),
-				'extract' => 'NEW YORK CITY, December 09, 2014 – Ned H. Cohen, founder and president of NHCohen Partners LLC, has been elected to serve on the Board of Advisors of 5 Stone Green Capital, a real estate investment fund focused on sustainability and the use of clean energy.'
+				'extract' => 'NEW YORK CITY, December 09, 2014  Ned H. Cohen, founder and president of NHCohen Partners LLC, has been elected to serve on the Board of Advisors of 5 Stone Green Capital, a real estate investment fund focused on sustainability and the use of clean energy.'
 			),
 			array(
 				'title' => 'Newly minted brokerage firm targets property syndications',
 				'view' => 'newly-minted-brokerage-firm-targets-property-syndications',
 				'date' => strtotime('12/08/2014'),
-				'extract' => 'Ned Cohen, a commercial real estate syndica- tion veteran, has formed an investment company that will identify opportunities for high-net-worth investors to participate in limited partnerships as equity investors. NHCohen Partners, and its affiliate broker-dealer NHCohen Capital, hopes to invest nationally in transactions of $15-50m.'
+				'extract' => 'Ned Cohen, a commercial real estate syndication veteran, has formed an investment company that will identify opportunities for high-net-worth investors to participate in limited partnerships as equity investors.'
 			),
 			array(
 				'title' => 'Ned Cohen starts his own firm',
@@ -89,7 +89,7 @@ class In_the_news_model extends CI_Model {
 				'title' => 'Former Malkin Exec. Forms Real Estate Investment Firm',
 				'url' => 'http://www.globest.com/news/12_984/newyork/finance/Former-Malkin-Exec-Forms-Real-Estate-Investment-Firm-352388.html',
 				'date' => strtotime('11/10/2014'),
-				'extract' => 'NEW YORK CITY—Ned H. Cohen, a former executive vice president with Malkin Securities Corp., has launched NHCohen Partners, LLC'
+				'extract' => 'NEW YORK CITY Ned H. Cohen, a former executive vice president with Malkin Securities Corp., has launched NHCohen Partners, LLC'
 			)
 		);
 
