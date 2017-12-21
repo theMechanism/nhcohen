@@ -1,4 +1,4 @@
-<p>From: <a href="http://rew-online.com/2015/09/03/stock-market-volatility-shines-spotlight-in-real-estate-attributes/" target="_blank">http://rew-online.com/2015/09/03/stock-market-volatility-shines-spotlight-in-real-estate-attributes/</a></p>
+<p><strong>Download</strong>: <a href="/pdf/rew-online-2015-09-03-stock-market-volatility-shines-spotlight-in-real-estate-attributes.pdf">rew-online-2015-09-03-stock-market-volatility-shines-spotlight-in-real-estate-attributes.pdf</a></p>
 <p>Is the long-predicted bear market finally here, or are recent sharp declines merely a chance to load up on good stocks?</p>
 <p>Since no one can truly know, prudence demands that greater attention be given to portfolio diversification, says Ned H. Cohen, president of NHCohen Partners LLC, whose firm focuses mainly on real estate limited partnerships.</p>
 <p>&#8220;Direct ownership of quality real estate, modestly leveraged and acquired with clear, well planned exit strategies, has a long history of delivering steady income, capital gains, tax shelter benefits, protection against inflation and important estate-planning advantages,&#8221; Cohen points out.</p>
@@ -13,3 +13,4 @@
 <p>&#8220;With direct ownership, you are investing in a tangible asset rather than in a piece of paper. Those assets can weather changing economic cycles, creating long-term value.</p>
 <p>But they must be chosen by experienced, successful real estate entrepreneurs, and the investment partnerships must be structured by finance experts to protect investors against bumps in the road and provide well thought out plans for asset disposition.&#8221;</p>
 <p>COPYRIGHT 2015 REAL ESTATE WEEKLY. ALL RIGHTS RESERVED.</p>
+<p><strong>Original Link (rew-online.com)</strong>: <a href="http://rew-online.com/2015/09/03/stock-market-volatility-shines-spotlight-in-real-estate-attributes/" target="_blank">http://rew-online.com/2015/09/03/stock-market-volatility-shines-spotlight-in-real-estate-attributes/</a></p>
