@@ -14,6 +14,12 @@ class In_the_news_model extends CI_Model {
 
 		$news = array(
 			array(
+				'title' => 'NHCohen Partners funds Texas Comfort Suites purchase',
+				'view' => 'nhcohen-partners-funds-texas-comfort-suites-purchase',
+				'date' => strtotime('10/16/2017'),
+				'extract' => 'New York City-based NHCohen Partners completed an equity raise of $6.1 million to facilitate the acquisition of the Comfort Suites Arlington hotel'
+			),
+			array(
 				'title' => 'NHCohen Partners Completes Equity Raise for Acquisition of Comfort Suites in NC',
 				'view' => 'nhcohen-partners-completes-equity-raise-for-acquisition-of-comfort-suites-in-nc',
 				'date' => strtotime('08/15/2016'),
