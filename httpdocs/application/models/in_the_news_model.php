@@ -45,7 +45,7 @@ class In_the_news_model extends CI_Model {
 			),
 			array(
 				'title' => 'NHCohen and Herrick, Feinstein Team Up',
-				'url' => 'http://www.globest.com/news/12_1064/newyork/office/NHCohen-and-Herrick-Feinstein-Team-Up-356108-1.html?CMP=OTC-RSS',
+				'view' => 'nhcohen-and-herrick-feinstein-team-up',
 				'date' => strtotime('03/12/2015'),
 				'extract' => 'Real estate investment firm NHCohen Partners LLC and Herrick, Feinstein LLP, a leader in commercial real estate law since 1928, have formed a strategic alliance'
 			),
