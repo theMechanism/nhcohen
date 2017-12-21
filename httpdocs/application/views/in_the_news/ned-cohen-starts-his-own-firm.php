@@ -1,4 +1,4 @@
-<p><strong>Download</strong>: <a href="/pdf/rew-online-2014-12-03-ned-cohen-starts-his-own-firm">hrew-online-2014-12-03-ned-cohen-starts-his-own-firm.pdf</a></p>
+<p><strong>Download</strong>: <a href="/pdf/rew-online-2014-12-03-ned-cohen-starts-his-own-firm.pdf">hrew-online-2014-12-03-ned-cohen-starts-his-own-firm.pdf</a></p>
 <p>Ned H. Cohen, a 35-year veteran of real estate finance, has formed a new Manhattan-based investment firm, NHCohen Partners LLC, along with an affiliated registered broker-dealer, NHCohen Capital LLC.</p>
 <p>NHCohen Partners will identify opportunities for investors to participate in limited partnerships that provide equity to well-established real estate entrepreneurs for investments in quality real estate.</p>
 <p>The firm also may seek attractive opportunities in other types of alternative investments. NHCohen Capital will be the placement agent for the securities issued by investment sponsors.</p>
