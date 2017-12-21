@@ -1,4 +1,4 @@
-<p><strong>Download</strong>: <a href="/pdf/globest-sites-globest-2014-12-16-cohen-inflation-will-bring-investors-yield.pdf">globest-sites-globest-2015-03-12-nhcohen-and-herrick-feinstein-team-up.pdf</a></p>
+<p><strong>Download</strong>: <a href="/pdf/globest-sites-globest-2014-12-16-cohen-inflation-will-bring-investors-yield.pdf">globest-sites-globest-2014-12-16-cohen-inflation-will-bring-investors-yield.pdf</a></p>
 <p>NEW YORK CITY—After 15 years as EVP of Malkin Securities Corp., Ned Cohen hung out his own shingle last month with two separate but related companies: NHCohen Partners, LLC, an investment firm, and NHCohen Capital LLC, an affiliated broker-dealer. GlobeSt.com sat down with the newly minted entrepreneur to get the back story behind this move for this EXCLUSIVE story.</p>
 <p><em><strong>GlobeSt.com</strong>: Why did you want to create your own firm at this time?</em><br />
 <p><strong>Ned Cohen</strong>: I saw an opportunity to provide the investors with whom I’ve worked the continued benefits of direct ownership of income producing real estate, which they no longer had once the Malkins created the Empire State Realty Trust.</p>

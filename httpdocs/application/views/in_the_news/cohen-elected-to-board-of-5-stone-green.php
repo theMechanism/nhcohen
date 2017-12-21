@@ -1,4 +1,4 @@
-<p><strong>Download</strong>: <a href="/pdf/rew-online-2015-01-28-cohen-elected-to-board-of-5-stone-green.pdf">ew-online-2015-01-28-cohen-elected-to-board-of-5-stone-green.pdf</a></p>
+<p><strong>Download</strong>: <a href="/pdf/rew-online-2015-01-28-cohen-elected-to-board-of-5-stone-green.pdf">rew-online-2015-01-28-cohen-elected-to-board-of-5-stone-green.pdf</a></p>
 <p>Ned H. Cohen, founder and president of NHCohen Partners LLC, has been elected to serve on the Board of Advisors of 5 Stone Green Capital, a real estate investment fund focused on sustainability and the use of clean energy.</p>
 <p>“Ned’s proven skills in building new businesses and understanding the concerns of investors as a fiduciary will make a valuable contribution to the growth of 5 Stone Green Capital,” said Doug Lawrence, founder and co-managing principal of the real estate fund.</p>
 <p>“We look forward to his business acumen and capital markets expertise, as well as his thoughts about attracting investors and supporters who understand the attributes of investing in green real estate assets in particular, and real estate funds in general.”</p>
