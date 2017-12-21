@@ -39,7 +39,7 @@ class In_the_news_model extends CI_Model {
 			),
 			array(
 				'title' => 'Q&A with Ned H. Cohen — Commercial Observer',
-				'url' => 'http://moweekly.commercialobserver.com/04242015.pdf',
+				'view' => 'qa-with-ned-h-cohen-commercial-observer',
 				'date' => strtotime('04/24/2015'),
 				'extract' => '"I\'ll be raising equity for a fund sponsored by one of New York\'s best-known real estate entities ... with a conservative approach similar to mine."'
 			),
