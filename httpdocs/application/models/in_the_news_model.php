@@ -87,7 +87,7 @@ class In_the_news_model extends CI_Model {
 			),
 			array(
 				'title' => 'Former Malkin Exec. Forms Real Estate Investment Firm',
-				'url' => 'http://www.globest.com/news/12_984/newyork/finance/Former-Malkin-Exec-Forms-Real-Estate-Investment-Firm-352388.html',
+				'view' => 'former-malkin-exec-forms-real-estate-investment-firm',
 				'date' => strtotime('11/10/2014'),
 				'extract' => 'NEW YORK CITY Ned H. Cohen, a former executive vice president with Malkin Securities Corp., has launched NHCohen Partners, LLC'
 			)
