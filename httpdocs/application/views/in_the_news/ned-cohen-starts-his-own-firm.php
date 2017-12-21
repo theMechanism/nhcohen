@@ -6,4 +6,4 @@
 <p>“More so than ever, there is a pressing need for private-equity vehicles through which high-net-worth individuals and family entities can take part in direct real estate ownership as a means of portfolio diversification,” said Cohen. “The invaluable perspective and insight I’ve been fortunate to acquire over the decades enables me to help clients meet their investment goals, and to work effectively with their registered advisors.”</p>
 <p>Cohen is a registered principal and operations professional with the Financial Industry Regulatory Authority (FINRA), and holds Series 22, 39, 63 and 99 securities licenses.</p>
 <p>NHCohen Partners will raise equity capital for conservatively leveraged income-producing real estate assets initially in the $15-to-$50-million range.</p>
-<p><strong>Original Link (rew-online.com)</strong>: <a href="http://rew-online.com/2014/12/03/ned-cohen-starts-his-own-firm/">http://rew-online.com/2014/12/03/ned-cohen-starts-his-own-firm/</a></p>
+<p><strong>Original Link (rew-online.com)</strong>: <a href="http://rew-online.com/2014/12/03/ned-cohen-starts-his-own-firm/">Ned Cohen Starts His Own Firm</a></p>

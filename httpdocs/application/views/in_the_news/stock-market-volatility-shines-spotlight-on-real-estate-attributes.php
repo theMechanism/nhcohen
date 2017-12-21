@@ -13,4 +13,4 @@
 <p>&#8220;With direct ownership, you are investing in a tangible asset rather than in a piece of paper. Those assets can weather changing economic cycles, creating long-term value.</p>
 <p>But they must be chosen by experienced, successful real estate entrepreneurs, and the investment partnerships must be structured by finance experts to protect investors against bumps in the road and provide well thought out plans for asset disposition.&#8221;</p>
 <p>COPYRIGHT 2015 REAL ESTATE WEEKLY. ALL RIGHTS RESERVED.</p>
-<p><strong>Original Link (rew-online.com)</strong>: <a href="http://rew-online.com/2015/09/03/stock-market-volatility-shines-spotlight-in-real-estate-attributes/" target="_blank">http://rew-online.com/2015/09/03/stock-market-volatility-shines-spotlight-in-real-estate-attributes/</a></p>
+<p><strong>Original Link (rew-online.com)</strong>: <a href="http://rew-online.com/2015/09/03/stock-market-volatility-shines-spotlight-in-real-estate-attributes/" target="_blank">Stock market volatility shines spotlight in real estate attributes</a></p>
