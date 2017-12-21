@@ -60,7 +60,7 @@ class About_us extends MY_Controller {
 		$this->load->view('template', $this->data);
 	}
 
-	public function in_the_news($action = FALSE, $offset = 0, $limit = 10)
+	public function in_the_news($action = FALSE, $offset = 0, $limit = 15)
 	{
 		$this->load->model('In_the_news_model');
 		$this->load->helper('in_the_news_helper');
