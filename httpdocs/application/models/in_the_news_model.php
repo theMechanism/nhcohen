@@ -63,7 +63,7 @@ class In_the_news_model extends CI_Model {
 			),
 			array(
 				'title' => 'Cohen: Inflation Will Bring Investors Yield',
-				'url' => 'http://www.globest.com/news/12_1012/newyork/finance/Cohen-Inflation-Will-Bring-Investors-Yield-353532.html',
+				'view' => 'cohen-inflation-will-bring-investors-yield',
 				'date' => strtotime('12/22/2014'),
 				'extract' => 'NEW YORK CITY—After starting his own set of companies last month, former Malkin executive Ned Cohen tells GlobeSt.com in this EXCLUSIVE Q&A about market conditions and other factors that were conducive to him striking out on his own.'
 			),
