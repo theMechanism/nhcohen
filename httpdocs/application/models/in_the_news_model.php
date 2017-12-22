@@ -32,10 +32,10 @@ class In_the_news_model extends CI_Model {
 				'extract' => 'The performance of direct real estate investments is not correlated to the stock market and will generally provide a more stable flow of distributions.'
 			),
 			array(
-				'title' => 'Ned H. Cohen featured in CityBizList',
-				'url' => 'http://citybizlist.com/article/273861/ned-h-cohen-cites-peril-posed-by-low-interest-rates-for-direct-ownership-investments-in-real-estate',
-				'date' => strtotime('06/04/2015'),
-				'extract' => 'Ned H. Cohen Cites Peril Posed by Low Interest Rates For Direct Ownership Investments in Real Estate'
+				'title' => 'Stock Market’s Ominous Volatility Shines Spotlight On Real Estate’s Defensive Attributes, Says Ned H. Cohen',
+				'view' => 'stock-markets-ominous-volatility-shines-spotlight-on-real-estates-defensive-attributes-says-ned-h-cohen',
+				'date' => strtotime('08/31/2015'),
+				'extract' => 'Is the long-predicted bear market finally here, or are recent sharp declines merely a chance to load up on good stocks? Since no one can truly know, prudence demands that greater attention be given to portfolio diversification, says Ned H. Cohen,'
 			),
 			array(
 				'title' => 'Q&A with Ned H. Cohen Commercial Observer',
