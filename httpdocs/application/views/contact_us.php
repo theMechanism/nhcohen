@@ -1,8 +1,8 @@
 <div class="container">
 	<p class="address">
 		NHCohen Partners LLC<br>
-		2 Park Avenue - 14th Floor<br>
-		New York, NY 10016
+		60 East 42nd Street – 46th Floor<br>
+		New York, NY 10165
 	</p>
 	<p class="contact-info">
 		o: <a href="tel:+12124986960">212.498.6960</a><br>
