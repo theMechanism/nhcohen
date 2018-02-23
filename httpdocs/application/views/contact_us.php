@@ -1,6 +1,7 @@
 <div class="container">
 	<p class="address">
 		NHCohen Partners LLC<br>
+		One Grand Central Place<br>
 		60 East 42nd Street – 46th Floor<br>
 		New York, NY 10165
 	</p>
