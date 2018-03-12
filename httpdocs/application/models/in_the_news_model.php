@@ -14,6 +14,12 @@ class In_the_news_model extends CI_Model {
 
 		$news = array(
 			array(
+				'title' => 'Passive equity fills capital gap for Tennessee multifamily purchase',
+				'view' => 'passive-equity-fills-capital-gap-for-tennessee-multifamily-purchase',
+				'date' => strtotime('03/07/2018'),
+				'extract' => 'Demonstrating the utility of real estate capital formation through syndication, NHCohen Partners has concluded a raise of $8.5 million to enable'
+			),
+			array(
 				'title' => 'NHCohen Partners funds Texas Comfort Suites purchase',
 				'view' => 'nhcohen-partners-funds-texas-comfort-suites-purchase',
 				'date' => strtotime('10/16/2017'),
