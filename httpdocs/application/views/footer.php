@@ -19,7 +19,7 @@
 	                        </ul>
 	                        <div class="info">
 								&copy;<?php echo date("Y"); ?> NHCohen Partners LLC<br>
-								NHCohen Capital LLC, Member: <a href="http://www.finra.org" rel="external">FINRA</a><br>
+								<!--NHCohen Capital LLC, Member: <a href="http://www.finra.org" rel="external">FINRA</a><br>-->
 								One Grand Central Place, 60 East 42nd Street, 46th Floor New York, NY 10165 <span>T: <a href="tel:+12124986960">212.498.6960</a></span
 								> <span>F: 855.856.6483</span>
 	                        </div>
