@@ -23,8 +23,8 @@
 								One Grand Central Place, 60 East 42nd Street, 46th Floor New York, NY 10165 <span>T: <a href="tel:+12124986960">212.498.6960</a></span
 								> <span>F: 855.856.6483</span>
 	                        </div>
-	                        <div class="disclaimer">Securities offered through NHCohen Capital LLC, a registered broker-dealer with the Securities and Exchange Commission and member of FINRA.<br>
-	                        NHCohen Capital LLC and NHCohen Partners LLC are affiliated companies.</div>
+	                        <!--div class="disclaimer">Securities offered through NHCohen Capital LLC, a registered broker-dealer with the Securities and Exchange Commission and member of FINRA.<br>
+	                        NHCohen Capital LLC and NHCohen Partners LLC are affiliated companies.</div-->
 	                    </nav>
 	                    <div class="socials">
 	                        <ul>
